@@ -26,5 +26,18 @@ namespace filtroCandidatos
         {
 
         }
+
+        private void Birth_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string nome = txtNome.Text;
+            string lastname = LastName.Text;
+            string DatadeNascimento = Birth.Value.ToString("yyyy-MM-dd");
+
+        }
     }
 }

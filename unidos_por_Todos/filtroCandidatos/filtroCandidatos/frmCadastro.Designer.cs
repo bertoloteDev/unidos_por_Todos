@@ -36,13 +36,13 @@ namespace filtroCandidatos
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.Birth = new System.Windows.Forms.DateTimePicker();
+            this.txtNome = new System.Windows.Forms.TextBox();
+            this.LastName = new System.Windows.Forms.TextBox();
+            this.Email = new System.Windows.Forms.TextBox();
+            this.PhoneNumber = new System.Windows.Forms.TextBox();
+            this.CPF = new System.Windows.Forms.TextBox();
+            this.Password = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -112,55 +112,56 @@ namespace filtroCandidatos
             this.label1.TabIndex = 6;
             this.label1.Text = "Senha:";
             // 
-            // dateTimePicker1
+            // Birth
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(225, 188);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(93, 20);
-            this.dateTimePicker1.TabIndex = 7;
+            this.Birth.Location = new System.Drawing.Point(225, 188);
+            this.Birth.Name = "Birth";
+            this.Birth.Size = new System.Drawing.Size(93, 20);
+            this.Birth.TabIndex = 7;
+            this.Birth.ValueChanged += new System.EventHandler(this.Birth_ValueChanged);
             // 
-            // textBox1
+            // txtNome
             // 
-            this.textBox1.Location = new System.Drawing.Point(218, 125);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 8;
+            this.txtNome.Location = new System.Drawing.Point(218, 125);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(100, 20);
+            this.txtNome.TabIndex = 8;
             // 
-            // textBox2
+            // LastName
             // 
-            this.textBox2.Location = new System.Drawing.Point(218, 155);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 9;
+            this.LastName.Location = new System.Drawing.Point(218, 155);
+            this.LastName.Name = "LastName";
+            this.LastName.Size = new System.Drawing.Size(100, 20);
+            this.LastName.TabIndex = 9;
             // 
-            // textBox3
+            // Email
             // 
-            this.textBox3.Location = new System.Drawing.Point(477, 186);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 10;
+            this.Email.Location = new System.Drawing.Point(477, 186);
+            this.Email.Name = "Email";
+            this.Email.Size = new System.Drawing.Size(100, 20);
+            this.Email.TabIndex = 10;
             // 
-            // textBox4
+            // PhoneNumber
             // 
-            this.textBox4.Location = new System.Drawing.Point(478, 155);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 11;
+            this.PhoneNumber.Location = new System.Drawing.Point(478, 155);
+            this.PhoneNumber.Name = "PhoneNumber";
+            this.PhoneNumber.Size = new System.Drawing.Size(100, 20);
+            this.PhoneNumber.TabIndex = 11;
             // 
-            // textBox5
+            // CPF
             // 
-            this.textBox5.Location = new System.Drawing.Point(478, 125);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 12;
-            this.textBox5.Text = " ";
+            this.CPF.Location = new System.Drawing.Point(478, 125);
+            this.CPF.Name = "CPF";
+            this.CPF.Size = new System.Drawing.Size(100, 20);
+            this.CPF.TabIndex = 12;
+            this.CPF.Text = " ";
             // 
-            // textBox6
+            // Password
             // 
-            this.textBox6.Location = new System.Drawing.Point(478, 217);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 13;
+            this.Password.Location = new System.Drawing.Point(478, 217);
+            this.Password.Name = "Password";
+            this.Password.Size = new System.Drawing.Size(100, 20);
+            this.Password.TabIndex = 13;
             // 
             // label7
             // 
@@ -179,6 +180,7 @@ namespace filtroCandidatos
             this.button1.TabIndex = 15;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // frmCadastro
             // 
@@ -187,13 +189,13 @@ namespace filtroCandidatos
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.Password);
+            this.Controls.Add(this.CPF);
+            this.Controls.Add(this.PhoneNumber);
+            this.Controls.Add(this.Email);
+            this.Controls.Add(this.LastName);
+            this.Controls.Add(this.txtNome);
+            this.Controls.Add(this.Birth);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -217,13 +219,13 @@ namespace filtroCandidatos
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.DateTimePicker Birth;
+        private System.Windows.Forms.TextBox txtNome;
+        private System.Windows.Forms.TextBox LastName;
+        private System.Windows.Forms.TextBox Email;
+        private System.Windows.Forms.TextBox PhoneNumber;
+        private System.Windows.Forms.TextBox CPF;
+        private System.Windows.Forms.TextBox Password;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button button1;
     }
