@@ -24,31 +24,14 @@ namespace filtroCandidatos
 
         }
 
-        private void Result_Click(object sender, EventArgs e)
+       
+
+       
+        private void Register_Click(object sender, EventArgs e)
         {
+            Form frmCadastro = new frmCadastro();
+            frmCadastro.Show();
             
-            double orcamento = Convert.ToDouble(money.Text);
-            string candidato1 = Candidate1.Text;
-            string candidato2 = Candidate2.Text;
-            double orcamento2 = Convert.ToDouble(cash.Text);
-
-            if (orcamento >= orcamento2) 
-            {
-                Response.Text = " Responsavél pela área: " + candidato1;
-            }
-            else
-            {
-                Response.Text = " Rsponsável pela área: " + candidato2;
-            }
-            
-
-
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
