@@ -34,11 +34,11 @@ namespace filtroCandidatos
             // 
             // Register
             // 
-            this.Register.Location = new System.Drawing.Point(460, 470);
+            this.Register.Location = new System.Drawing.Point(279, 320);
             this.Register.Name = "Register";
-            this.Register.Size = new System.Drawing.Size(75, 23);
+            this.Register.Size = new System.Drawing.Size(116, 45);
             this.Register.TabIndex = 0;
-            this.Register.Text = "button1";
+            this.Register.Text = "CLIQUE AQUI";
             this.Register.UseVisualStyleBackColor = true;
             this.Register.Click += new System.EventHandler(this.Register_Click);
             // 
