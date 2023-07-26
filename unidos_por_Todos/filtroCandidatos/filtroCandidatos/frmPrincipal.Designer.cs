@@ -39,6 +39,7 @@ namespace filtroCandidatos
             this.Candidate2 = new System.Windows.Forms.TextBox();
             this.ideinha = new System.Windows.Forms.Label();
             this.cash = new System.Windows.Forms.TextBox();
+            this.btnAbrirSeleção = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Candidate1
@@ -147,11 +148,22 @@ namespace filtroCandidatos
             this.cash.Size = new System.Drawing.Size(132, 36);
             this.cash.TabIndex = 9;
             // 
+            // btnAbrirSeleção
+            // 
+            this.btnAbrirSeleção.Location = new System.Drawing.Point(361, 565);
+            this.btnAbrirSeleção.Name = "btnAbrirSeleção";
+            this.btnAbrirSeleção.Size = new System.Drawing.Size(75, 63);
+            this.btnAbrirSeleção.TabIndex = 10;
+            this.btnAbrirSeleção.Text = "abrir Seleção";
+            this.btnAbrirSeleção.UseVisualStyleBackColor = true;
+            this.btnAbrirSeleção.Click += new System.EventHandler(this.btnAbrirSeleção_Click);
+            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(743, 800);
+            this.Controls.Add(this.btnAbrirSeleção);
             this.Controls.Add(this.cash);
             this.Controls.Add(this.ideinha);
             this.Controls.Add(this.Candidate2);
@@ -184,6 +196,7 @@ namespace filtroCandidatos
         private System.Windows.Forms.TextBox Candidate2;
         private System.Windows.Forms.Label ideinha;
         private System.Windows.Forms.TextBox cash;
+        private System.Windows.Forms.Button btnAbrirSeleção;
     }
 }
 

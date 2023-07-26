@@ -50,5 +50,11 @@ namespace filtroCandidatos
         {
 
         }
+
+        private void btnAbrirSeleção_Click(object sender, EventArgs e)
+        {
+            Form frmSeleção = new frmSeleção();
+            frmSeleção.Show();
+        }
     }
 }
