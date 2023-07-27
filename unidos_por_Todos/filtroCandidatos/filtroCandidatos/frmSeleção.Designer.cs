@@ -35,12 +35,12 @@ namespace filtroCandidatos
             this.btnCentroOeste = new System.Windows.Forms.Button();
             this.btnSul = new System.Windows.Forms.Button();
             this.btnSudeste = new System.Windows.Forms.Button();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(50, 22);
             this.label1.Name = "label1";
@@ -98,18 +98,11 @@ namespace filtroCandidatos
             this.btnSudeste.UseVisualStyleBackColor = true;
             this.btnSudeste.Click += new System.EventHandler(this.btnSudeste_Click);
             // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(339, 24);
-            this.menuStrip1.TabIndex = 2;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
             // frmSeleção
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(339, 195);
             this.Controls.Add(this.btnSudeste);
             this.Controls.Add(this.btnSul);
@@ -117,8 +110,6 @@ namespace filtroCandidatos
             this.Controls.Add(this.btnNordeste);
             this.Controls.Add(this.btnNorte);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmSeleção";
             this.Text = "GabrielFBraz";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -135,6 +126,5 @@ namespace filtroCandidatos
         private System.Windows.Forms.Button btnCentroOeste;
         private System.Windows.Forms.Button btnSul;
         private System.Windows.Forms.Button btnSudeste;
-        private System.Windows.Forms.MenuStrip menuStrip1;
     }
 }

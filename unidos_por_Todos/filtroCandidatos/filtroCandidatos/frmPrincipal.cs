@@ -19,7 +19,6 @@ namespace filtroCandidatos
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
 
 
         }
@@ -55,6 +54,17 @@ namespace filtroCandidatos
         {
             Form frmSeleção = new frmSeleção();
             frmSeleção.Show();
+        }
+
+        private void richTextAboutUs_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form frmQuemSomosNos = new frmQuemSomosNos();
+            frmQuemSomosNos.Show();
         }
     }
 }
