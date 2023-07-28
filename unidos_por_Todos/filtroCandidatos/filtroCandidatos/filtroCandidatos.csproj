@@ -52,19 +52,82 @@
     <Compile Include="frmCadastro.Designer.cs">
       <DependentUpon>frmCadastro.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmPrincipal.cs">
+    <Compile Include="frmCentroOeste.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmPrincipal.Designer.cs">
-      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    <Compile Include="frmCentroOeste.Designer.cs">
+      <DependentUpon>frmCentroOeste.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSudeste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSudeste.Designer.cs">
+      <DependentUpon>frmSudeste.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNordeste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNordeste.Designer.cs">
+      <DependentUpon>frmNordeste.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSul.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSul.Designer.cs">
+      <DependentUpon>frmSul.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNorte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNorte.Designer.cs">
+      <DependentUpon>frmNorte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQuemSomosNos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuemSomosNos.Designer.cs">
+      <DependentUpon>frmQuemSomosNos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSeleção.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSeleção.Designer.cs">
+      <DependentUpon>frmSeleção.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGabriel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGabriel.Designer.cs">
+      <DependentUpon>frmGabriel.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmCadastro.resx">
       <DependentUpon>frmCadastro.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmPrincipal.resx">
-      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    <EmbeddedResource Include="frmCentroOeste.resx">
+      <DependentUpon>frmCentroOeste.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNordeste.resx">
+      <DependentUpon>frmNordeste.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNorte.resx">
+      <DependentUpon>frmNorte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuemSomosNos.resx">
+      <DependentUpon>frmQuemSomosNos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSeleção.resx">
+      <DependentUpon>frmSeleção.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGabriel.resx">
+      <DependentUpon>frmGabriel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSudeste.resx">
+      <DependentUpon>frmSudeste.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSul.resx">
+      <DependentUpon>frmSul.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

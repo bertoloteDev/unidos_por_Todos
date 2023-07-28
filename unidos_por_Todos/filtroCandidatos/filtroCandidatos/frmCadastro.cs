@@ -114,5 +114,29 @@ namespace filtroCandidatos
                 Image.Image = System.Drawing.Image.FromFile(@"..\..\Resources\hide.png");
             }
         }
+
+        private void frmCadastro_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Birth_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Image2_Click(object sender, EventArgs e)
+        {
+            if (Password2.PasswordChar == '*')
+            {
+                Password2.PasswordChar = '\0'; // Mostrar a senha
+                Image2.Image = System.Drawing.Image.FromFile(@"..\..\Resources\view.png");
+            }
+            else
+            {
+                Password2.PasswordChar = '*'; // Ocultar a senha
+                Image2.Image = System.Drawing.Image.FromFile(@"..\..\Resources\hide.png");
+            }
+        }
     }
 }
