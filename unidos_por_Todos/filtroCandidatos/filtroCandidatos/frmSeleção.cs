@@ -24,27 +24,32 @@ namespace filtroCandidatos
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Aqui aparecerá os dados da região norte onde mostra locais com alto numero de pobreza");
+            Form frmNorte = new frmNorte();
+            frmNorte.Show();
         }
 
         private void btnCentroOeste_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Aqui aparecerá os dados da região Centro-Oeste onde mostra locais com alto numero de pobreza");
+            Form frmCentroOeste = new frmCentroOeste();
+            frmCentroOeste.Show();
         }
 
         private void btnNordeste_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Aqui aparecerá os dados da região Nordeste onde mostra locais com alto numero de pobreza");
+            Form frmNordeste = new frmNordeste();
+            frmNordeste.Show();
         }
 
         private void btnSul_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Aqui aparecerá os dados da região Sul onde mostra locais com alto numero de pobreza");
+            Form frmSul = new frmSul();
+            frmSul.Show();
         }
 
         private void btnSudeste_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Aqui aparecerá os dados da região Sudeste onde mostra locais com alto numero de pobreza");
+            Form frmSudeste = new frmSudeste();
+            frmSudeste.Show();
         }
     }
 }

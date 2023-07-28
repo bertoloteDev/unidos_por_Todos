@@ -42,7 +42,7 @@ namespace filtroCandidatos
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(50, 22);
+            this.label1.Location = new System.Drawing.Point(66, 49);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(260, 33);
             this.label1.TabIndex = 0;
@@ -50,9 +50,9 @@ namespace filtroCandidatos
             // 
             // btnNorte
             // 
-            this.btnNorte.Location = new System.Drawing.Point(85, 79);
+            this.btnNorte.Location = new System.Drawing.Point(87, 109);
             this.btnNorte.Name = "btnNorte";
-            this.btnNorte.Size = new System.Drawing.Size(83, 23);
+            this.btnNorte.Size = new System.Drawing.Size(100, 60);
             this.btnNorte.TabIndex = 1;
             this.btnNorte.Text = "Norte";
             this.btnNorte.UseVisualStyleBackColor = true;
@@ -60,9 +60,9 @@ namespace filtroCandidatos
             // 
             // btnNordeste
             // 
-            this.btnNordeste.Location = new System.Drawing.Point(85, 108);
+            this.btnNordeste.Location = new System.Drawing.Point(87, 185);
             this.btnNordeste.Name = "btnNordeste";
-            this.btnNordeste.Size = new System.Drawing.Size(83, 23);
+            this.btnNordeste.Size = new System.Drawing.Size(100, 60);
             this.btnNordeste.TabIndex = 1;
             this.btnNordeste.Text = "Nordeste";
             this.btnNordeste.UseVisualStyleBackColor = true;
@@ -70,9 +70,9 @@ namespace filtroCandidatos
             // 
             // btnCentroOeste
             // 
-            this.btnCentroOeste.Location = new System.Drawing.Point(174, 79);
+            this.btnCentroOeste.Location = new System.Drawing.Point(206, 109);
             this.btnCentroOeste.Name = "btnCentroOeste";
-            this.btnCentroOeste.Size = new System.Drawing.Size(83, 23);
+            this.btnCentroOeste.Size = new System.Drawing.Size(100, 60);
             this.btnCentroOeste.TabIndex = 1;
             this.btnCentroOeste.Text = "Centro-Oeste";
             this.btnCentroOeste.UseVisualStyleBackColor = true;
@@ -80,9 +80,9 @@ namespace filtroCandidatos
             // 
             // btnSul
             // 
-            this.btnSul.Location = new System.Drawing.Point(174, 108);
+            this.btnSul.Location = new System.Drawing.Point(206, 185);
             this.btnSul.Name = "btnSul";
-            this.btnSul.Size = new System.Drawing.Size(83, 23);
+            this.btnSul.Size = new System.Drawing.Size(100, 60);
             this.btnSul.TabIndex = 1;
             this.btnSul.Text = "Sul";
             this.btnSul.UseVisualStyleBackColor = true;
@@ -90,9 +90,9 @@ namespace filtroCandidatos
             // 
             // btnSudeste
             // 
-            this.btnSudeste.Location = new System.Drawing.Point(129, 137);
+            this.btnSudeste.Location = new System.Drawing.Point(147, 264);
             this.btnSudeste.Name = "btnSudeste";
-            this.btnSudeste.Size = new System.Drawing.Size(84, 23);
+            this.btnSudeste.Size = new System.Drawing.Size(100, 60);
             this.btnSudeste.TabIndex = 1;
             this.btnSudeste.Text = "Sudeste";
             this.btnSudeste.UseVisualStyleBackColor = true;
@@ -103,7 +103,7 @@ namespace filtroCandidatos
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(339, 195);
+            this.ClientSize = new System.Drawing.Size(393, 383);
             this.Controls.Add(this.btnSudeste);
             this.Controls.Add(this.btnSul);
             this.Controls.Add(this.btnCentroOeste);
@@ -111,6 +111,7 @@ namespace filtroCandidatos
             this.Controls.Add(this.btnNorte);
             this.Controls.Add(this.label1);
             this.Name = "frmSeleção";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GabrielFBraz";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
