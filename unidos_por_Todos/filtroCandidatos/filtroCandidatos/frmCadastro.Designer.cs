@@ -40,8 +40,6 @@ namespace filtroCandidatos
             this.txtNome = new System.Windows.Forms.TextBox();
             this.LastName = new System.Windows.Forms.TextBox();
             this.Email = new System.Windows.Forms.TextBox();
-            this.PhoneNumber = new System.Windows.Forms.TextBox();
-            this.cpf = new System.Windows.Forms.TextBox();
             this.Password = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.Register = new System.Windows.Forms.Button();
@@ -49,7 +47,11 @@ namespace filtroCandidatos
             this.Woman = new System.Windows.Forms.RadioButton();
             this.Gender = new System.Windows.Forms.GroupBox();
             this.Sex = new System.Windows.Forms.Label();
+            this.PhoneNumber = new System.Windows.Forms.MaskedTextBox();
+            this.cpf = new System.Windows.Forms.MaskedTextBox();
+            this.Image = new System.Windows.Forms.PictureBox();
             this.Gender.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Image)).BeginInit();
             this.SuspendLayout();
             // 
             // nome
@@ -61,7 +63,6 @@ namespace filtroCandidatos
             this.nome.Size = new System.Drawing.Size(54, 18);
             this.nome.TabIndex = 0;
             this.nome.Text = "Nome:";
-            this.nome.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -72,7 +73,6 @@ namespace filtroCandidatos
             this.label2.Size = new System.Drawing.Size(94, 18);
             this.label2.TabIndex = 1;
             this.label2.Text = "Sobrenome:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -83,7 +83,6 @@ namespace filtroCandidatos
             this.label3.Size = new System.Drawing.Size(155, 18);
             this.label3.TabIndex = 2;
             this.label3.Text = "Data de Nascimento:";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -124,7 +123,6 @@ namespace filtroCandidatos
             this.label1.Size = new System.Drawing.Size(57, 18);
             this.label1.TabIndex = 6;
             this.label1.Text = "Senha:";
-            this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // Birth
             // 
@@ -133,7 +131,6 @@ namespace filtroCandidatos
             this.Birth.Name = "Birth";
             this.Birth.Size = new System.Drawing.Size(305, 26);
             this.Birth.TabIndex = 7;
-            this.Birth.ValueChanged += new System.EventHandler(this.Birth_ValueChanged);
             // 
             // txtNome
             // 
@@ -142,7 +139,6 @@ namespace filtroCandidatos
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(149, 26);
             this.txtNome.TabIndex = 8;
-            this.txtNome.TextChanged += new System.EventHandler(this.txtNome_TextChanged);
             // 
             // LastName
             // 
@@ -151,7 +147,6 @@ namespace filtroCandidatos
             this.LastName.Name = "LastName";
             this.LastName.Size = new System.Drawing.Size(149, 26);
             this.LastName.TabIndex = 9;
-            this.LastName.TextChanged += new System.EventHandler(this.LastName_TextChanged);
             // 
             // Email
             // 
@@ -160,23 +155,7 @@ namespace filtroCandidatos
             this.Email.Name = "Email";
             this.Email.Size = new System.Drawing.Size(190, 26);
             this.Email.TabIndex = 10;
-            // 
-            // PhoneNumber
-            // 
-            this.PhoneNumber.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PhoneNumber.Location = new System.Drawing.Point(611, 138);
-            this.PhoneNumber.Name = "PhoneNumber";
-            this.PhoneNumber.Size = new System.Drawing.Size(190, 26);
-            this.PhoneNumber.TabIndex = 11;
-            // 
-            // cpf
-            // 
-            this.cpf.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cpf.Location = new System.Drawing.Point(611, 108);
-            this.cpf.Name = "cpf";
-            this.cpf.Size = new System.Drawing.Size(190, 26);
-            this.cpf.TabIndex = 12;
-            this.cpf.Text = " ";
+            this.Email.Validated += new System.EventHandler(this.Email_Validated);
             // 
             // Password
             // 
@@ -186,7 +165,6 @@ namespace filtroCandidatos
             this.Password.PasswordChar = '*';
             this.Password.Size = new System.Drawing.Size(190, 26);
             this.Password.TabIndex = 13;
-            this.Password.TextChanged += new System.EventHandler(this.Password_TextChanged);
             // 
             // label7
             // 
@@ -251,18 +229,47 @@ namespace filtroCandidatos
             this.Sex.TabIndex = 19;
             this.Sex.Text = "Sexo:";
             // 
+            // PhoneNumber
+            // 
+            this.PhoneNumber.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PhoneNumber.Location = new System.Drawing.Point(611, 138);
+            this.PhoneNumber.Mask = "(00) 00000-0000";
+            this.PhoneNumber.Name = "PhoneNumber";
+            this.PhoneNumber.Size = new System.Drawing.Size(131, 26);
+            this.PhoneNumber.TabIndex = 21;
+            // 
+            // cpf
+            // 
+            this.cpf.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cpf.Location = new System.Drawing.Point(611, 108);
+            this.cpf.Mask = "000.000.000-00";
+            this.cpf.Name = "cpf";
+            this.cpf.Size = new System.Drawing.Size(131, 26);
+            this.cpf.TabIndex = 22;
+            // 
+            // Image
+            // 
+            this.Image.Image = global::filtroCandidatos.Properties.Resources.hide;
+            this.Image.Location = new System.Drawing.Point(807, 203);
+            this.Image.Name = "Image";
+            this.Image.Size = new System.Drawing.Size(29, 26);
+            this.Image.TabIndex = 23;
+            this.Image.TabStop = false;
+            this.Image.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // frmCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(925, 450);
+            this.Controls.Add(this.Image);
+            this.Controls.Add(this.cpf);
+            this.Controls.Add(this.PhoneNumber);
             this.Controls.Add(this.Sex);
             this.Controls.Add(this.Gender);
             this.Controls.Add(this.Register);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.Password);
-            this.Controls.Add(this.cpf);
-            this.Controls.Add(this.PhoneNumber);
             this.Controls.Add(this.Email);
             this.Controls.Add(this.LastName);
             this.Controls.Add(this.txtNome);
@@ -276,9 +283,9 @@ namespace filtroCandidatos
             this.Controls.Add(this.nome);
             this.Name = "frmCadastro";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.frmCadastro_Load);
             this.Gender.ResumeLayout(false);
             this.Gender.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Image)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -297,8 +304,6 @@ namespace filtroCandidatos
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.TextBox LastName;
         private System.Windows.Forms.TextBox Email;
-        private System.Windows.Forms.TextBox PhoneNumber;
-        private System.Windows.Forms.TextBox cpf;
         private System.Windows.Forms.TextBox Password;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button Register;
@@ -306,5 +311,8 @@ namespace filtroCandidatos
         private System.Windows.Forms.RadioButton Woman;
         private System.Windows.Forms.GroupBox Gender;
         private System.Windows.Forms.Label Sex;
+        private System.Windows.Forms.MaskedTextBox PhoneNumber;
+        private System.Windows.Forms.MaskedTextBox cpf;
+        private System.Windows.Forms.PictureBox Image;
     }
 }

@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Text.RegularExpressions; // Serve para importar uma determinada biblioteca para conseguir usar a classe regex
+
 
 namespace filtroCandidatos
 {
@@ -15,21 +17,6 @@ namespace filtroCandidatos
         public frmCadastro()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Birth_ValueChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -53,9 +40,17 @@ namespace filtroCandidatos
             {
                 opcao = "Feminino";
             }
-            
+            else if (Men.Checked)
+            {
+                opcao = "Masculino";
+            }
+            else // Se nenhuma das opções estiverem selecionadas irá aparecer a mensagem 
+            {
+                MessageBox.Show("Selecione seu gênero");
+                return;
+            }
 
-            DateTime today = DateTime.Now; // DateTime é um tipo de váriavel que marca o dia e a hora,  declarei a variável chamda "today", chamei uma classe nativa do C# ("DateTime") e peguei um atributo dela que retorna o dia de hoje("Now")
+                DateTime today = DateTime.Now; // DateTime é um tipo de váriavel que marca o dia e a hora,  declarei a variável chamda "today", chamei uma classe nativa do C# ("DateTime") e peguei um atributo dela que retorna o dia de hoje("Now")
 
             DateTime birthdate = Birth.Value; // Chamei a classe nativa do c# "DateTime", declarei a variável "birthdate" e atribui o valor da string "Birth.Value" dentro da variável
 
@@ -64,14 +59,14 @@ namespace filtroCandidatos
             if (age < 18)// Verificar se o usuário tem 18 anos para efetuar o cadastro. SE Variável "age" for menor que 18 irá aparecer uma mensagem dizendo que o usuário não possui a idade necessária
             {
                 MessageBox.Show(" Não tem a idade necessária ");
-                return;
+                return; //retorna ao inicio da ação
                
             }
 
             if (nome != "" && lastname != "" && DatadeNascimento != "" && CPF != "" && telefone != "" && email != "" && senha != "")// Declarei um if para verificar se os campos de cadastros estão preenchidos
                                                                                                                                     
             {
-                MessageBox.Show("Usuário Cadastrado com Sucesso");// Se os campos estiverem preenchidos aparecerá um MessageBox escrito "Usuário Cadastrado com sucesso"
+                MessageBox.Show("Usuário Cadastrado com Sucesso\n");// Se os campos estiverem preenchidos aparecerá um MessageBox escrito "Usuário Cadastrado com sucesso"
                 
             }
             else // Se todos os campos não estiverem preenchidos irá aparecer um MessageBox escrito "Informações Inválidas"
@@ -81,38 +76,43 @@ namespace filtroCandidatos
                 
             }
 
-           
+        }
+
+        private void Email_Validated(object sender, EventArgs e)
+        {
+            string email = Email.Text;
+            Regex regex = new Regex(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$");//Declarei a classe "Regex" e declarei uma variável chamada "Regex". Para eu conseguir usar essa variável eu preciso usar o "new". O Regex serve para validar a máscara de email.
+                if (!regex.IsMatch(email)) // o If serve para verificar se o email tem a estrutura necessária para ser considerado valido
+            {
+                MessageBox.Show("Email Inválido");
+                Email.Focus();// Estou focando o textbox( name - "Email")
+            }
+
 
         }
 
-        private void frmCadastro_Load(object sender, EventArgs e)
+        private void cpf_Validated(object sender, EventArgs e)
         {
-
+            string CPF = cpf.Text;
+            Regex regex1 = new Regex(@"^\d{3}\.\d{3}\.\d{3}-\d{2}$");// Regex para máscara de CPF
+            if(!regex1.IsMatch(CPF))// Verifica se o CPF está digitado corretamente. Se não estiver aparecerá a mensagem "CPF inválido
+            {
+                MessageBox.Show("CPF Inválido");
+            }
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void txtNome_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LastName_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Password_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
+            if (Password.PasswordChar == '*')
+            {
+                Password.PasswordChar = '\0'; // Mostrar a senha
+                Image.Image = System.Drawing.Image.FromFile(@"..\..\Resources\view.png");
+            }
+            else
+            {
+                Password.PasswordChar = '*'; // Ocultar a senha
+                Image.Image = System.Drawing.Image.FromFile(@"..\..\Resources\hide.png");
+            }
         }
     }
 }
