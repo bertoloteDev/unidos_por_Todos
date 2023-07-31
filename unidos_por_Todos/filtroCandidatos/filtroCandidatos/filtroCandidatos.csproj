@@ -58,6 +58,12 @@
     <Compile Include="frmCentroOeste.Designer.cs">
       <DependentUpon>frmCentroOeste.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmFiltro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFiltro.Designer.cs">
+      <DependentUpon>frmFiltro.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmSudeste.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +113,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmCentroOeste.resx">
       <DependentUpon>frmCentroOeste.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFiltro.resx">
+      <DependentUpon>frmFiltro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmNordeste.resx">
       <DependentUpon>frmNordeste.cs</DependentUpon>
