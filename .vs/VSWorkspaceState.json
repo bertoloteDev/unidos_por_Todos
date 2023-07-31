@@ -1,9 +1,10 @@
 {
   "ExpandedNodes": [
     "",
+    "\\filtroCandidatos",
+    "\\filtroCandidatos\\filtroCandidatos",
     "\\unidos_por_Todos",
-    "\\unidos_por_Todos\\filtroCandidatos",
-    "\\unidos_por_Todos\\filtroCandidatos\\filtroCandidatos"
+    "\\unidos_por_Todos\\filtroCandidatos"
   ],
   "SelectedNode": "\\unidos_por_Todos\\filtroCandidatos\\filtroCandidatos.sln",
   "PreviewInSolutionExplorer": false

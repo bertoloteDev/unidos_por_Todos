@@ -58,6 +58,18 @@
     <Compile Include="frmCentroOeste.Designer.cs">
       <DependentUpon>frmCentroOeste.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRecuperacaosenha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRecuperacaosenha.Designer.cs">
+      <DependentUpon>frmRecuperacaosenha.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmSudeste.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,6 +120,9 @@
     <EmbeddedResource Include="frmCentroOeste.resx">
       <DependentUpon>frmCentroOeste.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmNordeste.resx">
       <DependentUpon>frmNordeste.cs</DependentUpon>
     </EmbeddedResource>
@@ -116,6 +131,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmQuemSomosNos.resx">
       <DependentUpon>frmQuemSomosNos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRecuperacaosenha.resx">
+      <DependentUpon>frmRecuperacaosenha.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSeleção.resx">
       <DependentUpon>frmSeleção.cs</DependentUpon>

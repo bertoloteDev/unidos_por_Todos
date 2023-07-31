@@ -1,0 +1,12 @@
+C:\Users\ingrid.asantos12\source\repos\unidos_por_todos\filtroCandidatos\filtroCandidatos\bin\Debug\filtroCandidatos.exe.config
+C:\Users\ingrid.asantos12\source\repos\unidos_por_todos\filtroCandidatos\filtroCandidatos\bin\Debug\filtroCandidatos.exe
+C:\Users\ingrid.asantos12\source\repos\unidos_por_todos\filtroCandidatos\filtroCandidatos\bin\Debug\filtroCandidatos.pdb
+C:\Users\ingrid.asantos12\source\repos\unidos_por_todos\filtroCandidatos\filtroCandidatos\obj\Debug\filtroCandidatos.csproj.AssemblyReference.cache
+C:\Users\ingrid.asantos12\source\repos\unidos_por_todos\filtroCandidatos\filtroCandidatos\obj\Debug\filtroCandidatos.frmlogin.resources
+C:\Users\ingrid.asantos12\source\repos\unidos_por_todos\filtroCandidatos\filtroCandidatos\obj\Debug\filtroCandidatos.frmPrincipal.resources
+C:\Users\ingrid.asantos12\source\repos\unidos_por_todos\filtroCandidatos\filtroCandidatos\obj\Debug\filtroCandidatos.Properties.Resources.resources
+C:\Users\ingrid.asantos12\source\repos\unidos_por_todos\filtroCandidatos\filtroCandidatos\obj\Debug\filtroCandidatos.csproj.GenerateResource.cache
+C:\Users\ingrid.asantos12\source\repos\unidos_por_todos\filtroCandidatos\filtroCandidatos\obj\Debug\filtroCandidatos.csproj.CoreCompileInputs.cache
+C:\Users\ingrid.asantos12\source\repos\unidos_por_todos\filtroCandidatos\filtroCandidatos\obj\Debug\filtroCandidatos.exe
+C:\Users\ingrid.asantos12\source\repos\unidos_por_todos\filtroCandidatos\filtroCandidatos\obj\Debug\filtroCandidatos.pdb
+C:\Users\ingrid.asantos12\source\repos\unidos_por_Todos\filtroCandidatos\filtroCandidatos\obj\Debug\filtroCandidatos.frmRecuperacaosenha.resources
