@@ -26,12 +26,41 @@ namespace filtroCandidatos
         {
             string vcpf = txtCPF.Text;
             string vsenha = txtSenha.Text;
+
+          if (vcpf != "" && vsenha != "")
+            {
+                Form vSelecao = new frmSeleção();
+                vSelecao.Show();
+            }
+                else
+            {
+                MessageBox.Show(" Preencha os Campos ");
+            }
+
+
         }
 
         private void recuperarSemhaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form vRecuperacao = new frmRecuperacaosenha();
             vRecuperacao.Show();
+        }
+
+        private void quemSomosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form vQuemsomos = new frmQuemSomosNos();
+            vQuemsomos.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form vFormulario = new frmCadastro();
+            vFormulario.Show();
+        }
+
+        private void frmLogin_Load_1(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
         }
     }
 }

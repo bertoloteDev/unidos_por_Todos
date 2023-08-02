@@ -19,11 +19,13 @@ namespace filtroCandidatos
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
+            
             Form frmNorte = new frmNorte();
             frmNorte.Show();
         }

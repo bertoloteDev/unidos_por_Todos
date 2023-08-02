@@ -57,5 +57,11 @@ namespace filtroCandidatos
                 txtConfsenha.UseSystemPasswordChar = true;
             }
         }
+
+        private void frmRecuperacaosenha_Load(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+
+        }
     }
 }

@@ -38,5 +38,33 @@ namespace filtroCandidatos
             MessageBox.Show("cbxCategoria: " + vCategorias +
                 " txtLocalidades: " + vLocalidades + " txtQuant: " + vQuant);
         }
+
+        private void voltarParaTelaInicialToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form vInicial = new frmLogin();
+            vInicial.Show();
+        }
+
+        private void voltarParaTelaAnteriorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form vVoltaranterior = new frmSeleção();
+            vVoltaranterior.Show();
+        }
+
+        private void alteraçãoDeDadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form vAlteracaodados = new frmEditarCadastro();
+            vAlteracaodados.Show();
+        }
+
+        private void txtQuant_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmFiltro_Load(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+        }
     }
 }

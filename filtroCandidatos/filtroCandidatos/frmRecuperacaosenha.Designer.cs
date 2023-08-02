@@ -179,6 +179,7 @@ namespace filtroCandidatos
             this.Controls.Add(this.label1);
             this.Name = "frmRecuperacaosenha";
             this.Text = "Recuperação de Senha ";
+            this.Load += new System.EventHandler(this.frmRecuperacaosenha_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

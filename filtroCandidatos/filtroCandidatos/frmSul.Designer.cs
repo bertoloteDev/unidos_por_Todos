@@ -51,6 +51,7 @@ namespace filtroCandidatos
             this.Controls.Add(this.label1);
             this.Name = "frmSul";
             this.Text = "Região Sul";
+            this.Load += new System.EventHandler(this.frmSul_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

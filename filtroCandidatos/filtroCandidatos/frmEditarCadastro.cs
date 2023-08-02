@@ -48,5 +48,11 @@ namespace filtroCandidatos
                 PbOcutar.Image = Image.FromFile(@"..\..\Resources\hide.png");
             }
         }
+
+        private void frmEditarCadastro_Load(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+
+        }
     }
 }

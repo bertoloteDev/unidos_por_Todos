@@ -16,5 +16,11 @@ namespace filtroCandidatos
         {
             InitializeComponent();
         }
+
+        private void frmCentroOeste_Load(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+
+        }
     }
 }

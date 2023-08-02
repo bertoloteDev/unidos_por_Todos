@@ -24,5 +24,11 @@ namespace filtroCandidatos
         {
             
         }
+
+        private void frmQuemSomosNos_Load(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+
+        }
     }
 }

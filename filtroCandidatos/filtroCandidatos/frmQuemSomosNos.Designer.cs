@@ -115,6 +115,7 @@ namespace filtroCandidatos
             this.Name = "frmQuemSomosNos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quem Somos Nós?";
+            this.Load += new System.EventHandler(this.frmQuemSomosNos_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -16,7 +16,7 @@ namespace filtroCandidatos
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmGabriel());
+            Application.Run(new frmLogin());
         }
     }
 }

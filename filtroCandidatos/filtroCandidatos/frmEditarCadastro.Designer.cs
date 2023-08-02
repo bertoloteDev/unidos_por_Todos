@@ -198,6 +198,7 @@ namespace filtroCandidatos
             this.Controls.Add(this.Confirmar);
             this.Name = "frmEditarCadastro";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.frmEditarCadastro_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PbOcutar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

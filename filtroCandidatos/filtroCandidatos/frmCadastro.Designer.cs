@@ -184,13 +184,14 @@ namespace filtroCandidatos
             // 
             // Register
             // 
+            this.Register.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.Register.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Register.Location = new System.Drawing.Point(633, 494);
             this.Register.Name = "Register";
             this.Register.Size = new System.Drawing.Size(135, 35);
             this.Register.TabIndex = 15;
             this.Register.Text = "REGISTRE-SE";
-            this.Register.UseVisualStyleBackColor = true;
+            this.Register.UseVisualStyleBackColor = false;
             this.Register.Click += new System.EventHandler(this.button1_Click);
             // 
             // Men
@@ -298,6 +299,7 @@ namespace filtroCandidatos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(1452, 659);
             this.Controls.Add(this.Image2);
             this.Controls.Add(this.RepitaaSenha);
@@ -321,6 +323,7 @@ namespace filtroCandidatos
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.nome);
+            this.ForeColor = System.Drawing.SystemColors.Desktop;
             this.Name = "frmCadastro";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.frmCadastro_Load);

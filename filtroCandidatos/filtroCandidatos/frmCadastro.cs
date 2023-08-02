@@ -35,6 +35,8 @@ namespace filtroCandidatos
             
             string senha = Password.Text;// Declarei a variável que é uma string e coloquei o "Password.Text" nessa variável
 
+            string senha2 = Password2.Text;// Declarei a variável que é uma string e coloquei o "Password2.Text" nessa variável
+
             string opcao = "";
             if (Woman.Checked)
             {
@@ -63,18 +65,27 @@ namespace filtroCandidatos
                
             }
 
-            if (nome != "" && lastname != "" && DatadeNascimento != "" && CPF != "" && telefone != "" && email != "" && senha != "")// Declarei um if para verificar se os campos de cadastros estão preenchidos
-                                                                                                                                    
-            {
-                MessageBox.Show("Usuário Cadastrado com Sucesso\n");// Se os campos estiverem preenchidos aparecerá um MessageBox escrito "Usuário Cadastrado com sucesso"
-                
-            }
-            else // Se todos os campos não estiverem preenchidos irá aparecer um MessageBox escrito "Informações Inválidas"
-            
+            if (!(nome != "" && lastname != "" && DatadeNascimento != "" && CPF != "" && telefone != "" && email != "" && senha != ""))// Declarei um if para verificar se os campos de cadastros estão preenchidos           
+               // Se todos os campos não estiverem preenchidos irá aparecer um MessageBox escrito "Informações Inválidas"
             {
               MessageBox.Show(" Informações Inválidas ");  // Se todos os campos não estiverem preenchidos irá aparecer um MessageBox escrito "Informações Inválidas"
                 
             }
+
+
+            if( senha == senha2)
+            {
+                MessageBox.Show("Usuário Cadastrado com Sucesso\n");// Se os campos estiverem preenchidos aparecerá um MessageBox escrito "Usuário Cadastrado com sucesso"
+
+                Form vSelacao = new frmSeleção();
+                vSelacao.Show();
+            }
+            else
+            {
+                MessageBox.Show("Senhas não Conferem!");
+
+            }
+
 
         }
 
@@ -117,7 +128,7 @@ namespace filtroCandidatos
 
         private void frmCadastro_Load(object sender, EventArgs e)
         {
-
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void Birth_ValueChanged(object sender, EventArgs e)
