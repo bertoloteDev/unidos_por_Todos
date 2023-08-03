@@ -76,6 +76,12 @@
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmOngsCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOngsCadastro.Designer.cs">
+      <DependentUpon>frmOngsCadastro.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmRecuperacaosenha.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,6 +130,12 @@
     <Compile Include="frmGabriel.Designer.cs">
       <DependentUpon>frmGabriel.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmTeladeDesenvolvedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTeladeDesenvolvedor.Designer.cs">
+      <DependentUpon>frmTeladeDesenvolvedor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmCadastro.resx">
@@ -147,6 +159,9 @@
     <EmbeddedResource Include="frmNorte.resx">
       <DependentUpon>frmNorte.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmOngsCadastro.resx">
+      <DependentUpon>frmOngsCadastro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmQuemSomosNos.resx">
       <DependentUpon>frmQuemSomosNos.cs</DependentUpon>
     </EmbeddedResource>
@@ -164,6 +179,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmSul.resx">
       <DependentUpon>frmSul.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTeladeDesenvolvedor.resx">
+      <DependentUpon>frmTeladeDesenvolvedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

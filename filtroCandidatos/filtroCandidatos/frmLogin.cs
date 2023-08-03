@@ -84,5 +84,11 @@ namespace filtroCandidatos
         {
 
         }
+
+        private void loginToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frmDev = new frmTeladeDesenvolvedor();
+            frmDev.Show();
+        }
     }
 }

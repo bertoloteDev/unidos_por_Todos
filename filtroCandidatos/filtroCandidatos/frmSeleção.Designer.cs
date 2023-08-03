@@ -153,6 +153,12 @@ namespace filtroCandidatos
             this.Controls.Add(this.groupBox88);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
+            this.Controls.Add(this.btnSudeste);
+            this.Controls.Add(this.btnSul);
+            this.Controls.Add(this.btnCentroOeste);
+            this.Controls.Add(this.btnNordeste);
+            this.Controls.Add(this.btnNorte);
+            this.Controls.Add(this.label1);
             this.Name = "frmSeleção";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GabrielFBraz";

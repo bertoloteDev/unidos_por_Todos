@@ -21,15 +21,16 @@ namespace filtroCandidatos
 
         private void button1_Click(object sender, EventArgs e)
         {
+            char[] caractersexc = {' ', '/', '-', '.','_', ':' };
             string nome = txtNome.Text; // Declarei a variável que é uma string e coloquei o "txtNome.Text" nessa variável
             
             string lastname = LastName.Text;// Declarei a variável que é uma string e coloquei o "LastName.Text" nessa variável
             
             string DatadeNascimento = Birth.Value.ToString("yyyy-MM-dd"); // Declarei a variável que é uma string e coloquei o "Birth" nessa variável e como ela é um valor numérico ela acompanha o .Value e depois usei o ToString e depois eu coloquei o formato que eu quero que é "yyyy" que significa o ano em 4 digítos, o "MM" que significa o mês em 2 digítos e o "dd" que significa dias em 2 digítos
             
-            string CPF = cpf.Text;// Declarei a variável que é uma string e coloquei o "cpf.Text" nessa variável
+            string CPF = cpf.Text.Trim(caractersexc);// Declarei a variável que é uma string e coloquei o "cpf.Text" nessa variável
             
-            string telefone = PhoneNumber.Text;// Declarei a variável que é uma string e coloquei o "PhoneNumber.Text" nessa variável
+            string telefone = PhoneNumber.Text.Trim(caractersexc);// Declarei a variável que é uma string e coloquei o "PhoneNumber.Text" nessa variável
             
             string email = Email.Text;// Declarei a variável que é uma string e coloquei o "Email.Text" nessa variável
             
@@ -69,7 +70,7 @@ namespace filtroCandidatos
                // Se todos os campos não estiverem preenchidos irá aparecer um MessageBox escrito "Informações Inválidas"
             {
               MessageBox.Show(" Informações Inválidas ");  // Se todos os campos não estiverem preenchidos irá aparecer um MessageBox escrito "Informações Inválidas"
-                
+                return;
             }
 
 

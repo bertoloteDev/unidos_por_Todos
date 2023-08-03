@@ -64,9 +64,9 @@ namespace filtroCandidatos
             this.AlterarDados.AutoSize = true;
             this.AlterarDados.Location = new System.Drawing.Point(226, 82);
             this.AlterarDados.Name = "AlterarDados";
-            this.AlterarDados.Size = new System.Drawing.Size(71, 13);
+            this.AlterarDados.Size = new System.Drawing.Size(181, 24);
             this.AlterarDados.TabIndex = 1;
-            this.AlterarDados.Text = "Alterar Dados";
+            this.AlterarDados.Text = "ALTERAR DADOS";
             // 
             // TxtNomedeConfirmação
             // 
