@@ -197,6 +197,7 @@ namespace filtroCandidatos
             // Men
             // 
             this.Men.AutoSize = true;
+            this.Men.Checked = true;
             this.Men.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Men.Location = new System.Drawing.Point(28, 42);
             this.Men.Name = "Men";
@@ -214,7 +215,6 @@ namespace filtroCandidatos
             this.Woman.Name = "Woman";
             this.Woman.Size = new System.Drawing.Size(67, 17);
             this.Woman.TabIndex = 17;
-            this.Woman.TabStop = true;
             this.Woman.Text = "Feminino";
             this.Woman.UseVisualStyleBackColor = true;
             // 

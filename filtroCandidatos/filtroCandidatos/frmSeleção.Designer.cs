@@ -103,7 +103,7 @@ namespace filtroCandidatos
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(393, 383);
+            this.ClientSize = new System.Drawing.Size(445, 464);
             this.Controls.Add(this.btnSudeste);
             this.Controls.Add(this.btnSul);
             this.Controls.Add(this.btnCentroOeste);
