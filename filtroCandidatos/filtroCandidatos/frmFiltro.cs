@@ -66,5 +66,13 @@ namespace filtroCandidatos
         {
             this.WindowState = FormWindowState.Maximized;
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+            int x = (this.Width - groupBox1.Width) / 2;
+            int y = (this.Height - groupBox1.Height) / 2;
+            groupBox1.Location = new Point(x, y);
+        }
     }
 }

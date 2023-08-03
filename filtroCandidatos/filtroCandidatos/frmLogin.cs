@@ -61,6 +61,28 @@ namespace filtroCandidatos
         private void frmLogin_Load_1(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;
+            int x = (this.Width - groupBox1.Width)/2;
+            int y = (this.Height - groupBox1.Height) / 2;
+            groupBox1.Location = new Point(x, y);
+        }
+
+        private void pbPass_Click(object sender, EventArgs e)
+        {
+            if (txtSenha.PasswordChar == '*')
+            {
+                txtSenha.PasswordChar = '\0'; // Mostrar a senha
+                pbPass.Image = Image.FromFile(@"..\..\Resources\view.png");
+            }
+            else
+            {
+                txtSenha.PasswordChar = '*'; // Ocultar a senha
+                pbPass.Image = Image.FromFile(@"..\..\Resources\\hide.png");
+            }
+        }
+
+        private void cadastrosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
