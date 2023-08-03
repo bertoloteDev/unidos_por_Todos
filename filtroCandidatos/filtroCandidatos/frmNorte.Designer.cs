@@ -41,9 +41,11 @@ namespace filtroCandidatos
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Location = new System.Drawing.Point(30, 46);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(427, 13);
+            this.label1.Size = new System.Drawing.Size(640, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Aqui aparecerá os dados da região norte onde mostra locais com alto numero de pob" +
     "reza";
@@ -53,17 +55,18 @@ namespace filtroCandidatos
             this.groupBox80.Controls.Add(this.label1);
             this.groupBox80.Location = new System.Drawing.Point(164, 93);
             this.groupBox80.Name = "groupBox80";
-            this.groupBox80.Size = new System.Drawing.Size(481, 100);
+            this.groupBox80.Size = new System.Drawing.Size(703, 100);
             this.groupBox80.TabIndex = 1;
             this.groupBox80.TabStop = false;
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1011, 24);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -86,8 +89,8 @@ namespace filtroCandidatos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.ClientSize = new System.Drawing.Size(1011, 532);
             this.Controls.Add(this.groupBox80);
             this.Controls.Add(this.menuStrip1);
             this.Name = "frmNorte";

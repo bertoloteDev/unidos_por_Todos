@@ -15,7 +15,7 @@ namespace filtroCandidatos
         public frmQuemSomosNos()
         {
             InitializeComponent();
-            l2.Text = " Bem-vindo à Unidos por Todos, sua parceira em informações significativas para a mudança social. Somos uma\n empresa especializada em coletar e fornecer dados precisos e abrangentes sobre regiões com alta taxa de\n pobreza em todo o mundo. Nosso propósito é empoderar organizações não governamentais (ONGs) com\n informações valiosas que os ajudem a realizar impacto positivo e duradouro em comunidades desfavorecidas.";
+            l2.Text = " Bem-vindo à Unidos por Todos, sua parceira em informações significativas para a mudança social. Somos uma\n empresa especializada em coletar e fornecer dados precisos e abrangentes sobre regiões com alta taxa de pobreza\n em todo o mundo. Nosso propósito é empoderar organizações não governamentais (ONGs) com informações\n valiosas que os ajudem a realizar impacto positivo e duradouro em comunidades desfavorecidas.";
             l4.Text = " Nossa missão é transformar dados em conhecimento para ação. Acreditamos que informações precisas e atualizadas\n são essenciais para abordar as desigualdades socioeconômicas e promover mudanças significativas em regiões\n afetadas pela pobreza. Nosso objetivo é capacitar ONGs com dados confiáveis e inteligência de mercado,\n possibilitando que elas implementem programas mais eficientes e bem-sucedidos.";
             l6.Text = " Nosso trabalho é pautado pela ética, transparência e responsabilidade. Compreendemos a importância dos dados\n que fornecemos e nos comprometemos em proteger a privacidade das comunidades envolvidas. Priorizamos\n parcerias de longo prazo com nossos clientes, trabalhando em conjunto para identificar soluções inovadoras e com\n alto impacto social.";
         }
@@ -38,6 +38,11 @@ namespace filtroCandidatos
         {
             Form frmLogin = new frmLogin();
             frmLogin.Show();
+        }
+
+        private void groupBox85_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -3,10 +3,8 @@
     "",
     "\\filtroCandidatos",
     "\\filtroCandidatos\\filtroCandidatos",
-    "\\unidos_por_Todos",
-    "\\unidos_por_Todos\\filtroCandidatos",
-    "\\unidos_por_Todos\\filtroCandidatos\\filtroCandidatos"
+    "\\unidos_por_Todos"
   ],
-  "SelectedNode": "\\filtroCandidatos\\filtroCandidatos\\frmLogin.cs",
+  "SelectedNode": "\\filtroCandidatos\\filtroCandidatos\\frmQuemSomosNos.cs",
   "PreviewInSolutionExplorer": false
 }
