@@ -2,8 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\filtroCandidatos",
-    "\\filtroCandidatos\\filtroCandidatos"
+    "\\filtroCandidatos\\filtroCandidatos",
+    "\\unidos_por_Todos",
+    "\\unidos_por_Todos\\filtroCandidatos",
+    "\\unidos_por_Todos\\filtroCandidatos\\filtroCandidatos"
   ],
-  "SelectedNode": "\\filtroCandidatos\\filtroCandidatos\\frmSul.cs",
+  "SelectedNode": "\\filtroCandidatos\\filtroCandidatos\\frmLogin.cs",
   "PreviewInSolutionExplorer": false
 }
