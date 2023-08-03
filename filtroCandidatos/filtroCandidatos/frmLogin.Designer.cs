@@ -139,6 +139,7 @@ namespace filtroCandidatos
             this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
             this.loginToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
             this.loginToolStripMenuItem.Text = " Login Desenvolvedores";
+            this.loginToolStripMenuItem.Click += new System.EventHandler(this.loginToolStripMenuItem_Click);
             // 
             // quemSomosToolStripMenuItem
             // 

@@ -62,5 +62,11 @@ namespace filtroCandidatos
         {
             this.WindowState = FormWindowState.Maximized;
         }
+
+        private void loginToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frmDev = new frmTeladeDesenvolvedor();
+            frmDev.Show();
+        }
     }
 }
