@@ -101,5 +101,21 @@ namespace filtroCandidatos
         {
 
         }
+
+        private void txtConfsenha_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblConf_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void voltarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form vTelainicial = new frmLogin();
+            vTelainicial.Show();
+        }
     }
 }

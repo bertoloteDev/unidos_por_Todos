@@ -62,6 +62,7 @@ namespace filtroCandidatos
             // AlterarDados
             // 
             this.AlterarDados.AutoSize = true;
+            this.AlterarDados.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.AlterarDados.Location = new System.Drawing.Point(226, 82);
             this.AlterarDados.Name = "AlterarDados";
             this.AlterarDados.Size = new System.Drawing.Size(181, 24);
@@ -205,7 +206,7 @@ namespace filtroCandidatos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.ClientSize = new System.Drawing.Size(1452, 631);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmEditarCadastro";
