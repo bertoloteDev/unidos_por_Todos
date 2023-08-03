@@ -60,5 +60,10 @@ namespace filtroCandidatos
                 EmailONG.Focus();// Estou focando o textbox( name - "Email")
             }
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

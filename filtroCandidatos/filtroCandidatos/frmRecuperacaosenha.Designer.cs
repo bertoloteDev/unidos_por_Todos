@@ -233,7 +233,7 @@ namespace filtroCandidatos
             // 
             // voltarToolStripMenuItem
             // 
-            this.voltarToolStripMenuItem.BackColor = System.Drawing.Color.SeaShell;
+            this.voltarToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.voltarToolStripMenuItem.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.voltarToolStripMenuItem.Name = "voltarToolStripMenuItem";
             this.voltarToolStripMenuItem.Size = new System.Drawing.Size(73, 20);

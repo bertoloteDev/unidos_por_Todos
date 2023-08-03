@@ -28,5 +28,12 @@ namespace filtroCandidatos
         {
             this.WindowState = FormWindowState.Maximized;
         }
+
+        private void voltarParaTelaAnteriorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form vtelaant = new frmLogin();
+            vtelaant.Show();
+        }
+    }
     }
 }
