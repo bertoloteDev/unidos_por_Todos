@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\filtroCandidatos"
+    "\\filtroCandidatos",
+    "\\filtroCandidatos\\filtroCandidatos"
   ],
-  "SelectedNode": "\\filtroCandidatos\\filtroCandidatos.sln",
+  "SelectedNode": "\\filtroCandidatos\\filtroCandidatos\\frmFiltro.cs",
   "PreviewInSolutionExplorer": false
 }
