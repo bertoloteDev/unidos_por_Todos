@@ -20,7 +20,16 @@ namespace filtroCandidatos
         private void frmSudeste_Load(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;
+            int x = (this.Width - groupBox83.Width) / 2;
+            int y = (this.Height - groupBox83.Height) / 2;
+            groupBox83.Location = new Point(x, y);
 
+        }
+
+        private void voltarATelaInicialToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frmLogin = new frmLogin();
+            frmLogin.Show();
         }
     }
 }

@@ -20,7 +20,16 @@ namespace filtroCandidatos
         private void frmNordeste_Load(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;
+            int x = (this.Width - groupBox82.Width) / 2;
+            int y = (this.Height - groupBox82.Height) / 2;
+            groupBox82.Location = new Point(x, y);
 
+        }
+
+        private void voltarATelaInicialToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frmLogin = new frmLogin();
+            frmLogin.Show();
         }
     }
 }

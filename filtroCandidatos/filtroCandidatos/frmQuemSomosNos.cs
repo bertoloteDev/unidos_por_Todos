@@ -28,7 +28,16 @@ namespace filtroCandidatos
         private void frmQuemSomosNos_Load(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;
+            int x = (this.Width - groupBox85.Width) / 2;
+            int y = (this.Height - groupBox85.Height) / 2;
+            groupBox85.Location = new Point(x, y);
 
+        }
+
+        private void voltarATelaInicialToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frmLogin = new frmLogin();
+            frmLogin.Show();
         }
     }
 }

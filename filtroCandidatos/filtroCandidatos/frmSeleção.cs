@@ -20,6 +20,10 @@ namespace filtroCandidatos
         private void Form1_Load(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;
+            this.WindowState = FormWindowState.Maximized;
+            int x = (this.Width - groupBox88.Width) / 2;
+            int y = (this.Height - groupBox88.Height) / 2;
+            groupBox88.Location = new Point(x, y);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -52,6 +56,17 @@ namespace filtroCandidatos
         {
             Form frmSudeste = new frmSudeste();
             frmSudeste.Show();
+        }
+
+        private void voltarATelaPricipalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frmLogin = new frmLogin();
+            frmLogin.Show();
+        }
+
+        private void groupBox88_Enter(object sender, EventArgs e)
+        {
+            
         }
     }
 }

@@ -30,18 +30,58 @@ namespace filtroCandidatos
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
+            this.groupBox83 = new System.Windows.Forms.GroupBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.voltarATelaInicialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.groupBox83.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.label1.Location = new System.Drawing.Point(165, 21);
+            this.label1.Location = new System.Drawing.Point(17, 46);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(442, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Aqui aparecerá os dados da região Sudeste onde mostra locais com alto numero de p" +
     "obreza";
+            // 
+            // groupBox83
+            // 
+            this.groupBox83.Controls.Add(this.label1);
+            this.groupBox83.Location = new System.Drawing.Point(160, 100);
+            this.groupBox83.Name = "groupBox83";
+            this.groupBox83.Size = new System.Drawing.Size(475, 100);
+            this.groupBox83.TabIndex = 1;
+            this.groupBox83.TabStop = false;
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.TabIndex = 2;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // menuToolStripMenuItem
+            // 
+            this.menuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.voltarATelaInicialToolStripMenuItem});
+            this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
+            this.menuToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
+            this.menuToolStripMenuItem.Text = "Menu";
+            // 
+            // voltarATelaInicialToolStripMenuItem
+            // 
+            this.voltarATelaInicialToolStripMenuItem.Name = "voltarATelaInicialToolStripMenuItem";
+            this.voltarATelaInicialToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.voltarATelaInicialToolStripMenuItem.Text = "Voltar a tela inicial";
+            this.voltarATelaInicialToolStripMenuItem.Click += new System.EventHandler(this.voltarATelaInicialToolStripMenuItem_Click);
             // 
             // frmSudeste
             // 
@@ -49,10 +89,16 @@ namespace filtroCandidatos
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.groupBox83);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmSudeste";
             this.Text = "Região Sudeste";
             this.Load += new System.EventHandler(this.frmSudeste_Load);
+            this.groupBox83.ResumeLayout(false);
+            this.groupBox83.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -61,5 +107,9 @@ namespace filtroCandidatos
         #endregion
 
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.GroupBox groupBox83;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem voltarATelaInicialToolStripMenuItem;
     }
 }
