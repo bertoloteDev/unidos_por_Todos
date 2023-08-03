@@ -76,6 +76,12 @@
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmOngsCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOngsCadastro.Designer.cs">
+      <DependentUpon>frmOngsCadastro.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmRecuperacaosenha.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,6 +158,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmNorte.resx">
       <DependentUpon>frmNorte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOngsCadastro.resx">
+      <DependentUpon>frmOngsCadastro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmQuemSomosNos.resx">
       <DependentUpon>frmQuemSomosNos.cs</DependentUpon>

@@ -60,11 +60,12 @@ namespace filtroCandidatos
             // AlterarDados
             // 
             this.AlterarDados.AutoSize = true;
+            this.AlterarDados.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AlterarDados.Location = new System.Drawing.Point(213, 31);
             this.AlterarDados.Name = "AlterarDados";
-            this.AlterarDados.Size = new System.Drawing.Size(71, 13);
+            this.AlterarDados.Size = new System.Drawing.Size(181, 24);
             this.AlterarDados.TabIndex = 1;
-            this.AlterarDados.Text = "Alterar Dados";
+            this.AlterarDados.Text = "ALTERAR DADOS";
             // 
             // TxtNomedeConfirmação
             // 

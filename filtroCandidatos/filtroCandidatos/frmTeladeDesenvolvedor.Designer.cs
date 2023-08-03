@@ -169,7 +169,7 @@ namespace filtroCandidatos
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmTeladeDesenvolvedor";
-            this.Text = "frmTeladeDesenvolvedor";
+            this.Text = " ";
             this.Load += new System.EventHandler(this.frmTeladeDesenvolvedor_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
