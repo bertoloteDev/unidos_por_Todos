@@ -41,9 +41,11 @@ namespace filtroCandidatos
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(28, 39);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(22, 37);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(418, 13);
+            this.label1.Size = new System.Drawing.Size(748, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "Aqui aparecerá os dados da região Sul onde mostra locais com alto numero de pobre" +
     "za";
@@ -51,14 +53,15 @@ namespace filtroCandidatos
             // groupBox84
             // 
             this.groupBox84.Controls.Add(this.label1);
-            this.groupBox84.Location = new System.Drawing.Point(146, 162);
+            this.groupBox84.Location = new System.Drawing.Point(12, 162);
             this.groupBox84.Name = "groupBox84";
-            this.groupBox84.Size = new System.Drawing.Size(476, 100);
+            this.groupBox84.Size = new System.Drawing.Size(776, 100);
             this.groupBox84.TabIndex = 1;
             this.groupBox84.TabStop = false;
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
@@ -78,7 +81,7 @@ namespace filtroCandidatos
             // voltarATelaInicialToolStripMenuItem
             // 
             this.voltarATelaInicialToolStripMenuItem.Name = "voltarATelaInicialToolStripMenuItem";
-            this.voltarATelaInicialToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.voltarATelaInicialToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
             this.voltarATelaInicialToolStripMenuItem.Text = "Voltar a tela inicial";
             this.voltarATelaInicialToolStripMenuItem.Click += new System.EventHandler(this.voltarATelaInicialToolStripMenuItem_Click);
             // 
@@ -86,7 +89,7 @@ namespace filtroCandidatos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.groupBox84);
             this.Controls.Add(this.menuStrip1);

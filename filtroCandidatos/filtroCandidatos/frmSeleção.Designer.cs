@@ -39,6 +39,7 @@ namespace filtroCandidatos
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.voltarATelaPricipalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox88 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.groupBox88.SuspendLayout();
             this.SuspendLayout();
@@ -46,9 +47,10 @@ namespace filtroCandidatos
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(5, 34);
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(5, 31);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(336, 31);
             this.label1.TabIndex = 0;
@@ -139,17 +141,27 @@ namespace filtroCandidatos
             this.groupBox88.Controls.Add(this.btnNordeste);
             this.groupBox88.Location = new System.Drawing.Point(747, 195);
             this.groupBox88.Name = "groupBox88";
-            this.groupBox88.Size = new System.Drawing.Size(341, 332);
+            this.groupBox88.Size = new System.Drawing.Size(344, 332);
             this.groupBox88.TabIndex = 3;
             this.groupBox88.TabStop = false;
             this.groupBox88.Enter += new System.EventHandler(this.groupBox88_Enter);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(1345, 458);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(85, 44);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Cadastrar ONG";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // frmSeleção
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.ClientSize = new System.Drawing.Size(1442, 566);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox88);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
@@ -178,5 +190,6 @@ namespace filtroCandidatos
         private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem voltarATelaPricipalToolStripMenuItem;
         private System.Windows.Forms.GroupBox groupBox88;
+        private System.Windows.Forms.Button button1;
     }
 }
