@@ -35,5 +35,4 @@ namespace filtroCandidatos
             vtelaant.Show();
         }
     }
-    }
 }
