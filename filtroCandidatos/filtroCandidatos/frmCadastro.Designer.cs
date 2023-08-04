@@ -278,7 +278,7 @@ namespace filtroCandidatos
             // 
             this.Image.BackColor = System.Drawing.Color.White;
             this.Image.Image = global::filtroCandidatos.Properties.Resources.hide;
-            this.Image.Location = new System.Drawing.Point(917, 280);
+            this.Image.Location = new System.Drawing.Point(907, 233);
             this.Image.Name = "Image";
             this.Image.Size = new System.Drawing.Size(23, 19);
             this.Image.TabIndex = 23;
@@ -309,7 +309,7 @@ namespace filtroCandidatos
             // 
             this.Image2.BackColor = System.Drawing.Color.White;
             this.Image2.Image = global::filtroCandidatos.Properties.Resources.hide;
-            this.Image2.Location = new System.Drawing.Point(917, 231);
+            this.Image2.Location = new System.Drawing.Point(907, 282);
             this.Image2.Name = "Image2";
             this.Image2.Size = new System.Drawing.Size(23, 19);
             this.Image2.TabIndex = 26;

@@ -63,12 +63,13 @@ namespace filtroCandidatos
             // CPNJ
             // 
             this.CPNJ.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CPNJ.ForeColor = System.Drawing.SystemColors.Window;
+            this.CPNJ.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.CPNJ.Location = new System.Drawing.Point(600, 257);
             this.CPNJ.Mask = "00.000.000/0000-00";
             this.CPNJ.Name = "CPNJ";
             this.CPNJ.Size = new System.Drawing.Size(140, 26);
             this.CPNJ.TabIndex = 1;
+            this.CPNJ.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.CPNJ_MaskInputRejected);
             // 
             // lbl45
             // 
@@ -118,26 +119,28 @@ namespace filtroCandidatos
             // NameONG
             // 
             this.NameONG.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NameONG.ForeColor = System.Drawing.SystemColors.Window;
+            this.NameONG.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.NameONG.Location = new System.Drawing.Point(600, 203);
             this.NameONG.Name = "NameONG";
             this.NameONG.Size = new System.Drawing.Size(212, 26);
             this.NameONG.TabIndex = 6;
+            this.NameONG.TextChanged += new System.EventHandler(this.NameONG_TextChanged);
             // 
             // EmailONG
             // 
             this.EmailONG.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EmailONG.ForeColor = System.Drawing.SystemColors.Window;
+            this.EmailONG.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.EmailONG.Location = new System.Drawing.Point(600, 307);
             this.EmailONG.Name = "EmailONG";
             this.EmailONG.Size = new System.Drawing.Size(212, 26);
             this.EmailONG.TabIndex = 7;
+            this.EmailONG.TextChanged += new System.EventHandler(this.EmailONG_TextChanged);
             this.EmailONG.Validated += new System.EventHandler(this.EmailONG_Validated);
             // 
             // Response
             // 
             this.Response.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Response.ForeColor = System.Drawing.SystemColors.Window;
+            this.Response.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Response.Location = new System.Drawing.Point(600, 411);
             this.Response.Name = "Response";
             this.Response.Size = new System.Drawing.Size(212, 26);
@@ -159,12 +162,13 @@ namespace filtroCandidatos
             // PhoneONG
             // 
             this.PhoneONG.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PhoneONG.ForeColor = System.Drawing.SystemColors.Window;
+            this.PhoneONG.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.PhoneONG.Location = new System.Drawing.Point(600, 356);
             this.PhoneONG.Mask = "(00) 0 0000-0000";
             this.PhoneONG.Name = "PhoneONG";
             this.PhoneONG.Size = new System.Drawing.Size(140, 26);
             this.PhoneONG.TabIndex = 10;
+            this.PhoneONG.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.PhoneONG_MaskInputRejected);
             // 
             // label5
             // 
@@ -180,12 +184,13 @@ namespace filtroCandidatos
             // cpfResponse
             // 
             this.cpfResponse.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cpfResponse.ForeColor = System.Drawing.SystemColors.Window;
+            this.cpfResponse.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cpfResponse.Location = new System.Drawing.Point(600, 461);
             this.cpfResponse.Mask = "000.000.000-00";
             this.cpfResponse.Name = "cpfResponse";
             this.cpfResponse.Size = new System.Drawing.Size(131, 26);
             this.cpfResponse.TabIndex = 24;
+            this.cpfResponse.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.cpfResponse_MaskInputRejected);
             // 
             // label6
             // 
@@ -240,6 +245,7 @@ namespace filtroCandidatos
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmOngsCadastro";
             this.Text = "frmOngsCadastro";
+            this.Load += new System.EventHandler(this.frmOngsCadastro_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

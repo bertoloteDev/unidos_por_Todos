@@ -65,5 +65,35 @@ namespace filtroCandidatos
         {
 
         }
+
+        private void frmOngsCadastro_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CPNJ_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
+
+        private void NameONG_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void EmailONG_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PhoneONG_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
+
+        private void cpfResponse_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
     }
 }

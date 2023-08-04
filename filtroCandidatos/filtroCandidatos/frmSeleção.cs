@@ -68,5 +68,17 @@ namespace filtroCandidatos
         {
             
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Form cadastroong = new frmOngsCadastro();
+            cadastroong.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form editarcadastro = new frmEditarCadastro();
+            editarcadastro.Show();
+        }
     }
 }
