@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using filtroCandidatos.Models;
 
 namespace filtroCandidatos
 {
@@ -15,8 +16,18 @@ namespace filtroCandidatos
         public frmLogin()
         {
             InitializeComponent();
+            using (MyDbContext db = new MyDbContext())
+            {
+                string query = "select * from cadastrados;";
+                
+
+            }
+
         }
 
+       
+        
+        
         private void frmLogin_Load(object sender, EventArgs e)
         {
 

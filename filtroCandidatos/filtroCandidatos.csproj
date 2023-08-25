@@ -208,6 +208,7 @@
     <Compile Include="frmTeladeDesenvolvedor.Designer.cs">
       <DependentUpon>frmTeladeDesenvolvedor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\Cadastro.cs" />
     <Compile Include="MyDbContext.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

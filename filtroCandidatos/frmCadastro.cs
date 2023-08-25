@@ -8,7 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Text.RegularExpressions; // Serve para importar uma determinada biblioteca para conseguir usar a classe regex
-
+using System.Data.Entity;
+using System.Data.Entity.ModelConfiguration.Conventions;
+using MySql.Data.MySqlClient;
+using filtroCandidatos.Models;
 
 namespace filtroCandidatos
 {
@@ -37,6 +40,8 @@ namespace filtroCandidatos
             string senha = Password.Text;// Declarei a variável que é uma string e coloquei o "Password.Text" nessa variável
 
             string senha2 = Password2.Text;// Declarei a variável que é uma string e coloquei o "Password2.Text" nessa variável
+
+            string idade2 = idade.Text;
 
             string opcao = "";
             if (Woman.Checked)
@@ -77,7 +82,39 @@ namespace filtroCandidatos
             if( senha == senha2)
             {
                 MessageBox.Show("Usuário Cadastrado com Sucesso\n");// Se os campos estiverem preenchidos aparecerá um MessageBox escrito "Usuário Cadastrado com sucesso"
+                using (MyDbContext db = new MyDbContext())
 
+                {
+
+                    string query = @"INSERT INTO cadastrados (nome, sobrenome, cpf, data_de_nascimento, idade, genero, telefone_usuario) VALUES (@nome, @sobrenome, @cpf, @data_de_nascimento, @idade, @genero, @telefone_usuario)";
+
+                    var parameters = new[]
+
+                    {
+
+                    new MySqlParameter("@nome", nome),
+
+                    new MySqlParameter("@sobrenome", lastname),
+
+                    new MySqlParameter("@cpf", CPF),
+
+                    new MySqlParameter("@data_de_nascimento", DatadeNascimento),
+
+                    new MySqlParameter("@idade", idade2),
+
+                    new MySqlParameter("@genero", opcao),
+
+                    new MySqlParameter("@telefone_usuario", telefone)
+
+                   
+
+                    };
+
+
+
+                    int rowsAffected = db.Database.ExecuteSqlCommand(query, parameters);
+
+                }
                 Form vSelacao = new frmSeleção();
                 vSelacao.Show();
             }
@@ -149,6 +186,16 @@ namespace filtroCandidatos
                 Password2.PasswordChar = '*'; // Ocultar a senha
                 Image2.Image = System.Drawing.Image.FromFile(@"..\..\Resources\hide.png");
             }
+        }
+
+        private void Password2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void idade_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
