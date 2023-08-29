@@ -35,13 +35,15 @@ namespace filtroCandidatos
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.listBox3 = new System.Windows.Forms.ListBox();
             this.logoff = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.voltarParaTelaAnteriorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.bdong = new System.Windows.Forms.DataGridView();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bdong)).BeginInit();
             this.SuspendLayout();
             // 
             // listBox1
@@ -65,7 +67,7 @@ namespace filtroCandidatos
             "Telefone: (11) 99113 - 0727",
             "Email: elianarodrigues54@gmail.com",
             "Orçamento: R$ 500.450 "});
-            this.listBox1.Location = new System.Drawing.Point(95, 202);
+            this.listBox1.Location = new System.Drawing.Point(558, 230);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(315, 202);
             this.listBox1.TabIndex = 0;
@@ -75,7 +77,7 @@ namespace filtroCandidatos
             this.lbl1.AutoSize = true;
             this.lbl1.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl1.ForeColor = System.Drawing.SystemColors.Window;
-            this.lbl1.Location = new System.Drawing.Point(127, 159);
+            this.lbl1.Location = new System.Drawing.Point(104, 97);
             this.lbl1.Name = "lbl1";
             this.lbl1.Size = new System.Drawing.Size(260, 20);
             this.lbl1.TabIndex = 1;
@@ -97,7 +99,7 @@ namespace filtroCandidatos
             "Responsável: Eliana Rodrigues Almeida",
             "Email: transformandovidas@gmail.com",
             "Orçamento: R$ 500.450"});
-            this.listBox2.Location = new System.Drawing.Point(935, 231);
+            this.listBox2.Location = new System.Drawing.Point(35, 234);
             this.listBox2.Name = "listBox2";
             this.listBox2.Size = new System.Drawing.Size(329, 173);
             this.listBox2.TabIndex = 2;
@@ -108,7 +110,7 @@ namespace filtroCandidatos
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Window;
-            this.label1.Location = new System.Drawing.Point(987, 159);
+            this.label1.Location = new System.Drawing.Point(986, 97);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(212, 20);
             this.label1.TabIndex = 3;
@@ -130,24 +132,11 @@ namespace filtroCandidatos
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.Window;
-            this.label3.Location = new System.Drawing.Point(519, 159);
+            this.label3.Location = new System.Drawing.Point(500, 97);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(330, 20);
             this.label3.TabIndex = 5;
             this.label3.Text = "LOCAIS QUE PRECISAM DE AJUDA:";
-            // 
-            // listBox3
-            // 
-            this.listBox3.FormattingEnabled = true;
-            this.listBox3.Items.AddRange(new object[] {
-            "Cidade: São Paulo",
-            "Estado:  São Paulo",
-            "Bairro: Capão Redondo",
-            "IDH: 0,782"});
-            this.listBox3.Location = new System.Drawing.Point(523, 255);
-            this.listBox3.Name = "listBox3";
-            this.listBox3.Size = new System.Drawing.Size(315, 95);
-            this.listBox3.TabIndex = 6;
             // 
             // logoff
             // 
@@ -170,11 +159,20 @@ namespace filtroCandidatos
             this.menuStrip1.TabIndex = 8;
             this.menuStrip1.Text = "menuStrip1";
             // 
+            // voltarParaTelaAnteriorToolStripMenuItem
+            // 
+            this.voltarParaTelaAnteriorToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.voltarParaTelaAnteriorToolStripMenuItem.Name = "voltarParaTelaAnteriorToolStripMenuItem";
+            this.voltarParaTelaAnteriorToolStripMenuItem.Size = new System.Drawing.Size(144, 20);
+            this.voltarParaTelaAnteriorToolStripMenuItem.Text = "Voltar para tela anterior ";
+            this.voltarParaTelaAnteriorToolStripMenuItem.Click += new System.EventHandler(this.voltarParaTelaAnteriorToolStripMenuItem_Click);
+            // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.bdong);
+            this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.listBox1);
-            this.groupBox1.Controls.Add(this.listBox3);
+            this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.lbl1);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.listBox2);
@@ -184,14 +182,25 @@ namespace filtroCandidatos
             this.groupBox1.Size = new System.Drawing.Size(1346, 466);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // voltarParaTelaAnteriorToolStripMenuItem
+            // button1
             // 
-            this.voltarParaTelaAnteriorToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.voltarParaTelaAnteriorToolStripMenuItem.Name = "voltarParaTelaAnteriorToolStripMenuItem";
-            this.voltarParaTelaAnteriorToolStripMenuItem.Size = new System.Drawing.Size(144, 20);
-            this.voltarParaTelaAnteriorToolStripMenuItem.Text = "Voltar para tela anterior ";
-            this.voltarParaTelaAnteriorToolStripMenuItem.Click += new System.EventHandler(this.voltarParaTelaAnteriorToolStripMenuItem_Click);
+            this.button1.Location = new System.Drawing.Point(201, 205);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // bdong
+            // 
+            this.bdong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.bdong.Location = new System.Drawing.Point(990, 195);
+            this.bdong.Name = "bdong";
+            this.bdong.Size = new System.Drawing.Size(240, 150);
+            this.bdong.TabIndex = 7;
             // 
             // frmTeladeDesenvolvedor
             // 
@@ -210,6 +219,7 @@ namespace filtroCandidatos
             this.menuStrip1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bdong)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -223,10 +233,11 @@ namespace filtroCandidatos
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ListBox listBox3;
         private System.Windows.Forms.Button logoff;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.ToolStripMenuItem voltarParaTelaAnteriorToolStripMenuItem;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridView bdong;
     }
 }

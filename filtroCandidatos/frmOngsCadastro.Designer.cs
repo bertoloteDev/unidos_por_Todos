@@ -45,6 +45,8 @@ namespace filtroCandidatos
             this.label6 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.voltarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.orcamento = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -221,12 +223,30 @@ namespace filtroCandidatos
             this.voltarToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
             this.voltarToolStripMenuItem.Text = "Voltar";
             // 
+            // orcamento
+            // 
+            this.orcamento.Location = new System.Drawing.Point(1136, 356);
+            this.orcamento.Name = "orcamento";
+            this.orcamento.Size = new System.Drawing.Size(100, 20);
+            this.orcamento.TabIndex = 26;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(1051, 359);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(35, 13);
+            this.label7.TabIndex = 27;
+            this.label7.Text = "label7";
+            // 
             // frmOngsCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.ClientSize = new System.Drawing.Size(1407, 777);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.orcamento);
             this.Controls.Add(this.cpfResponse);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -271,5 +291,7 @@ namespace filtroCandidatos
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem voltarToolStripMenuItem;
+        private System.Windows.Forms.TextBox orcamento;
+        private System.Windows.Forms.Label label7;
     }
 }

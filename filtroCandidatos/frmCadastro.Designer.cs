@@ -54,8 +54,6 @@ namespace filtroCandidatos
             this.RepitaaSenha = new System.Windows.Forms.Label();
             this.Image2 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.idade = new System.Windows.Forms.TextBox();
             this.Gender.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Image)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Image2)).BeginInit();
@@ -321,8 +319,6 @@ namespace filtroCandidatos
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.idade);
-            this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.Image2);
             this.groupBox1.Controls.Add(this.nome);
@@ -350,23 +346,6 @@ namespace filtroCandidatos
             this.groupBox1.Size = new System.Drawing.Size(1056, 525);
             this.groupBox1.TabIndex = 27;
             this.groupBox1.TabStop = false;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(632, 337);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(35, 13);
-            this.label8.TabIndex = 27;
-            this.label8.Text = "label8";
-            // 
-            // idade
-            // 
-            this.idade.Location = new System.Drawing.Point(746, 337);
-            this.idade.Name = "idade";
-            this.idade.Size = new System.Drawing.Size(100, 20);
-            this.idade.TabIndex = 28;
-            this.idade.TextChanged += new System.EventHandler(this.idade_TextChanged);
             // 
             // frmCadastro
             // 
@@ -416,7 +395,5 @@ namespace filtroCandidatos
         private System.Windows.Forms.Label RepitaaSenha;
         private System.Windows.Forms.PictureBox Image2;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox idade;
-        private System.Windows.Forms.Label label8;
     }
 }

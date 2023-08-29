@@ -25,6 +25,7 @@ namespace filtroCandidatos
         private void button1_Click(object sender, EventArgs e)
         {
             char[] caractersexc = {' ', '/', '-', '.','_', ':' };
+
             string nome = txtNome.Text; // Declarei a variável que é uma string e coloquei o "txtNome.Text" nessa variável
             
             string lastname = LastName.Text;// Declarei a variável que é uma string e coloquei o "LastName.Text" nessa variável
@@ -41,7 +42,7 @@ namespace filtroCandidatos
 
             string senha2 = Password2.Text;// Declarei a variável que é uma string e coloquei o "Password2.Text" nessa variável
 
-            string idade2 = idade.Text;
+            
 
             string opcao = "";
             if (Woman.Checked)
@@ -58,7 +59,7 @@ namespace filtroCandidatos
                 return;
             }
 
-                DateTime today = DateTime.Now; // DateTime é um tipo de váriavel que marca o dia e a hora,  declarei a variável chamda "today", chamei uma classe nativa do C# ("DateTime") e peguei um atributo dela que retorna o dia de hoje("Now")
+            DateTime today = DateTime.Now; // DateTime é um tipo de váriavel que marca o dia e a hora,  declarei a variável chamda "today", chamei uma classe nativa do C# ("DateTime") e peguei um atributo dela que retorna o dia de hoje("Now")
 
             DateTime birthdate = Birth.Value; // Chamei a classe nativa do c# "DateTime", declarei a variável "birthdate" e atribui o valor da string "Birth.Value" dentro da variável
 
@@ -100,7 +101,7 @@ namespace filtroCandidatos
 
                     new MySqlParameter("@data_de_nascimento", DatadeNascimento),
 
-                    new MySqlParameter("@idade", idade2),
+                    new MySqlParameter("@idade", age),
 
                     new MySqlParameter("@genero", opcao),
 
@@ -123,6 +124,11 @@ namespace filtroCandidatos
                 MessageBox.Show("Senhas não Conferem!");
 
             }
+
+
+
+
+
 
 
         }

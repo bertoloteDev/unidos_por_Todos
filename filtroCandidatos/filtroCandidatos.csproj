@@ -112,6 +112,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="bdcadastrados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bdcadastrados.Designer.cs">
+      <DependentUpon>bdcadastrados.cs</DependentUpon>
+    </Compile>
     <Compile Include="Final.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -209,9 +215,13 @@
       <DependentUpon>frmTeladeDesenvolvedor.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Cadastro.cs" />
+    <Compile Include="Models\ong.cs" />
     <Compile Include="MyDbContext.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="bdcadastrados.resx">
+      <DependentUpon>bdcadastrados.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Final.resx">
       <DependentUpon>Final.cs</DependentUpon>
     </EmbeddedResource>
