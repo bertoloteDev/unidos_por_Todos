@@ -7,14 +7,29 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using filtroCandidatos.Models;
 
 namespace filtroCandidatos
 {
     public partial class frmFiltro : Form
     {
-        public frmFiltro()
+        string regiao;
+        public frmFiltro( string regiao)
         {
+            this.regiao = regiao;
             InitializeComponent();
+
+            using (MyDbContext db = new MyDbContext())
+
+            {
+
+                string query = "SELECT * FROM localidades where regiao like "+this.regiao+";";
+
+                List<Localidade> localidades = db.Database.SqlQuery<Localidade>(query).ToList();
+
+                dgvLocalidades.DataSource = localidades;
+
+            }
         }
 
         private void btnFiltrar_Click(object sender, EventArgs e)

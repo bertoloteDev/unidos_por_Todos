@@ -37,14 +37,16 @@ namespace filtroCandidatos
             this.voltarParaTelaAnteriorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.alteraçãoDeDadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.dgvLocalidades = new System.Windows.Forms.DataGridView();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLocalidades)).BeginInit();
             this.SuspendLayout();
             // 
             // txtLocalidades
             // 
             this.txtLocalidades.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLocalidades.Location = new System.Drawing.Point(17, 65);
+            this.txtLocalidades.Location = new System.Drawing.Point(8, 24);
             this.txtLocalidades.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtLocalidades.Name = "txtLocalidades";
             this.txtLocalidades.Size = new System.Drawing.Size(148, 26);
@@ -54,7 +56,7 @@ namespace filtroCandidatos
             // txtQuant
             // 
             this.txtQuant.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtQuant.Location = new System.Drawing.Point(190, 65);
+            this.txtQuant.Location = new System.Drawing.Point(181, 24);
             this.txtQuant.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtQuant.Name = "txtQuant";
             this.txtQuant.Size = new System.Drawing.Size(306, 26);
@@ -70,7 +72,7 @@ namespace filtroCandidatos
             "Habilitação",
             "Assistência Social",
             "Desenvolvimento e Defesa de Direitos"});
-            this.cbxCategorias.Location = new System.Drawing.Point(532, 65);
+            this.cbxCategorias.Location = new System.Drawing.Point(523, 24);
             this.cbxCategorias.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.cbxCategorias.Name = "cbxCategorias";
             this.cbxCategorias.Size = new System.Drawing.Size(249, 28);
@@ -79,7 +81,7 @@ namespace filtroCandidatos
             // 
             // btnFiltrar
             // 
-            this.btnFiltrar.Location = new System.Drawing.Point(16, 345);
+            this.btnFiltrar.Location = new System.Drawing.Point(1158, 147);
             this.btnFiltrar.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnFiltrar.Name = "btnFiltrar";
             this.btnFiltrar.Size = new System.Drawing.Size(113, 31);
@@ -131,8 +133,8 @@ namespace filtroCandidatos
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.dgvLocalidades);
             this.groupBox1.Controls.Add(this.txtQuant);
-            this.groupBox1.Controls.Add(this.btnFiltrar);
             this.groupBox1.Controls.Add(this.txtLocalidades);
             this.groupBox1.Controls.Add(this.cbxCategorias);
             this.groupBox1.Location = new System.Drawing.Point(345, 87);
@@ -142,6 +144,14 @@ namespace filtroCandidatos
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // dgvLocalidades
+            // 
+            this.dgvLocalidades.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvLocalidades.Location = new System.Drawing.Point(6, 60);
+            this.dgvLocalidades.Name = "dgvLocalidades";
+            this.dgvLocalidades.Size = new System.Drawing.Size(766, 354);
+            this.dgvLocalidades.TabIndex = 3;
+            // 
             // frmFiltro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
@@ -149,6 +159,7 @@ namespace filtroCandidatos
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(1459, 567);
             this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.btnFiltrar);
             this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
@@ -159,6 +170,7 @@ namespace filtroCandidatos
             this.menuStrip1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLocalidades)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -174,5 +186,6 @@ namespace filtroCandidatos
         private System.Windows.Forms.ToolStripMenuItem voltarParaTelaAnteriorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem alteraçãoDeDadosToolStripMenuItem;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.DataGridView dgvLocalidades;
     }
 }
