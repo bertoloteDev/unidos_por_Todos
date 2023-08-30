@@ -23,8 +23,8 @@ namespace filtroCandidatos.Models
         [Column("sobrenome")]
         public string sobrenome { get; set; }
 
-        [Column("data_nascimento")]
-        public DateTime data_nascimento { get; set; }
+        [Column("data_de_nascimento")]
+        public string data_de_nascimento { get; set; }
 
         [Column("cpf")]
         public string cpf { get; set; }

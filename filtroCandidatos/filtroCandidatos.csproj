@@ -118,6 +118,12 @@
     <Compile Include="bdcadastrados.Designer.cs">
       <DependentUpon>bdcadastrados.cs</DependentUpon>
     </Compile>
+    <Compile Include="bdongs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bdongs.Designer.cs">
+      <DependentUpon>bdongs.cs</DependentUpon>
+    </Compile>
     <Compile Include="Final.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -221,6 +227,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="bdcadastrados.resx">
       <DependentUpon>bdcadastrados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bdongs.resx">
+      <DependentUpon>bdongs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Final.resx">
       <DependentUpon>Final.cs</DependentUpon>

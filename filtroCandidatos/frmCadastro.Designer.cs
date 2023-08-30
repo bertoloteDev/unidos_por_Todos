@@ -54,6 +54,7 @@ namespace filtroCandidatos
             this.RepitaaSenha = new System.Windows.Forms.Label();
             this.Image2 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.voltar = new System.Windows.Forms.Button();
             this.Gender.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Image)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Image2)).BeginInit();
@@ -200,7 +201,7 @@ namespace filtroCandidatos
             // 
             this.Register.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.Register.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Register.Location = new System.Drawing.Point(455, 453);
+            this.Register.Location = new System.Drawing.Point(461, 453);
             this.Register.Name = "Register";
             this.Register.Size = new System.Drawing.Size(135, 35);
             this.Register.TabIndex = 15;
@@ -319,6 +320,7 @@ namespace filtroCandidatos
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.voltar);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.Image2);
             this.groupBox1.Controls.Add(this.nome);
@@ -346,6 +348,16 @@ namespace filtroCandidatos
             this.groupBox1.Size = new System.Drawing.Size(1056, 525);
             this.groupBox1.TabIndex = 27;
             this.groupBox1.TabStop = false;
+            // 
+            // voltar
+            // 
+            this.voltar.Location = new System.Drawing.Point(860, 465);
+            this.voltar.Name = "voltar";
+            this.voltar.Size = new System.Drawing.Size(135, 35);
+            this.voltar.TabIndex = 27;
+            this.voltar.Text = "CANCELAR";
+            this.voltar.UseVisualStyleBackColor = true;
+            this.voltar.Click += new System.EventHandler(this.voltar_Click);
             // 
             // frmCadastro
             // 
@@ -395,5 +407,6 @@ namespace filtroCandidatos
         private System.Windows.Forms.Label RepitaaSenha;
         private System.Windows.Forms.PictureBox Image2;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button voltar;
     }
 }

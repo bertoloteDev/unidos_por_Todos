@@ -144,7 +144,7 @@ namespace filtroCandidatos
             // 
             this.recuperarSemhaToolStripMenuItem.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.recuperarSemhaToolStripMenuItem.Name = "recuperarSemhaToolStripMenuItem";
-            this.recuperarSemhaToolStripMenuItem.Size = new System.Drawing.Size(232, 22);
+            this.recuperarSemhaToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
             this.recuperarSemhaToolStripMenuItem.Text = "Recuperar senha ";
             this.recuperarSemhaToolStripMenuItem.Click += new System.EventHandler(this.recuperarSemhaToolStripMenuItem_Click);
             // 
@@ -160,7 +160,7 @@ namespace filtroCandidatos
             // 
             this.quemSomosToolStripMenuItem.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.quemSomosToolStripMenuItem.Name = "quemSomosToolStripMenuItem";
-            this.quemSomosToolStripMenuItem.Size = new System.Drawing.Size(232, 22);
+            this.quemSomosToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
             this.quemSomosToolStripMenuItem.Text = "Quem somos?";
             this.quemSomosToolStripMenuItem.Click += new System.EventHandler(this.quemSomosToolStripMenuItem_Click);
             // 

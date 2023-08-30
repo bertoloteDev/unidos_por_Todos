@@ -30,7 +30,7 @@ namespace filtroCandidatos
             
             string lastname = LastName.Text;// Declarei a variável que é uma string e coloquei o "LastName.Text" nessa variável
             
-            string DatadeNascimento = Birth.Value.ToString("yyyy-MM-dd"); // Declarei a variável que é uma string e coloquei o "Birth" nessa variável e como ela é um valor numérico ela acompanha o .Value e depois usei o ToString e depois eu coloquei o formato que eu quero que é "yyyy" que significa o ano em 4 digítos, o "MM" que significa o mês em 2 digítos e o "dd" que significa dias em 2 digítos
+            string DatadeNasimento = Birth.Value.ToString("yyyy-MM-dd"); // Declarei a variável que é uma string e coloquei o "Birth" nessa variável e como ela é um valor numérico ela acompanha o .Value e depois usei o ToString e depois eu coloquei o formato que eu quero que é "yyyy" que significa o ano em 4 digítos, o "MM" que significa o mês em 2 digítos e o "dd" que significa dias em 2 digítos
             
             string CPF = cpf.Text.Trim(caractersexc);// Declarei a variável que é uma string e coloquei o "cpf.Text" nessa variável
             
@@ -72,7 +72,7 @@ namespace filtroCandidatos
                
             }
 
-            if (!(nome != "" && lastname != "" && DatadeNascimento != "" && CPF != "" && telefone != "" && email != "" && senha != ""))// Declarei um if para verificar se os campos de cadastros estão preenchidos           
+            if (!(nome != "" && lastname != "" && DatadeNasimento != "" && CPF != "" && telefone != "" && email != "" && senha != ""))// Declarei um if para verificar se os campos de cadastros estão preenchidos           
                // Se todos os campos não estiverem preenchidos irá aparecer um MessageBox escrito "Informações Inválidas"
             {
               MessageBox.Show(" Informações Inválidas ");  // Se todos os campos não estiverem preenchidos irá aparecer um MessageBox escrito "Informações Inválidas"
@@ -99,7 +99,7 @@ namespace filtroCandidatos
 
                     new MySqlParameter("@cpf", CPF),
 
-                    new MySqlParameter("@data_de_nascimento", DatadeNascimento),
+                    new MySqlParameter("@data_de_nascimento", DatadeNasimento),
 
                     new MySqlParameter("@idade", age),
 
@@ -116,8 +116,11 @@ namespace filtroCandidatos
                     int rowsAffected = db.Database.ExecuteSqlCommand(query, parameters);
 
                 }
-                Form vSelacao = new frmSeleção();
-                vSelacao.Show();
+
+                Form login = new frmLogin();
+                login.Show();
+
+
             }
             else
             {
@@ -202,6 +205,12 @@ namespace filtroCandidatos
         private void idade_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void voltar_Click(object sender, EventArgs e)
+        {
+            Form login = new frmLogin();
+            login.Show();
         }
     }
 }

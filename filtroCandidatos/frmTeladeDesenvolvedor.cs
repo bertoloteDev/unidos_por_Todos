@@ -32,12 +32,6 @@ namespace filtroCandidatos
             this.WindowState = FormWindowState.Maximized;
 
 
-            using (MyDbContext db = new MyDbContext())
-            {
-                string query = "select * from ongs;";
-                List<ong> ongs = db.Database.SqlQuery<ong>(query).ToList();
-                bdong.DataSource = ongs;
-            }
 
 
         }
@@ -53,10 +47,26 @@ namespace filtroCandidatos
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void consult_Click(object sender, EventArgs e)
         {
             Form bdcadastrados = new frmbdcadastrados();
             bdcadastrados.Show();
+        }
+
+        private void consult2_Click(object sender, EventArgs e)
+        {
+            Form bdong = new frmbdongs();
+            bdong.Show();
+        }
+
+        private void lbl1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
