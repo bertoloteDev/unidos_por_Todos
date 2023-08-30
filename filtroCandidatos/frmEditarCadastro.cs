@@ -33,6 +33,7 @@ namespace filtroCandidatos
              $"Email:{Email}\n" +
              $"Senha:{Senha} \n";
             MessageBox.Show(Mesag);
+
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

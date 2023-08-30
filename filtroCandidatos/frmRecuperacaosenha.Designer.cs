@@ -131,6 +131,7 @@ namespace filtroCandidatos
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(214, 29);
             this.txtEmail.TabIndex = 8;
+            this.txtEmail.Text = " ";
             // 
             // txtNsenha
             // 

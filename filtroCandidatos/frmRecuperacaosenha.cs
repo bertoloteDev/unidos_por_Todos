@@ -19,32 +19,79 @@ namespace filtroCandidatos
 
         private void btnRecuperar_Click(object sender, EventArgs e)
         {
-            
-                string recuperar = "";
-                if (rbtnEmail.Checked == true)
-                {
-                    recuperar = "E-mail";
-                    MessageBox.Show("Código enviado via E-mail");
 
-                }
-                else
-                {
-                    recuperar = "Mensagem";
-                    MessageBox.Show("Código enviado via SMS");
+            string recuperar = "";
+            if (rbtnEmail.Checked == true)
+            {
+                recuperar = "E-mail";
+                MessageBox.Show("Código enviado via E-mail");
 
-                }
-
-                string Email = lblEmail.Text;
-
-                string novasenha = lblSenha.Text;
-
-                string confisenha = lblSenhaconf.Text;
-
-                string confirmacao = lblConf.Text;
+            }
+            else
+            {
+                recuperar = "Mensagem";
+                MessageBox.Show("Código enviado via SMS");
 
             }
 
-            private void btnMsenha_Click(object sender, EventArgs e)
+            string Email = lblEmail.Text;
+
+            string novasenha = lblSenha.Text; 
+
+            string confisenha = lblSenhaconf.Text;
+
+            string confirmacao = lblConf.Text;
+
+            using (MyDbContext db = new MyDbContext())
+
+            {
+
+                string query = @"INSERT INTO Users (email, senha,tipo_de_cesso,id_cadastro) VALUES (@email,@senha,@confirmacao); SELECT LAST_INSERT_ID();";
+
+                var parameters = new[]
+
+                {
+
+                    new MySqlParameter("@email",Email ),
+
+                    new MySqlParameter("@senha",novasenha),
+                    new MySqlParameter("@confirmacao",confirmacao),
+
+           };
+
+                int batatinha = db.Database.SqlQuery<int>(query, parameters).Single();
+
+            }
+
+
+
+
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        private void btnMsenha_Click(object sender, EventArgs e)
         {
             if (txtNsenha.UseSystemPasswordChar)
             {
@@ -119,3 +166,4 @@ namespace filtroCandidatos
         }
     }
 }
+
