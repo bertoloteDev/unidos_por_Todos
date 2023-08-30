@@ -29,6 +29,7 @@ namespace filtroCandidatos
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -43,6 +44,7 @@ namespace filtroCandidatos
             this.button1 = new System.Windows.Forms.Button();
             this.pbPass = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPass)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -144,7 +146,7 @@ namespace filtroCandidatos
             // 
             this.recuperarSemhaToolStripMenuItem.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.recuperarSemhaToolStripMenuItem.Name = "recuperarSemhaToolStripMenuItem";
-            this.recuperarSemhaToolStripMenuItem.Size = new System.Drawing.Size(232, 22);
+            this.recuperarSemhaToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
             this.recuperarSemhaToolStripMenuItem.Text = "Recuperar senha ";
             this.recuperarSemhaToolStripMenuItem.Click += new System.EventHandler(this.recuperarSemhaToolStripMenuItem_Click);
             // 
@@ -160,7 +162,7 @@ namespace filtroCandidatos
             // 
             this.quemSomosToolStripMenuItem.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.quemSomosToolStripMenuItem.Name = "quemSomosToolStripMenuItem";
-            this.quemSomosToolStripMenuItem.Size = new System.Drawing.Size(232, 22);
+            this.quemSomosToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
             this.quemSomosToolStripMenuItem.Text = "Quem somos?";
             this.quemSomosToolStripMenuItem.Click += new System.EventHandler(this.quemSomosToolStripMenuItem_Click);
             // 
@@ -207,6 +209,11 @@ namespace filtroCandidatos
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "-";
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -245,5 +252,6 @@ namespace filtroCandidatos
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pbPass;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
     }
 }
