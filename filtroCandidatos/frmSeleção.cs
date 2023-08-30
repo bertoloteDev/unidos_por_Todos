@@ -12,10 +12,8 @@ namespace filtroCandidatos
 {
     public partial class frmSeleção : Form
     {
-        int id_Usuario;
-        public frmSeleção(int id_Usuario)
+        public frmSeleção()
         {
-            this.id_Usuario = id_Usuario;
             InitializeComponent();
         }
 

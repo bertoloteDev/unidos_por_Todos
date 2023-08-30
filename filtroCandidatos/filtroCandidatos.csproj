@@ -198,12 +198,6 @@
     <Compile Include="frmSeleção.Designer.cs">
       <DependentUpon>frmSeleção.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmGabriel.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmGabriel.Designer.cs">
-      <DependentUpon>frmGabriel.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmTeladeDesenvolvedor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -250,9 +244,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmSeleção.resx">
       <DependentUpon>frmSeleção.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmGabriel.resx">
-      <DependentUpon>frmGabriel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSudeste.resx">
       <DependentUpon>frmSudeste.cs</DependentUpon>
