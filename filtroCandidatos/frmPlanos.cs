@@ -60,7 +60,7 @@ namespace filtroCandidatos
         {
             AbrirpagamentosESelecionarRadioButton(3);
         }
-        private void AbrirForm2ESelecionarRadioButton(int radioButtonIndex)
+        private void AbrirpagamentosESelecionarRadioButton(int radioButtonIndex)
         {
             Form pagamentos = new pagamentos();
             pagamentos.SelecionarRadioButton(radioButtonIndex);
