@@ -12,8 +12,11 @@ namespace filtroCandidatos
 {
     public partial class frmSeleção : Form
     {
-        public frmSeleção()
+        int plano;
+        public frmSeleção(int plano)
         {
+            this.plano = plano;
+
             InitializeComponent();
         }
 

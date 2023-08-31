@@ -62,5 +62,29 @@ namespace filtroCandidatos
             gbCard.Visible = false;
             pBPix.Visible = true;
         }
+
+        private void groupBox1_Enter_1(object sender, EventArgs e)
+        {
+
+
+        }
+
+        private void btnPaga_Click(object sender, EventArgs e)
+        {
+            Form vRecuperacao = new frmSeleção(this.plano);
+            vRecuperacao.Show();
+        }
+
+        private void menuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void voltarParaTelaInicialToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form vRecuperacao = new frmPlanos();
+            vRecuperacao.Show();
+        
+         }
     }
 }

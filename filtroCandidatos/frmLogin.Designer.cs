@@ -132,8 +132,8 @@ namespace filtroCandidatos
             this.cadastrosToolStripMenuItem.BackColor = System.Drawing.Color.SeaShell;
             this.cadastrosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.recuperarSemhaToolStripMenuItem,
-            this.loginToolStripMenuItem,
-            this.quemSomosToolStripMenuItem});
+            this.quemSomosToolStripMenuItem,
+            this.loginToolStripMenuItem});
             this.cadastrosToolStripMenuItem.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cadastrosToolStripMenuItem.Name = "cadastrosToolStripMenuItem";
             this.cadastrosToolStripMenuItem.Size = new System.Drawing.Size(70, 24);

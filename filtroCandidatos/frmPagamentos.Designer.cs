@@ -29,6 +29,7 @@ namespace filtroCandidatos
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPagamentos));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
@@ -48,9 +49,13 @@ namespace filtroCandidatos
             this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
             this.gbCard = new System.Windows.Forms.GroupBox();
             this.pBPix = new System.Windows.Forms.PictureBox();
+            this.voltarParaTelaInicialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnPaga = new System.Windows.Forms.Button();
+            this.gBpag = new System.Windows.Forms.GroupBox();
             this.menuStrip1.SuspendLayout();
             this.gbCard.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pBPix)).BeginInit();
+            this.gBpag.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -68,9 +73,12 @@ namespace filtroCandidatos
             // menuToolStripMenuItem
             // 
             this.menuToolStripMenuItem.BackColor = System.Drawing.Color.White;
+            this.menuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.voltarParaTelaInicialToolStripMenuItem});
             this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
             this.menuToolStripMenuItem.Size = new System.Drawing.Size(70, 24);
             this.menuToolStripMenuItem.Text = "Menu";
+            this.menuToolStripMenuItem.Click += new System.EventHandler(this.menuToolStripMenuItem_Click);
             // 
             // label1
             // 
@@ -78,7 +86,7 @@ namespace filtroCandidatos
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(595, 49);
+            this.label1.Location = new System.Drawing.Point(482, 46);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(179, 34);
             this.label1.TabIndex = 1;
@@ -150,22 +158,22 @@ namespace filtroCandidatos
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Mongolian Baiti", 18F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(402, 158);
+            this.label8.Location = new System.Drawing.Point(278, 175);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(172, 20);
+            this.label8.Size = new System.Drawing.Size(216, 25);
             this.label8.TabIndex = 9;
             this.label8.Text = "Forma de Pagamento";
             // 
             // radCredito
             // 
             this.radCredito.AutoSize = true;
-            this.radCredito.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radCredito.Font = new System.Drawing.Font("Mongolian Baiti", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radCredito.ForeColor = System.Drawing.Color.White;
-            this.radCredito.Location = new System.Drawing.Point(448, 217);
+            this.radCredito.Location = new System.Drawing.Point(333, 235);
             this.radCredito.Name = "radCredito";
-            this.radCredito.Size = new System.Drawing.Size(73, 20);
+            this.radCredito.Size = new System.Drawing.Size(92, 27);
             this.radCredito.TabIndex = 10;
             this.radCredito.TabStop = true;
             this.radCredito.Text = "Crédito";
@@ -175,11 +183,11 @@ namespace filtroCandidatos
             // radDebito
             // 
             this.radDebito.AutoSize = true;
-            this.radDebito.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radDebito.Font = new System.Drawing.Font("Mongolian Baiti", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radDebito.ForeColor = System.Drawing.Color.White;
-            this.radDebito.Location = new System.Drawing.Point(448, 262);
+            this.radDebito.Location = new System.Drawing.Point(333, 280);
             this.radDebito.Name = "radDebito";
-            this.radDebito.Size = new System.Drawing.Size(69, 20);
+            this.radDebito.Size = new System.Drawing.Size(86, 27);
             this.radDebito.TabIndex = 11;
             this.radDebito.TabStop = true;
             this.radDebito.Text = "Débito";
@@ -203,11 +211,11 @@ namespace filtroCandidatos
             // radPix
             // 
             this.radPix.AutoSize = true;
-            this.radPix.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radPix.Font = new System.Drawing.Font("Mongolian Baiti", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radPix.ForeColor = System.Drawing.Color.White;
-            this.radPix.Location = new System.Drawing.Point(448, 303);
+            this.radPix.Location = new System.Drawing.Point(333, 321);
             this.radPix.Name = "radPix";
-            this.radPix.Size = new System.Drawing.Size(47, 20);
+            this.radPix.Size = new System.Drawing.Size(57, 27);
             this.radPix.TabIndex = 17;
             this.radPix.TabStop = true;
             this.radPix.Text = "Pix";
@@ -232,6 +240,7 @@ namespace filtroCandidatos
             // 
             // gbCard
             // 
+            this.gbCard.Controls.Add(this.pBPix);
             this.gbCard.Controls.Add(this.maskedTextBox2);
             this.gbCard.Controls.Add(this.maskedTextBox1);
             this.gbCard.Controls.Add(this.textBox5);
@@ -242,7 +251,7 @@ namespace filtroCandidatos
             this.gbCard.Controls.Add(this.label4);
             this.gbCard.Controls.Add(this.label3);
             this.gbCard.Controls.Add(this.label2);
-            this.gbCard.Location = new System.Drawing.Point(732, 176);
+            this.gbCard.Location = new System.Drawing.Point(619, 146);
             this.gbCard.Name = "gbCard";
             this.gbCard.Size = new System.Drawing.Size(468, 309);
             this.gbCard.TabIndex = 23;
@@ -252,13 +261,50 @@ namespace filtroCandidatos
             // 
             // pBPix
             // 
-            this.pBPix.Image = global::filtroCandidatos.Properties.Resources.ONG_confiavel_como_transmitir_a_sua_mensagem;
-            this.pBPix.Location = new System.Drawing.Point(633, 176);
+            this.pBPix.BackColor = System.Drawing.Color.White;
+            this.pBPix.Image = ((System.Drawing.Image)(resources.GetObject("pBPix.Image")));
+            this.pBPix.Location = new System.Drawing.Point(0, 6);
             this.pBPix.Name = "pBPix";
-            this.pBPix.Size = new System.Drawing.Size(319, 293);
+            this.pBPix.Size = new System.Drawing.Size(468, 303);
             this.pBPix.TabIndex = 24;
             this.pBPix.TabStop = false;
             this.pBPix.Visible = false;
+            // 
+            // voltarParaTelaInicialToolStripMenuItem
+            // 
+            this.voltarParaTelaInicialToolStripMenuItem.Font = new System.Drawing.Font("Mongolian Baiti", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.voltarParaTelaInicialToolStripMenuItem.Name = "voltarParaTelaInicialToolStripMenuItem";
+            this.voltarParaTelaInicialToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
+            this.voltarParaTelaInicialToolStripMenuItem.Text = "Voltar para tela inicial ";
+            this.voltarParaTelaInicialToolStripMenuItem.Click += new System.EventHandler(this.voltarParaTelaInicialToolStripMenuItem_Click);
+            // 
+            // btnPaga
+            // 
+            this.btnPaga.BackColor = System.Drawing.Color.White;
+            this.btnPaga.Font = new System.Drawing.Font("Mongolian Baiti", 18F, System.Drawing.FontStyle.Bold);
+            this.btnPaga.Location = new System.Drawing.Point(531, 496);
+            this.btnPaga.Name = "btnPaga";
+            this.btnPaga.Size = new System.Drawing.Size(130, 33);
+            this.btnPaga.TabIndex = 24;
+            this.btnPaga.Text = "Concluir ";
+            this.btnPaga.UseVisualStyleBackColor = false;
+            this.btnPaga.Click += new System.EventHandler(this.btnPaga_Click);
+            // 
+            // gBpag
+            // 
+            this.gBpag.Controls.Add(this.label1);
+            this.gBpag.Controls.Add(this.btnPaga);
+            this.gBpag.Controls.Add(this.label8);
+            this.gBpag.Controls.Add(this.gbCard);
+            this.gBpag.Controls.Add(this.radCredito);
+            this.gBpag.Controls.Add(this.radPix);
+            this.gBpag.Controls.Add(this.radDebito);
+            this.gBpag.Location = new System.Drawing.Point(91, 67);
+            this.gBpag.Name = "gBpag";
+            this.gBpag.Size = new System.Drawing.Size(1278, 574);
+            this.gBpag.TabIndex = 25;
+            this.gBpag.TabStop = false;
+            this.gBpag.Enter += new System.EventHandler(this.groupBox1_Enter_1);
             // 
             // frmPagamentos
             // 
@@ -266,13 +312,7 @@ namespace filtroCandidatos
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.ClientSize = new System.Drawing.Size(1477, 645);
-            this.Controls.Add(this.pBPix);
-            this.Controls.Add(this.gbCard);
-            this.Controls.Add(this.radPix);
-            this.Controls.Add(this.radDebito);
-            this.Controls.Add(this.radCredito);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.gBpag);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmPagamentos";
@@ -283,6 +323,8 @@ namespace filtroCandidatos
             this.gbCard.ResumeLayout(false);
             this.gbCard.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pBPix)).EndInit();
+            this.gBpag.ResumeLayout(false);
+            this.gBpag.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -309,5 +351,8 @@ namespace filtroCandidatos
         private System.Windows.Forms.MaskedTextBox maskedTextBox2;
         private System.Windows.Forms.GroupBox gbCard;
         private System.Windows.Forms.PictureBox pBPix;
+        private System.Windows.Forms.ToolStripMenuItem voltarParaTelaInicialToolStripMenuItem;
+        private System.Windows.Forms.Button btnPaga;
+        private System.Windows.Forms.GroupBox gBpag;
     }
 }
