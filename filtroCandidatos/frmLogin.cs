@@ -8,6 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using filtroCandidatos.Models;
+using System.Data.Entity;
+using System.Data.Entity.ModelConfiguration.Configuration;
+using MySql.Data.MySqlClient;
+
+
+
+
+
 
 namespace filtroCandidatos
 {
@@ -35,13 +43,33 @@ namespace filtroCandidatos
 
         private void btn_Entrar_Click(object sender, EventArgs e)
         {
-            string vcpf = txtCPF.Text;
+            string vLogin = txtCPF.Text;
             string vsenha = txtSenha.Text;
 
-          if (vcpf != "" && vsenha != "")
+          if (vLogin != "" && vsenha != "")
             {
-                Form vSelecao = new frmSeleção();
-                vSelecao.Show();
+
+                using (MyDbContext db = new MyDbContext())
+
+                {
+
+                    string query = @"SELECT l.id, l.cpf, l.email, l.rg  FROM login AS l JOIN cadastro AS c ON l.id_cadastrados = c.id WHERE c.cpf = @cpf AND l.senha = @senha";
+
+                    var parameters = new[]
+
+                    {
+                        new MySqlParameter("@cpf", vLogin),
+                        new MySqlParameter("@senha", vsenha)
+                   };
+
+
+                    Login login = db.Database.SqlQuery<Login>(query).Single();
+
+
+                    Form vSelecao = new frmSeleção(login.id);
+                    vSelecao.Show();
+                }
+
             }
                 else
             {

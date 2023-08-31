@@ -27,35 +27,33 @@ namespace filtroCandidatos
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {
-            
-            
-            Form frmNorte = new frmNorte();
-            frmNorte.Show();
+        {         
+            Form frmFiltro = new frmFiltro("Norte");
+            frmFiltro.Show();
         }
 
         private void btnCentroOeste_Click(object sender, EventArgs e)
         {
-            Form frmCentroOeste = new frmCentroOeste();
-            frmCentroOeste.Show();
+            Form frmFiltro = new frmFiltro("CentroOeste");
+            frmFiltro.Show();
         }
 
         private void btnNordeste_Click(object sender, EventArgs e)
         {
-            Form frmNordeste = new frmNordeste();
-            frmNordeste.Show();
+            Form frmFiltro = new frmFiltro("Nordeste");
+            frmFiltro.Show();
         }
 
         private void btnSul_Click(object sender, EventArgs e)
         {
-            Form frmSul = new frmSul();
-            frmSul.Show();
+            Form frmFiltro = new frmFiltro("Sul");
+            frmFiltro.Show(); ;
         }
 
         private void btnSudeste_Click(object sender, EventArgs e)
         {
-            Form frmSudeste = new frmSudeste();
-            frmSudeste.Show();
+            Form frmFiltro = new frmFiltro("Sudeste");
+            frmFiltro.Show();
         }
 
         private void voltarATelaPricipalToolStripMenuItem_Click(object sender, EventArgs e)
