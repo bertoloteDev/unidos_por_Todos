@@ -16,7 +16,7 @@ namespace filtroCandidatos.Models
         public int id { get; set; }
 
         [Column("nome_de_ongs")]
-        public string nome_ongs { get; set; }
+        public string nome_de_ongs { get; set; }
 
         [Column("responsavel_ongs")]
         public string responsavel_ongs { get; set; }
@@ -34,7 +34,6 @@ namespace filtroCandidatos.Models
         public float orcamento { get; set; }
 
         [Column("emailong")]
-
         public string emailong { get; set; }
 
 

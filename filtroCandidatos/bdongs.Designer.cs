@@ -36,8 +36,10 @@ namespace filtroCandidatos
             // 
             // bdong
             // 
+            this.bdong.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.bdong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.bdong.Location = new System.Drawing.Point(61, 70);
+            this.bdong.GridColor = System.Drawing.SystemColors.ActiveCaption;
+            this.bdong.Location = new System.Drawing.Point(259, 168);
             this.bdong.Name = "bdong";
             this.bdong.Size = new System.Drawing.Size(631, 315);
             this.bdong.TabIndex = 0;
@@ -45,9 +47,11 @@ namespace filtroCandidatos
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(319, 40);
+            this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
+            this.label1.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.label1.Location = new System.Drawing.Point(412, 55);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(119, 13);
+            this.label1.Size = new System.Drawing.Size(324, 30);
             this.label1.TabIndex = 1;
             this.label1.Text = "ONGs CADASTRADAS";
             // 
@@ -55,7 +59,8 @@ namespace filtroCandidatos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.ClientSize = new System.Drawing.Size(1127, 610);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.bdong);
             this.Name = "frmbdongs";

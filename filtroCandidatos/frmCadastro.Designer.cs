@@ -175,6 +175,7 @@ namespace filtroCandidatos
             this.Email.Name = "Email";
             this.Email.Size = new System.Drawing.Size(190, 22);
             this.Email.TabIndex = 10;
+            this.Email.TextChanged += new System.EventHandler(this.Email_TextChanged);
             this.Email.Validated += new System.EventHandler(this.Email_Validated);
             // 
             // Password
@@ -191,7 +192,7 @@ namespace filtroCandidatos
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Mongolian Baiti", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label7.Location = new System.Drawing.Point(426, 20);
+            this.label7.Location = new System.Drawing.Point(440, 23);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(207, 30);
             this.label7.TabIndex = 14;
@@ -201,7 +202,7 @@ namespace filtroCandidatos
             // 
             this.Register.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.Register.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Register.Location = new System.Drawing.Point(461, 453);
+            this.Register.Location = new System.Drawing.Point(464, 429);
             this.Register.Name = "Register";
             this.Register.Size = new System.Drawing.Size(135, 35);
             this.Register.TabIndex = 15;
@@ -222,6 +223,7 @@ namespace filtroCandidatos
             this.Men.TabStop = true;
             this.Men.Text = "Masculino";
             this.Men.UseVisualStyleBackColor = true;
+            this.Men.CheckedChanged += new System.EventHandler(this.Men_CheckedChanged);
             // 
             // Woman
             // 
@@ -343,15 +345,16 @@ namespace filtroCandidatos
             this.groupBox1.Controls.Add(this.LastName);
             this.groupBox1.Controls.Add(this.Password);
             this.groupBox1.Controls.Add(this.Email);
-            this.groupBox1.Location = new System.Drawing.Point(166, 75);
+            this.groupBox1.Location = new System.Drawing.Point(206, 66);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1056, 525);
             this.groupBox1.TabIndex = 27;
             this.groupBox1.TabStop = false;
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // voltar
             // 
-            this.voltar.Location = new System.Drawing.Point(860, 465);
+            this.voltar.Location = new System.Drawing.Point(23, 469);
             this.voltar.Name = "voltar";
             this.voltar.Size = new System.Drawing.Size(135, 35);
             this.voltar.TabIndex = 27;

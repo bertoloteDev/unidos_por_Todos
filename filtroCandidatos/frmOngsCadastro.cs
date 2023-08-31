@@ -58,7 +58,7 @@ namespace filtroCandidatos
             using (MyDbContext db = new MyDbContext())
 
             {
-                string query = @"INSERT INTO cadastrados (nome_de_ongs, responsavel_ongs, cnpj, cpf_responsavel, telefone, orcamento) VALUES (@nome_de_ongs, @responsavel_ongs, @cnpj, @cpf_responsavel, @telefone, @orcamento)";
+                string query = @"INSERT INTO ongs (nome_de_ongs, responsavel_ongs, cnpj, cpf_responsavel, telefone, orcamento, emailong) VALUES (@nome_de_ongs, @responsavel_ongs, @cnpj, @cpf_responsavel, @telefone, @orcamento, emailong)";
 
                 var parameters = new[]
 
@@ -70,7 +70,7 @@ namespace filtroCandidatos
 
                     new MySqlParameter("@cnpj", cnpj),
 
-                    new MySqlParameter("@cpf_responsavel", cpfResponse),
+                    new MySqlParameter("@cpf_responsavel", CPFresponsavel),
 
                     new MySqlParameter("@telefone", phone),
 
@@ -108,7 +108,10 @@ namespace filtroCandidatos
 
         private void frmOngsCadastro_Load(object sender, EventArgs e)
         {
-
+            this.WindowState = FormWindowState.Maximized;
+            int x = (this.Width - groupBox1.Width) / 2;
+            int y = (this.Height - groupBox1.Height) / 2;
+            groupBox1.Location = new Point(x, y);
         }
 
         private void CPNJ_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
@@ -134,6 +137,22 @@ namespace filtroCandidatos
         private void cpfResponse_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
         {
 
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void voltarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void voltar_Click(object sender, EventArgs e)
+        {
+            Form seleção = new frmSeleção();
+            seleção.Show();
         }
     }
 }
