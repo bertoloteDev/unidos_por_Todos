@@ -120,6 +120,12 @@
     <Compile Include="Final.Designer.cs">
       <DependentUpon>Final.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPlanos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPlanos.Designer.cs">
+      <DependentUpon>frmPlanos.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCadastro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -198,12 +204,6 @@
     <Compile Include="frmSeleção.Designer.cs">
       <DependentUpon>frmSeleção.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmGabriel.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmGabriel.Designer.cs">
-      <DependentUpon>frmGabriel.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmTeladeDesenvolvedor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -248,6 +248,9 @@
     <EmbeddedResource Include="frmOngsCadastro.resx">
       <DependentUpon>frmOngsCadastro.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmPlanos.resx">
+      <DependentUpon>frmPlanos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmQuemSomosNos.resx">
       <DependentUpon>frmQuemSomosNos.cs</DependentUpon>
     </EmbeddedResource>
@@ -256,9 +259,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmSeleção.resx">
       <DependentUpon>frmSeleção.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmGabriel.resx">
-      <DependentUpon>frmGabriel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSudeste.resx">
       <DependentUpon>frmSudeste.cs</DependentUpon>
