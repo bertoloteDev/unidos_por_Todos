@@ -89,5 +89,10 @@ namespace filtroCandidatos
             int y = (this.Height - groupBox1.Height) / 2;
             groupBox1.Location = new Point(x, y);
         }
+
+        private void cbxCategorias_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
