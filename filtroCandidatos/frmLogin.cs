@@ -66,8 +66,8 @@ namespace filtroCandidatos
                     Login login = db.Database.SqlQuery<Login>(query).Single();
 
 
-                    Form vSelecao = new frmSeleção(login.id);
-                    vSelecao.Show();
+                    /*Form vSelecao = new frmSeleção(login.id);
+                    vSelecao.Show();*/
                 }
 
             }

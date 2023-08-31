@@ -48,22 +48,21 @@ namespace filtroCandidatos
 
         private void btnPadrao_Click(object sender, EventArgs e)
         {
-            AbrirpagamentosESelecionarRadioButton(2);
+            teste(2);
         }
 
         private void btnBasico_Click(object sender, EventArgs e)
         {
-            AbrirpagamentosESelecionarRadioButton(1);
+            teste(1);
         }
 
         private void btnPremium_Click(object sender, EventArgs e)
         {
-            AbrirpagamentosESelecionarRadioButton(3);
+            teste(3);
         }
-        private void AbrirpagamentosESelecionarRadioButton(int radioButtonIndex)
+        private void teste(int radioButtonIndex)
         {
-            Form pagamentos = new pagamentos();
-            pagamentos.SelecionarRadioButton(radioButtonIndex);
+            Form pagamentos = new frmPagamentos(radioButtonIndex);
             pagamentos.Show();
         }
     }
