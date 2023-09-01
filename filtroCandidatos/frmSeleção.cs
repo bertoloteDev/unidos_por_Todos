@@ -29,34 +29,62 @@ namespace filtroCandidatos
             groupBox88.Location = new Point(x, y);
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {         
-            Form frmFiltro = new frmFiltro("Norte");
-            frmFiltro.Show();
-        }
 
         private void btnCentroOeste_Click(object sender, EventArgs e)
         {
-            Form frmFiltro = new frmFiltro("CentroOeste");
-            frmFiltro.Show();
+            if (plano == 3)
+            {
+                Form frmFiltro = new frmFiltro("CentroOeste");
+                frmFiltro.Show();
+            }
+            else
+            {
+                MessageBox.Show("Você não tem acesso a esta região com o plano selecionado.");
+            }
         }
 
         private void btnNordeste_Click(object sender, EventArgs e)
         {
-            Form frmFiltro = new frmFiltro("Nordeste");
-            frmFiltro.Show();
+            if (plano == 2 && "Nordeste".Equals(btnNordeste.Text, StringComparison.OrdinalIgnoreCase))
+            {
+                Form frmFiltro = new frmFiltro("Nordeste");
+                frmFiltro.Show();
+            }
+            else if (plano == 3)
+            {
+                Form frmFiltro = new frmFiltro("Nordeste");
+                frmFiltro.Show();
+            }
+            else
+            {
+                MessageBox.Show("Você não tem acesso a esta região com o plano selecionado.");
+            }
         }
 
         private void btnSul_Click(object sender, EventArgs e)
         {
-            Form frmFiltro = new frmFiltro("Sul");
-            frmFiltro.Show(); ;
+            if (plano == 3)
+            {
+                Form frmFiltro = new frmFiltro("Sul");
+                frmFiltro.Show();
+            }
+            else
+            {
+                MessageBox.Show("Você não tem acesso a esta região com o plano selecionado.");
+            }
         }
 
         private void btnSudeste_Click(object sender, EventArgs e)
         {
-            Form frmFiltro = new frmFiltro("Sudeste");
-            frmFiltro.Show();
+            if (plano == 3)
+            {
+                Form frmFiltro = new frmFiltro("Sudeste");
+                frmFiltro.Show();
+            }
+            else
+            {
+                MessageBox.Show("Você não tem acesso a esta região com o plano selecionado.");
+            }
         }
 
         private void voltarATelaPricipalToolStripMenuItem_Click(object sender, EventArgs e)
@@ -80,6 +108,19 @@ namespace filtroCandidatos
         {
             Form editarcadastro = new frmEditarCadastro();
             editarcadastro.Show();
+        }
+
+        private void btnNorte_Click(object sender, EventArgs e)
+        {
+            if (plano == 3)
+            {
+                Form frmFiltro = new frmFiltro("CentroOeste");
+                frmFiltro.Show();
+            }
+            else
+            {
+                MessageBox.Show("Você não tem acesso a esta região com o plano selecionado.");
+            }
         }
     }
 }
