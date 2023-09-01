@@ -25,11 +25,12 @@ namespace filtroCandidatos
         private void button1_Click(object sender, EventArgs e)
         {
             char[] caractersexc = {' ', '/', '-', '.','_', ':' };
+
             string nome = txtNome.Text; // Declarei a variável que é uma string e coloquei o "txtNome.Text" nessa variável
             
             string lastname = LastName.Text;// Declarei a variável que é uma string e coloquei o "LastName.Text" nessa variável
             
-            string DatadeNascimento = Birth.Value.ToString("yyyy-MM-dd"); // Declarei a variável que é uma string e coloquei o "Birth" nessa variável e como ela é um valor numérico ela acompanha o .Value e depois usei o ToString e depois eu coloquei o formato que eu quero que é "yyyy" que significa o ano em 4 digítos, o "MM" que significa o mês em 2 digítos e o "dd" que significa dias em 2 digítos
+            string DatadeNasimento = Birth.Value.ToString("yyyy-MM-dd"); // Declarei a variável que é uma string e coloquei o "Birth" nessa variável e como ela é um valor numérico ela acompanha o .Value e depois usei o ToString e depois eu coloquei o formato que eu quero que é "yyyy" que significa o ano em 4 digítos, o "MM" que significa o mês em 2 digítos e o "dd" que significa dias em 2 digítos
             
             string CPF = cpf.Text.Trim(caractersexc);// Declarei a variável que é uma string e coloquei o "cpf.Text" nessa variável
             
@@ -41,7 +42,7 @@ namespace filtroCandidatos
 
             string senha2 = Password2.Text;// Declarei a variável que é uma string e coloquei o "Password2.Text" nessa variável
 
-            string idade2 = idade.Text;
+            
 
             string opcao = "";
             if (Woman.Checked)
@@ -58,7 +59,7 @@ namespace filtroCandidatos
                 return;
             }
 
-                DateTime today = DateTime.Now; // DateTime é um tipo de váriavel que marca o dia e a hora,  declarei a variável chamda "today", chamei uma classe nativa do C# ("DateTime") e peguei um atributo dela que retorna o dia de hoje("Now")
+            DateTime today = DateTime.Now; // DateTime é um tipo de váriavel que marca o dia e a hora,  declarei a variável chamda "today", chamei uma classe nativa do C# ("DateTime") e peguei um atributo dela que retorna o dia de hoje("Now")
 
             DateTime birthdate = Birth.Value; // Chamei a classe nativa do c# "DateTime", declarei a variável "birthdate" e atribui o valor da string "Birth.Value" dentro da variável
 
@@ -71,7 +72,7 @@ namespace filtroCandidatos
                
             }
 
-            if (!(nome != "" && lastname != "" && DatadeNascimento != "" && CPF != "" && telefone != "" && email != "" && senha != ""))// Declarei um if para verificar se os campos de cadastros estão preenchidos           
+            if (!(nome != "" && lastname != "" && DatadeNasimento != "" && CPF != "" && telefone != "" && email != "" && senha != ""))// Declarei um if para verificar se os campos de cadastros estão preenchidos           
                // Se todos os campos não estiverem preenchidos irá aparecer um MessageBox escrito "Informações Inválidas"
             {
               MessageBox.Show(" Informações Inválidas ");  // Se todos os campos não estiverem preenchidos irá aparecer um MessageBox escrito "Informações Inválidas"
@@ -98,9 +99,9 @@ namespace filtroCandidatos
 
                     new MySqlParameter("@cpf", CPF),
 
-                    new MySqlParameter("@data_de_nascimento", DatadeNascimento),
+                    new MySqlParameter("@data_de_nascimento", DatadeNasimento),
 
-                    new MySqlParameter("@idade", idade2),
+                    new MySqlParameter("@idade", age),
 
                     new MySqlParameter("@genero", opcao),
 
@@ -115,14 +116,22 @@ namespace filtroCandidatos
                     int rowsAffected = db.Database.ExecuteSqlCommand(query, parameters);
 
                 }
-                Form vSelacao = new frmSeleção();
-                vSelacao.Show();
+
+                Form login = new frmLogin();
+                login.Show();
+                this.Close();
+
             }
             else
             {
                 MessageBox.Show("Senhas não Conferem!");
 
             }
+
+
+
+
+
 
 
         }
@@ -167,6 +176,10 @@ namespace filtroCandidatos
         private void frmCadastro_Load(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;
+            
+            int x = (this.Width - groupBox1.Width) / 2;
+            int y = (this.Height - groupBox1.Height) / 2;
+            groupBox1.Location = new Point(x, y);
         }
 
         private void Birth_ValueChanged(object sender, EventArgs e)
@@ -194,6 +207,27 @@ namespace filtroCandidatos
         }
 
         private void idade_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void voltar_Click(object sender, EventArgs e)
+        {
+            Form login = new frmLogin();
+            login.Show();
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Email_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Men_CheckedChanged(object sender, EventArgs e)
         {
 
         }

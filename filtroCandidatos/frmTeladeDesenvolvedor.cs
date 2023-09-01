@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
+using filtroCandidatos.Models;
+
 
 namespace filtroCandidatos
 {
@@ -27,12 +30,45 @@ namespace filtroCandidatos
         private void frmTeladeDesenvolvedor_Load(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;
+
+
+
+
         }
 
         private void voltarParaTelaAnteriorToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form vtelaant = new frmLogin();
             vtelaant.Show();
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void consult_Click(object sender, EventArgs e)
+        {
+            Form bdcadastrados = new frmbdcadastrados();
+            bdcadastrados.Show();
+            this.Close();
+        }
+
+        private void consult2_Click(object sender, EventArgs e)
+        {
+            Form bdong = new frmbdongs();
+            bdong.Show();
+            this.Close();
+        }
+
+        private void lbl1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

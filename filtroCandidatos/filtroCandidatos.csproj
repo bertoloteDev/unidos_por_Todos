@@ -114,6 +114,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="bdcadastrados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bdcadastrados.Designer.cs">
+      <DependentUpon>bdcadastrados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bdongs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bdongs.Designer.cs">
+      <DependentUpon>bdongs.cs</DependentUpon>
+    </Compile>
     <Compile Include="Final.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -213,6 +225,7 @@
     <Compile Include="Models\Cadastro.cs" />
     <Compile Include="Models\Localidade.cs" />
     <Compile Include="Models\Login.cs" />
+    <Compile Include="Models\ong.cs" />
     <Compile Include="MyDbContext.cs" />
     <Compile Include="frmPagamentos.cs">
       <SubType>Form</SubType>
@@ -222,6 +235,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="bdcadastrados.resx">
+      <DependentUpon>bdcadastrados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bdongs.resx">
+      <DependentUpon>bdongs.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Final.resx">
       <DependentUpon>Final.cs</DependentUpon>
     </EmbeddedResource>

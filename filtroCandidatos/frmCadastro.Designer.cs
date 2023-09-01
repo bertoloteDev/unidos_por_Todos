@@ -54,8 +54,7 @@ namespace filtroCandidatos
             this.RepitaaSenha = new System.Windows.Forms.Label();
             this.Image2 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.idade = new System.Windows.Forms.TextBox();
+            this.voltar = new System.Windows.Forms.Button();
             this.Gender.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Image)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Image2)).BeginInit();
@@ -176,6 +175,7 @@ namespace filtroCandidatos
             this.Email.Name = "Email";
             this.Email.Size = new System.Drawing.Size(190, 22);
             this.Email.TabIndex = 10;
+            this.Email.TextChanged += new System.EventHandler(this.Email_TextChanged);
             this.Email.Validated += new System.EventHandler(this.Email_Validated);
             // 
             // Password
@@ -192,7 +192,7 @@ namespace filtroCandidatos
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Mongolian Baiti", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label7.Location = new System.Drawing.Point(426, 20);
+            this.label7.Location = new System.Drawing.Point(440, 23);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(207, 30);
             this.label7.TabIndex = 14;
@@ -202,7 +202,7 @@ namespace filtroCandidatos
             // 
             this.Register.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.Register.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Register.Location = new System.Drawing.Point(455, 453);
+            this.Register.Location = new System.Drawing.Point(464, 429);
             this.Register.Name = "Register";
             this.Register.Size = new System.Drawing.Size(135, 35);
             this.Register.TabIndex = 15;
@@ -223,6 +223,7 @@ namespace filtroCandidatos
             this.Men.TabStop = true;
             this.Men.Text = "Masculino";
             this.Men.UseVisualStyleBackColor = true;
+            this.Men.CheckedChanged += new System.EventHandler(this.Men_CheckedChanged);
             // 
             // Woman
             // 
@@ -321,8 +322,7 @@ namespace filtroCandidatos
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.idade);
-            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.voltar);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.Image2);
             this.groupBox1.Controls.Add(this.nome);
@@ -345,28 +345,22 @@ namespace filtroCandidatos
             this.groupBox1.Controls.Add(this.LastName);
             this.groupBox1.Controls.Add(this.Password);
             this.groupBox1.Controls.Add(this.Email);
-            this.groupBox1.Location = new System.Drawing.Point(166, 75);
+            this.groupBox1.Location = new System.Drawing.Point(206, 66);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1056, 525);
             this.groupBox1.TabIndex = 27;
             this.groupBox1.TabStop = false;
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // label8
+            // voltar
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(632, 337);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(35, 13);
-            this.label8.TabIndex = 27;
-            this.label8.Text = "label8";
-            // 
-            // idade
-            // 
-            this.idade.Location = new System.Drawing.Point(746, 337);
-            this.idade.Name = "idade";
-            this.idade.Size = new System.Drawing.Size(100, 20);
-            this.idade.TabIndex = 28;
-            this.idade.TextChanged += new System.EventHandler(this.idade_TextChanged);
+            this.voltar.Location = new System.Drawing.Point(23, 469);
+            this.voltar.Name = "voltar";
+            this.voltar.Size = new System.Drawing.Size(135, 35);
+            this.voltar.TabIndex = 27;
+            this.voltar.Text = "CANCELAR";
+            this.voltar.UseVisualStyleBackColor = true;
+            this.voltar.Click += new System.EventHandler(this.voltar_Click);
             // 
             // frmCadastro
             // 
@@ -416,7 +410,6 @@ namespace filtroCandidatos
         private System.Windows.Forms.Label RepitaaSenha;
         private System.Windows.Forms.PictureBox Image2;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox idade;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button voltar;
     }
 }
