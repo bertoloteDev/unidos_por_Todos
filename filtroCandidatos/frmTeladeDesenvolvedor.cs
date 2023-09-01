@@ -51,12 +51,14 @@ namespace filtroCandidatos
         {
             Form bdcadastrados = new frmbdcadastrados();
             bdcadastrados.Show();
+            this.Close();
         }
 
         private void consult2_Click(object sender, EventArgs e)
         {
             Form bdong = new frmbdongs();
             bdong.Show();
+            this.Close();
         }
 
         private void lbl1_Click(object sender, EventArgs e)

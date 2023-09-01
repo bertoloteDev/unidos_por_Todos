@@ -119,7 +119,7 @@ namespace filtroCandidatos
 
                 Form login = new frmLogin();
                 login.Show();
-
+                this.Close();
 
             }
             else

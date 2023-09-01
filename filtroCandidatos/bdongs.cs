@@ -27,7 +27,17 @@ namespace filtroCandidatos
                 string query = "select * from ongs;";
                 List<ong> ongs = db.Database.SqlQuery<ong>(query).ToList();
                 bdong.DataSource = ongs;
+                
             }
         }
+
+        private void btnvoltar_Click(object sender, EventArgs e)
+        {
+            
+            Form teladevbd = new frmTeladeDesenvolvedor();
+            teladevbd.Show();
+            
+        }
+        
     }
 }

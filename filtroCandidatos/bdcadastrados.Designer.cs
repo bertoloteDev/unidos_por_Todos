@@ -31,6 +31,7 @@ namespace filtroCandidatos
         {
             this.bancodedados_cadastrados = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
+            this.cancelardev = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.bancodedados_cadastrados)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,12 +56,24 @@ namespace filtroCandidatos
             this.label1.Text = "USUÁRIOS CADASTRADOS";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // cancelardev
+            // 
+            this.cancelardev.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cancelardev.Location = new System.Drawing.Point(12, 12);
+            this.cancelardev.Name = "cancelardev";
+            this.cancelardev.Size = new System.Drawing.Size(128, 35);
+            this.cancelardev.TabIndex = 2;
+            this.cancelardev.Text = "VOLTAR";
+            this.cancelardev.UseVisualStyleBackColor = true;
+            this.cancelardev.Click += new System.EventHandler(this.button1_Click);
+            // 
             // frmbdcadastrados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.ClientSize = new System.Drawing.Size(1277, 693);
+            this.Controls.Add(this.cancelardev);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.bancodedados_cadastrados);
             this.Name = "frmbdcadastrados";
@@ -76,5 +89,6 @@ namespace filtroCandidatos
 
         private System.Windows.Forms.DataGridView bancodedados_cadastrados;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button cancelardev;
     }
 }

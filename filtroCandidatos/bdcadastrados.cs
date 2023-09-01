@@ -39,5 +39,11 @@ namespace filtroCandidatos
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form teladev = new frmTeladeDesenvolvedor();
+            teladev.Show();
+        }
     }
 }
