@@ -15,7 +15,7 @@ namespace filtroCandidatos.Models
         public int id { get; set; }
 
         [Column("email")]
-        public int email{ get; set; }
+        public string email{ get; set; }
 
         [Column("tipo_de_acesso")]
         public string tipo_de_acesso { get; set; }
@@ -24,7 +24,7 @@ namespace filtroCandidatos.Models
         public string senha { get; set; }
 
         [Column("id_cadastro")]
-        public string id_cadastro { get; set; }
+        public int id_cadastro { get; set; }
 
     }
 }

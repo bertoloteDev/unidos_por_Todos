@@ -53,17 +53,17 @@ namespace filtroCandidatos
 
                 {
 
-                    string query = @"SELECT l.id, l.cpf, l.email, l.rg  FROM login AS l JOIN cadastro AS c ON l.id_cadastrados = c.id WHERE c.cpf = @cpf AND l.senha = @senha";
+                    string query = @"SELECT l.id, l.email, l.senha, l.tipo_de_acesso, l.id_cadastrados FROM login AS l WHERE l.email = @email AND l.senha = @senha";
 
                     var parameters = new[]
 
                     {
-                        new MySqlParameter("@cpf", vLogin),
+                        new MySqlParameter("@email", vLogin),
                         new MySqlParameter("@senha", vsenha)
                    };
 
 
-                   //ogin login = db.Database.SqlQuery<Login>(query).Single();
+                   Login login = db.Database.SqlQuery<Login>(query, parameters).Single();
 
 
                     Form vSelecao = new frmPlanos();

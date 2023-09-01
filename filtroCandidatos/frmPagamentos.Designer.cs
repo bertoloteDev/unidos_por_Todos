@@ -32,6 +32,7 @@ namespace filtroCandidatos
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPagamentos));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.voltarParaTelaInicialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -49,7 +50,6 @@ namespace filtroCandidatos
             this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
             this.gbCard = new System.Windows.Forms.GroupBox();
             this.pBPix = new System.Windows.Forms.PictureBox();
-            this.voltarParaTelaInicialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnPaga = new System.Windows.Forms.Button();
             this.gBpag = new System.Windows.Forms.GroupBox();
             this.menuStrip1.SuspendLayout();
@@ -79,6 +79,14 @@ namespace filtroCandidatos
             this.menuToolStripMenuItem.Size = new System.Drawing.Size(70, 24);
             this.menuToolStripMenuItem.Text = "Menu";
             this.menuToolStripMenuItem.Click += new System.EventHandler(this.menuToolStripMenuItem_Click);
+            // 
+            // voltarParaTelaInicialToolStripMenuItem
+            // 
+            this.voltarParaTelaInicialToolStripMenuItem.Font = new System.Drawing.Font("Mongolian Baiti", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.voltarParaTelaInicialToolStripMenuItem.Name = "voltarParaTelaInicialToolStripMenuItem";
+            this.voltarParaTelaInicialToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
+            this.voltarParaTelaInicialToolStripMenuItem.Text = "Voltar para tela inicial ";
+            this.voltarParaTelaInicialToolStripMenuItem.Click += new System.EventHandler(this.voltarParaTelaInicialToolStripMenuItem_Click);
             // 
             // label1
             // 
@@ -240,7 +248,6 @@ namespace filtroCandidatos
             // 
             // gbCard
             // 
-            this.gbCard.Controls.Add(this.pBPix);
             this.gbCard.Controls.Add(this.maskedTextBox2);
             this.gbCard.Controls.Add(this.maskedTextBox1);
             this.gbCard.Controls.Add(this.textBox5);
@@ -263,20 +270,12 @@ namespace filtroCandidatos
             // 
             this.pBPix.BackColor = System.Drawing.Color.White;
             this.pBPix.Image = ((System.Drawing.Image)(resources.GetObject("pBPix.Image")));
-            this.pBPix.Location = new System.Drawing.Point(0, 6);
+            this.pBPix.Location = new System.Drawing.Point(619, 152);
             this.pBPix.Name = "pBPix";
             this.pBPix.Size = new System.Drawing.Size(468, 303);
             this.pBPix.TabIndex = 24;
             this.pBPix.TabStop = false;
             this.pBPix.Visible = false;
-            // 
-            // voltarParaTelaInicialToolStripMenuItem
-            // 
-            this.voltarParaTelaInicialToolStripMenuItem.Font = new System.Drawing.Font("Mongolian Baiti", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.voltarParaTelaInicialToolStripMenuItem.Name = "voltarParaTelaInicialToolStripMenuItem";
-            this.voltarParaTelaInicialToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
-            this.voltarParaTelaInicialToolStripMenuItem.Text = "Voltar para tela inicial ";
-            this.voltarParaTelaInicialToolStripMenuItem.Click += new System.EventHandler(this.voltarParaTelaInicialToolStripMenuItem_Click);
             // 
             // btnPaga
             // 
@@ -292,6 +291,7 @@ namespace filtroCandidatos
             // 
             // gBpag
             // 
+            this.gBpag.Controls.Add(this.pBPix);
             this.gBpag.Controls.Add(this.label1);
             this.gBpag.Controls.Add(this.btnPaga);
             this.gBpag.Controls.Add(this.label8);

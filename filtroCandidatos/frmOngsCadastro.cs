@@ -151,8 +151,8 @@ namespace filtroCandidatos
 
         private void voltar_Click(object sender, EventArgs e)
         {
-            Form seleção = new frmSeleção();
-            seleção.Show();
+            /*Form seleção = new frmSeleção();
+            seleção.Show();*/
         }
     }
 }

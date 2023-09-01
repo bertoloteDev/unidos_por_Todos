@@ -62,8 +62,8 @@ namespace filtroCandidatos
 
         private void voltarParaTelaAnteriorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form vVoltaranterior = new frmSeleção();
-            vVoltaranterior.Show();
+            /*Form vVoltaranterior = new frmSeleção();
+            vVoltaranterior.Show();*/
         }
 
         private void alteraçãoDeDadosToolStripMenuItem_Click(object sender, EventArgs e)

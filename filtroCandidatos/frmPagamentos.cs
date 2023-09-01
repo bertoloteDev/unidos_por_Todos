@@ -71,6 +71,15 @@ namespace filtroCandidatos
 
         private void btnPaga_Click(object sender, EventArgs e)
         {
+
+            string query = @"SELECT l.id, l.numero_do_cartao, l.cvc, l.nome_cartao, l.cpf_cartao, l.pacote, l.valiadade_do_cartao, l.chave, l.id_cadastros FROM login AS l WHERE l.email = @email AND l.senha = @senha";
+
+
+
+
+
+
+
             Form vRecuperacao = new frmSeleção(this.plano);
             vRecuperacao.Show();
         }
