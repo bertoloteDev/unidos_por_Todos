@@ -39,19 +39,19 @@ namespace filtroCandidatos
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
             this.radCredito = new System.Windows.Forms.RadioButton();
             this.radDebito = new System.Windows.Forms.RadioButton();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtnome = new System.Windows.Forms.TextBox();
+            this.txtcvv = new System.Windows.Forms.TextBox();
             this.radPix = new System.Windows.Forms.RadioButton();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.maskCpf = new System.Windows.Forms.MaskedTextBox();
+            this.maskNume = new System.Windows.Forms.MaskedTextBox();
             this.gbCard = new System.Windows.Forms.GroupBox();
             this.pBPix = new System.Windows.Forms.PictureBox();
             this.btnPaga = new System.Windows.Forms.Button();
             this.gBpag = new System.Windows.Forms.GroupBox();
+            this.maskvali = new System.Windows.Forms.MaskedTextBox();
             this.menuStrip1.SuspendLayout();
             this.gbCard.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pBPix)).BeginInit();
@@ -156,13 +156,6 @@ namespace filtroCandidatos
             this.label6.TabIndex = 6;
             this.label6.Text = "Validade do cartão:";
             // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(189, 184);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(213, 20);
-            this.dateTimePicker1.TabIndex = 8;
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -202,19 +195,19 @@ namespace filtroCandidatos
             this.radDebito.UseVisualStyleBackColor = true;
             this.radDebito.CheckedChanged += new System.EventHandler(this.radDebito_CheckedChanged);
             // 
-            // textBox2
+            // txtnome
             // 
-            this.textBox2.Location = new System.Drawing.Point(189, 56);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 13;
+            this.txtnome.Location = new System.Drawing.Point(189, 56);
+            this.txtnome.Name = "txtnome";
+            this.txtnome.Size = new System.Drawing.Size(100, 20);
+            this.txtnome.TabIndex = 13;
             // 
-            // textBox5
+            // txtcvv
             // 
-            this.textBox5.Location = new System.Drawing.Point(189, 230);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 16;
+            this.txtcvv.Location = new System.Drawing.Point(189, 230);
+            this.txtcvv.Name = "txtcvv";
+            this.txtcvv.Size = new System.Drawing.Size(100, 20);
+            this.txtcvv.TabIndex = 16;
             // 
             // radPix
             // 
@@ -230,29 +223,30 @@ namespace filtroCandidatos
             this.radPix.UseVisualStyleBackColor = true;
             this.radPix.CheckedChanged += new System.EventHandler(this.radPix_CheckedChanged);
             // 
-            // maskedTextBox1
+            // maskCpf
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(189, 99);
-            this.maskedTextBox1.Mask = "000.000.000-00";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(100, 20);
-            this.maskedTextBox1.TabIndex = 18;
+            this.maskCpf.Location = new System.Drawing.Point(189, 99);
+            this.maskCpf.Mask = "000.000.000-00";
+            this.maskCpf.Name = "maskCpf";
+            this.maskCpf.Size = new System.Drawing.Size(100, 20);
+            this.maskCpf.TabIndex = 18;
             // 
-            // maskedTextBox2
+            // maskNume
             // 
-            this.maskedTextBox2.Location = new System.Drawing.Point(189, 143);
-            this.maskedTextBox2.Mask = "0000.0000.0000.0000";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(115, 20);
-            this.maskedTextBox2.TabIndex = 22;
+            this.maskNume.Location = new System.Drawing.Point(189, 143);
+            this.maskNume.Mask = "0000.0000.0000.0000";
+            this.maskNume.Name = "maskNume";
+            this.maskNume.Size = new System.Drawing.Size(115, 20);
+            this.maskNume.TabIndex = 22;
             // 
             // gbCard
             // 
-            this.gbCard.Controls.Add(this.maskedTextBox2);
-            this.gbCard.Controls.Add(this.maskedTextBox1);
-            this.gbCard.Controls.Add(this.textBox5);
-            this.gbCard.Controls.Add(this.textBox2);
-            this.gbCard.Controls.Add(this.dateTimePicker1);
+            this.gbCard.Controls.Add(this.pBPix);
+            this.gbCard.Controls.Add(this.maskvali);
+            this.gbCard.Controls.Add(this.maskNume);
+            this.gbCard.Controls.Add(this.maskCpf);
+            this.gbCard.Controls.Add(this.txtcvv);
+            this.gbCard.Controls.Add(this.txtnome);
             this.gbCard.Controls.Add(this.label6);
             this.gbCard.Controls.Add(this.label5);
             this.gbCard.Controls.Add(this.label4);
@@ -270,9 +264,9 @@ namespace filtroCandidatos
             // 
             this.pBPix.BackColor = System.Drawing.Color.White;
             this.pBPix.Image = ((System.Drawing.Image)(resources.GetObject("pBPix.Image")));
-            this.pBPix.Location = new System.Drawing.Point(619, 152);
+            this.pBPix.Location = new System.Drawing.Point(92, 6);
             this.pBPix.Name = "pBPix";
-            this.pBPix.Size = new System.Drawing.Size(468, 303);
+            this.pBPix.Size = new System.Drawing.Size(266, 303);
             this.pBPix.TabIndex = 24;
             this.pBPix.TabStop = false;
             this.pBPix.Visible = false;
@@ -291,7 +285,6 @@ namespace filtroCandidatos
             // 
             // gBpag
             // 
-            this.gBpag.Controls.Add(this.pBPix);
             this.gBpag.Controls.Add(this.label1);
             this.gBpag.Controls.Add(this.btnPaga);
             this.gBpag.Controls.Add(this.label8);
@@ -305,6 +298,15 @@ namespace filtroCandidatos
             this.gBpag.TabIndex = 25;
             this.gBpag.TabStop = false;
             this.gBpag.Enter += new System.EventHandler(this.groupBox1_Enter_1);
+            // 
+            // maskvali
+            // 
+            this.maskvali.Location = new System.Drawing.Point(189, 184);
+            this.maskvali.Mask = "00/00/0000";
+            this.maskvali.Name = "maskvali";
+            this.maskvali.Size = new System.Drawing.Size(100, 20);
+            this.maskvali.TabIndex = 23;
+            this.maskvali.ValidatingType = typeof(System.DateTime);
             // 
             // frmPagamentos
             // 
@@ -340,19 +342,19 @@ namespace filtroCandidatos
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.RadioButton radCredito;
         private System.Windows.Forms.RadioButton radDebito;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtnome;
+        private System.Windows.Forms.TextBox txtcvv;
         private System.Windows.Forms.RadioButton radPix;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
+        private System.Windows.Forms.MaskedTextBox maskCpf;
+        private System.Windows.Forms.MaskedTextBox maskNume;
         private System.Windows.Forms.GroupBox gbCard;
         private System.Windows.Forms.PictureBox pBPix;
         private System.Windows.Forms.ToolStripMenuItem voltarParaTelaInicialToolStripMenuItem;
         private System.Windows.Forms.Button btnPaga;
         private System.Windows.Forms.GroupBox gBpag;
+        private System.Windows.Forms.MaskedTextBox maskvali;
     }
 }

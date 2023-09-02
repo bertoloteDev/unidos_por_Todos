@@ -23,7 +23,7 @@ namespace filtroCandidatos
 
             {
 
-                string query = "SELECT * FROM localidades where regiao like "+this.regiao+";";
+                string query = "SELECT * FROM localidades where regiao like '"+this.regiao+"';";
 
                 List<Localidade> localidades = db.Database.SqlQuery<Localidade>(query).ToList();
 

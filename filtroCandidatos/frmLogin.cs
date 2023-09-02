@@ -53,7 +53,7 @@ namespace filtroCandidatos
 
                 {
 
-                    string query = @"SELECT l.id, l.email, l.senha, l.tipo_de_acesso, l.id_cadastrados FROM login AS l WHERE l.email = @email AND l.senha = @senha";
+                    string query = @"SELECT l.id, l.email, l.senha, l.tipo_de_acesso, l.id_cadastrados FROM login AS l WHERE l.email = @email AND l.senha = @senha LIMIT 1;";
 
                     var parameters = new[]
 
@@ -63,7 +63,7 @@ namespace filtroCandidatos
                    };
 
 
-                   Login login = db.Database.SqlQuery<Login>(query, parameters).Single();
+                   Login login = db.Database.SqlQuery<Login>(query, parameters).SingleOrDefault();
 
 
                     Form vSelecao = new frmPlanos();

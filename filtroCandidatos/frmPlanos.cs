@@ -62,7 +62,7 @@ namespace filtroCandidatos
         }
         private void teste(int radioButtonIndex)
         {
-            Form pagamentos = new frmPagamentos(radioButtonIndex);
+            Form pagamentos = new frmPagamentos(radioButtonIndex, 1);
             pagamentos.Show();
         }
     }
