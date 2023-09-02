@@ -39,8 +39,8 @@ namespace filtroCandidatos
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.cadastrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.recuperarSemhaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quemSomosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.button1 = new System.Windows.Forms.Button();
             this.pbPass = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -91,7 +91,6 @@ namespace filtroCandidatos
             this.txtCPF.Name = "txtCPF";
             this.txtCPF.Size = new System.Drawing.Size(211, 29);
             this.txtCPF.TabIndex = 5;
-            this.txtCPF.Text = " ";
             // 
             // txtSenha
             // 
@@ -148,14 +147,6 @@ namespace filtroCandidatos
             this.recuperarSemhaToolStripMenuItem.Text = "Recuperar senha ";
             this.recuperarSemhaToolStripMenuItem.Click += new System.EventHandler(this.recuperarSemhaToolStripMenuItem_Click);
             // 
-            // loginToolStripMenuItem
-            // 
-            this.loginToolStripMenuItem.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
-            this.loginToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
-            this.loginToolStripMenuItem.Text = "Desenvolvedores ";
-            this.loginToolStripMenuItem.Click += new System.EventHandler(this.loginToolStripMenuItem_Click);
-            // 
             // quemSomosToolStripMenuItem
             // 
             this.quemSomosToolStripMenuItem.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -163,6 +154,14 @@ namespace filtroCandidatos
             this.quemSomosToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
             this.quemSomosToolStripMenuItem.Text = "Quem somos?";
             this.quemSomosToolStripMenuItem.Click += new System.EventHandler(this.quemSomosToolStripMenuItem_Click);
+            // 
+            // loginToolStripMenuItem
+            // 
+            this.loginToolStripMenuItem.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
+            this.loginToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
+            this.loginToolStripMenuItem.Text = "Desenvolvedores ";
+            this.loginToolStripMenuItem.Click += new System.EventHandler(this.loginToolStripMenuItem_Click);
             // 
             // button1
             // 

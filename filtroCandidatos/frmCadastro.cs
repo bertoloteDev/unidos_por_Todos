@@ -87,7 +87,7 @@ namespace filtroCandidatos
 
                 {
 
-                    string query = @"INSERT INTO cadastrados (nome, sobrenome, cpf, data_de_nascimento, idade, genero, telefone_usuario) VALUES (@nome, @sobrenome, @cpf, @data_de_nascimento, @idade, @genero, @telefone_usuario)";
+                    string query = @"INSERT INTO cadastrados (nome, sobrenome, cpf,data_de_nascimento, idade, genero, telefone_usuario) VALUES (@nome, @sobrenome, @cpf, @data_de_nascimento, @idade, @genero, @telefone_usuario); SELECT LAST_INSERT_ID();";
 
                     var parameters = new[]
 
@@ -112,6 +112,24 @@ namespace filtroCandidatos
                     };
 
 
+                    
+                    int id_cadastrados = db.Database.SqlQuery<int>(query, parameters).Single();
+
+                    query = @"INSERT INTO login (email, tipo_de_acesso, senha, id_cadastrados) VALUES (@email, @tipo_de_acesso, @senha, @id_cadastrados);";
+
+                    parameters = new[]
+
+                   {
+
+                    new MySqlParameter ("@email", email),
+
+                    new MySqlParameter("@senha", senha),
+
+                    new MySqlParameter("@tipo_de_acesso", "clientes"),
+
+                    new MySqlParameter("@id_cadastrados", id_cadastrados)
+
+                    };
 
                     int rowsAffected = db.Database.ExecuteSqlCommand(query, parameters);
 
@@ -215,6 +233,7 @@ namespace filtroCandidatos
         {
             Form login = new frmLogin();
             login.Show();
+            this.Close();
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
