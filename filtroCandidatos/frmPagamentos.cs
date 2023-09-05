@@ -119,7 +119,7 @@ namespace filtroCandidatos
 
                 };
 
-                int batatinha = db.Database.SqlQuery<int>(query, parameters).Single();
+               // int batatinha = db.Database.SqlQuery<int>(query, parameters).Single();
 
             }
 
