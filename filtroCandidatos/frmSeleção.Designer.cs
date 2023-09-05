@@ -68,7 +68,7 @@ namespace filtroCandidatos
             this.btnNorte.TabIndex = 1;
             this.btnNorte.Text = "Norte";
             this.btnNorte.UseVisualStyleBackColor = true;
-            this.btnNorte.Click += new System.EventHandler(this.button1_Click);
+            this.btnNorte.Click += new System.EventHandler(this.btnNorte_Click);
             // 
             // btnNordeste
             // 

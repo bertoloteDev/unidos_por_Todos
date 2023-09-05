@@ -51,11 +51,6 @@ namespace filtroCandidatos
             teste(2);
         }
 
-        private void btnBasico_Click(object sender, EventArgs e)
-        {
-            teste(1);
-        }
-
         private void btnPremium_Click(object sender, EventArgs e)
         {
             teste(3);
@@ -64,6 +59,11 @@ namespace filtroCandidatos
         {
             Form pagamentos = new frmPagamentos(radioButtonIndex, 1);
             pagamentos.Show();
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }
