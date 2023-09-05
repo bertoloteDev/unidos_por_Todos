@@ -27,6 +27,8 @@ namespace filtroCandidatos
             int x = (this.Width - groupBox88.Width) / 2;
             int y = (this.Height - groupBox88.Height) / 2;
             groupBox88.Location = new Point(x, y);
+
+            //A FAZER: select nos cadastrados e planos para verificar quem ´já pagou e e então mostrar o groupBox se não vai mandar para a tela de planos
         }
 
 

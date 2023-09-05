@@ -139,6 +139,8 @@ namespace filtroCandidatos
                 login.Show();
                 this.Close();
 
+                //A FAZER: chamar a tela de planos passando o id do login
+
             }
             else
             {
