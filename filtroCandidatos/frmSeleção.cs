@@ -15,6 +15,7 @@ namespace filtroCandidatos
         int plano;
         public frmSeleção(int plano)
         {
+            //A FAZER: receber como parametro o usuario cadastrado
             this.plano = plano;
 
             InitializeComponent();
