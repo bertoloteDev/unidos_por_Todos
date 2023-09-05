@@ -65,6 +65,8 @@ namespace filtroCandidatos
 
                    Login login = db.Database.SqlQuery<Login>(query, parameters).SingleOrDefault();
 
+                    //A FAZER: select nos cadastrados e planos para verificar quem ´já pagou e chamar a tela de seleção passando os parametros corretos
+
 
                     Form vSelecao = new frmPlanos();
                     vSelecao.Show();

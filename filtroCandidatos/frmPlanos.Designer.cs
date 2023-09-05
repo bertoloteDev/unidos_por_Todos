@@ -115,9 +115,9 @@ namespace filtroCandidatos
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.label4.Location = new System.Drawing.Point(567, 265);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(135, 25);
+            this.label4.Size = new System.Drawing.Size(117, 25);
             this.label4.TabIndex = 2;
-            this.label4.Text = "R$: 3,000,00";
+            this.label4.Text = "R$: 100,00";
             // 
             // label3
             // 
@@ -126,9 +126,9 @@ namespace filtroCandidatos
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.label3.Location = new System.Drawing.Point(229, 265);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(117, 25);
+            this.label3.Size = new System.Drawing.Size(105, 25);
             this.label3.TabIndex = 2;
-            this.label3.Text = "R$: 500,00";
+            this.label3.Text = "R$: 50,00";
             // 
             // btnPremium
             // 
