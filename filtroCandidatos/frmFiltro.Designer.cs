@@ -49,9 +49,9 @@ namespace filtroCandidatos
             this.txtLocalidades.Location = new System.Drawing.Point(41, 19);
             this.txtLocalidades.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtLocalidades.Name = "txtLocalidades";
-            this.txtLocalidades.Size = new System.Drawing.Size(175, 29);
+            this.txtLocalidades.Size = new System.Drawing.Size(194, 29);
             this.txtLocalidades.TabIndex = 0;
-            this.txtLocalidades.Text = "1 -LOCALIDADES      ";
+            this.txtLocalidades.Text = "  1 -LOCALIDADES      ";
             // 
             // txtQuant
             // 
@@ -69,7 +69,7 @@ namespace filtroCandidatos
             this.cbxCategorias.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
             this.cbxCategorias.FormattingEnabled = true;
             this.cbxCategorias.Items.AddRange(new object[] {
-            "Habilitação",
+            "Habitação",
             "Assistência Social",
             "Desenvolvimento e Defesa de Direitos"});
             this.cbxCategorias.Location = new System.Drawing.Point(699, 16);
