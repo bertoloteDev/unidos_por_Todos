@@ -50,8 +50,19 @@ namespace filtroCandidatos
 
         private void radCredito_CheckedChanged(object sender, EventArgs e)
         {
-            gbCard.Visible = true;
+            txtnome.Visible = true;
+            txtcvv.Visible = true;
+            maskCpf.Visible = true;
+            maskNume.Visible = true;
+            maskvali.Visible = true;
             pBPix.Visible = false;
+            label2.Visible = true;
+            label3.Visible = true;
+            label4.Visible = true;
+            label5.Visible = true;
+            label6.Visible = true;
+
+
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
@@ -61,14 +72,35 @@ namespace filtroCandidatos
 
         private void radDebito_CheckedChanged(object sender, EventArgs e)
         {
-            gbCard.Visible = true;
+            txtnome.Visible = true;
+            txtcvv.Visible = true;
+            maskCpf.Visible = true;
+            maskNume.Visible = true;
+            maskvali.Visible = true;
             pBPix.Visible = false;
+            label2.Visible = true;
+            label3.Visible = true;
+            label4.Visible = true;
+            label5.Visible = true;
+            label6.Visible = true;
+
         }
 
         private void radPix_CheckedChanged(object sender, EventArgs e)
         {
-            gbCard.Visible = false;
+            txtnome.Visible = false;
+            txtcvv.Visible = false;
+            maskCpf.Visible = false;
+            maskNume.Visible = false;
+            maskvali.Visible = false;
             pBPix.Visible = true;
+            label2.Visible = false;
+            label3.Visible = false;
+            label4.Visible = false;
+            label5.Visible = false;
+            label6.Visible = false;
+            
+
         }
 
         private void groupBox1_Enter_1(object sender, EventArgs e)
@@ -139,5 +171,10 @@ namespace filtroCandidatos
             vRecuperacao.Show();
         
          }
+
+        private void pBPix_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
