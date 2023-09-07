@@ -84,6 +84,14 @@ namespace filtroCandidatos
             this.btnRecuperar.UseVisualStyleBackColor = false;
             this.btnRecuperar.Click += new System.EventHandler(this.btnRecuperar_Click);
             // 
+            // txtEmail
+            // 
+            this.txtEmail.Location = new System.Drawing.Point(263, 130);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(214, 29);
+            this.txtEmail.TabIndex = 8;
+            this.txtEmail.Text = " ";
+            // 
             // txtNsenha
             // 
             this.txtNsenha.Location = new System.Drawing.Point(263, 187);
