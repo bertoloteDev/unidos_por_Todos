@@ -34,24 +34,32 @@ namespace filtroCandidatos
 
         private void btnFiltrar_Click(object sender, EventArgs e)
         {
-            string vCategorias = "";
-            if (cbxCategorias.SelectedItem != null)
-            {
-                vCategorias = cbxCategorias.SelectedItem.ToString();
-            }
 
             string vLocalidades = txtLocalidades.Text;
             string vQuant = txtQuant.Text;
 
-            if (vCategorias == "" && vLocalidades == "" && vQuant == "")
+            if (
+                vLocalidades == "" && vQuant == "")
             {
                 MessageBox.Show(" precisa filtrar por algum campo");
                 return;
             }
 
 
-            MessageBox.Show("cbxCategoria: " + vCategorias +
-                " txtLocalidades: " + vLocalidades + " txtQuant: " + vQuant);
+            MessageBox.Show(" txtLocalidades: " + vLocalidades + " txtQuant: " + vQuant);
+
+
+            using (MyDbContext db = new MyDbContext())
+
+            {
+
+                string query = "SELECT * FROM localidades where regiao like '" + this.regiao + "' and cidade LIKE '"+ vLocalidades + "';";
+
+                List<Localidade> localidades = db.Database.SqlQuery<Localidade>(query).ToList();
+
+                dgvLocalidades.DataSource = localidades;
+
+            }
         }
 
         private void voltarParaTelaInicialToolStripMenuItem_Click(object sender, EventArgs e)

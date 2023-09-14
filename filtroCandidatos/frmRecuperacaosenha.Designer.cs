@@ -64,37 +64,29 @@ namespace filtroCandidatos
             // 
             // voltarToolStripMenuItem
             // 
-            this.voltarToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.voltarToolStripMenuItem.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.voltarToolStripMenuItem.BackColor = System.Drawing.Color.SeaShell;
+            this.voltarToolStripMenuItem.Font = new System.Drawing.Font("Mongolian Baiti", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.voltarToolStripMenuItem.Name = "voltarToolStripMenuItem";
-            this.voltarToolStripMenuItem.Size = new System.Drawing.Size(73, 20);
-            this.voltarToolStripMenuItem.Text = "Voltar :)";
+            this.voltarToolStripMenuItem.Size = new System.Drawing.Size(194, 20);
+            this.voltarToolStripMenuItem.Text = "Voltar para tela anterior";
             this.voltarToolStripMenuItem.Click += new System.EventHandler(this.voltarToolStripMenuItem_Click);
             // 
             // btnRecuperar
             // 
-            this.btnRecuperar.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnRecuperar.Font = new System.Drawing.Font("Mongolian Baiti", 15.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRecuperar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.btnRecuperar.Location = new System.Drawing.Point(263, 359);
+            this.btnRecuperar.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.btnRecuperar.Font = new System.Drawing.Font("Mongolian Baiti", 18.75F, System.Drawing.FontStyle.Bold);
+            this.btnRecuperar.ForeColor = System.Drawing.Color.Black;
+            this.btnRecuperar.Location = new System.Drawing.Point(263, 363);
             this.btnRecuperar.Name = "btnRecuperar";
-            this.btnRecuperar.Size = new System.Drawing.Size(140, 37);
+            this.btnRecuperar.Size = new System.Drawing.Size(140, 46);
             this.btnRecuperar.TabIndex = 7;
             this.btnRecuperar.Text = "Recuperar ";
             this.btnRecuperar.UseVisualStyleBackColor = false;
             this.btnRecuperar.Click += new System.EventHandler(this.btnRecuperar_Click);
             // 
-            // txtEmail
-            // 
-            this.txtEmail.Location = new System.Drawing.Point(263, 130);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(214, 29);
-            this.txtEmail.TabIndex = 8;
-            this.txtEmail.Text = " ";
-            // 
             // txtNsenha
             // 
-            this.txtNsenha.Location = new System.Drawing.Point(263, 187);
+            this.txtNsenha.Location = new System.Drawing.Point(263, 189);
             this.txtNsenha.Name = "txtNsenha";
             this.txtNsenha.Size = new System.Drawing.Size(214, 29);
             this.txtNsenha.TabIndex = 9;
@@ -102,10 +94,10 @@ namespace filtroCandidatos
             // lblConf
             // 
             this.lblConf.AutoSize = true;
-            this.lblConf.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblConf.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.lblConf.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblConf.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.lblConf.Location = new System.Drawing.Point(113, 300);
+            this.lblConf.ForeColor = System.Drawing.Color.White;
+            this.lblConf.Location = new System.Drawing.Point(113, 299);
             this.lblConf.Name = "lblConf";
             this.lblConf.Size = new System.Drawing.Size(130, 20);
             this.lblConf.TabIndex = 4;
@@ -114,7 +106,7 @@ namespace filtroCandidatos
             // 
             // txtConfsenha
             // 
-            this.txtConfsenha.Location = new System.Drawing.Point(263, 234);
+            this.txtConfsenha.Location = new System.Drawing.Point(263, 236);
             this.txtConfsenha.Name = "txtConfsenha";
             this.txtConfsenha.Size = new System.Drawing.Size(214, 29);
             this.txtConfsenha.TabIndex = 10;
@@ -123,10 +115,10 @@ namespace filtroCandidatos
             // lblSenhaconf
             // 
             this.lblSenhaconf.AutoSize = true;
-            this.lblSenhaconf.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblSenhaconf.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.lblSenhaconf.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSenhaconf.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblSenhaconf.Location = new System.Drawing.Point(91, 234);
+            this.lblSenhaconf.ForeColor = System.Drawing.Color.White;
+            this.lblSenhaconf.Location = new System.Drawing.Point(91, 236);
             this.lblSenhaconf.Name = "lblSenhaconf";
             this.lblSenhaconf.Size = new System.Drawing.Size(152, 20);
             this.lblSenhaconf.TabIndex = 3;
@@ -135,11 +127,12 @@ namespace filtroCandidatos
             // rbtnEmail
             // 
             this.rbtnEmail.AutoSize = true;
-            this.rbtnEmail.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.rbtnEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.rbtnEmail.Location = new System.Drawing.Point(263, 298);
+            this.rbtnEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.rbtnEmail.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtnEmail.ForeColor = System.Drawing.Color.White;
+            this.rbtnEmail.Location = new System.Drawing.Point(263, 295);
             this.rbtnEmail.Name = "rbtnEmail";
-            this.rbtnEmail.Size = new System.Drawing.Size(84, 24);
+            this.rbtnEmail.Size = new System.Drawing.Size(78, 24);
             this.rbtnEmail.TabIndex = 11;
             this.rbtnEmail.TabStop = true;
             this.rbtnEmail.Text = "E-mail";
@@ -148,10 +141,10 @@ namespace filtroCandidatos
             // lblSenha
             // 
             this.lblSenha.AutoSize = true;
-            this.lblSenha.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblSenha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.lblSenha.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSenha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.lblSenha.Location = new System.Drawing.Point(139, 190);
+            this.lblSenha.ForeColor = System.Drawing.Color.White;
+            this.lblSenha.Location = new System.Drawing.Point(139, 192);
             this.lblSenha.Name = "lblSenha";
             this.lblSenha.Size = new System.Drawing.Size(104, 20);
             this.lblSenha.TabIndex = 2;
@@ -160,11 +153,12 @@ namespace filtroCandidatos
             // rbtnMensa
             // 
             this.rbtnMensa.AutoSize = true;
-            this.rbtnMensa.BackColor = System.Drawing.Color.White;
-            this.rbtnMensa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.rbtnMensa.Location = new System.Drawing.Point(392, 296);
+            this.rbtnMensa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.rbtnMensa.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtnMensa.ForeColor = System.Drawing.Color.White;
+            this.rbtnMensa.Location = new System.Drawing.Point(392, 295);
             this.rbtnMensa.Name = "rbtnMensa";
-            this.rbtnMensa.Size = new System.Drawing.Size(124, 24);
+            this.rbtnMensa.Size = new System.Drawing.Size(115, 24);
             this.rbtnMensa.TabIndex = 12;
             this.rbtnMensa.TabStop = true;
             this.rbtnMensa.Text = "Mensagem ";
@@ -173,10 +167,10 @@ namespace filtroCandidatos
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
-            this.lblEmail.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.lblEmail.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.lblEmail.Location = new System.Drawing.Point(63, 139);
+            this.lblEmail.ForeColor = System.Drawing.Color.White;
+            this.lblEmail.Location = new System.Drawing.Point(63, 141);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(180, 20);
             this.lblEmail.TabIndex = 1;
@@ -186,7 +180,7 @@ namespace filtroCandidatos
             // 
             this.pbPass.BackColor = System.Drawing.Color.White;
             this.pbPass.Image = global::filtroCandidatos.Properties.Resources.hide;
-            this.pbPass.Location = new System.Drawing.Point(493, 246);
+            this.pbPass.Location = new System.Drawing.Point(493, 248);
             this.pbPass.Margin = new System.Windows.Forms.Padding(2);
             this.pbPass.Name = "pbPass";
             this.pbPass.Size = new System.Drawing.Size(23, 17);
@@ -197,12 +191,12 @@ namespace filtroCandidatos
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label1.Location = new System.Drawing.Point(212, 49);
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 21.75F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(185, 35);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(200, 25);
+            this.label1.Size = new System.Drawing.Size(237, 30);
             this.label1.TabIndex = 0;
             this.label1.Text = "Recuperar Senha:";
             // 
@@ -210,7 +204,7 @@ namespace filtroCandidatos
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.Image = global::filtroCandidatos.Properties.Resources.hide;
-            this.pictureBox1.Location = new System.Drawing.Point(493, 199);
+            this.pictureBox1.Location = new System.Drawing.Point(493, 201);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(23, 17);
@@ -220,10 +214,11 @@ namespace filtroCandidatos
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(263, 130);
+            this.txtEmail.Location = new System.Drawing.Point(263, 132);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(214, 29);
             this.txtEmail.TabIndex = 8;
+            this.txtEmail.Text = " ";
             // 
             // groupBox1
             // 
@@ -256,6 +251,7 @@ namespace filtroCandidatos
             this.ClientSize = new System.Drawing.Size(1460, 638);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.menuStrip1);
+            this.ForeColor = System.Drawing.Color.White;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmRecuperacaosenha";
             this.Text = "Recuperação de Senha ";

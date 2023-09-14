@@ -29,7 +29,6 @@ namespace filtroCandidatos
         {
             this.txtLocalidades = new System.Windows.Forms.TextBox();
             this.txtQuant = new System.Windows.Forms.TextBox();
-            this.cbxCategorias = new System.Windows.Forms.ComboBox();
             this.btnFiltrar = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -45,8 +44,10 @@ namespace filtroCandidatos
             // 
             // txtLocalidades
             // 
-            this.txtLocalidades.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
-            this.txtLocalidades.Location = new System.Drawing.Point(41, 19);
+            this.txtLocalidades.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.txtLocalidades.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLocalidades.ForeColor = System.Drawing.Color.White;
+            this.txtLocalidades.Location = new System.Drawing.Point(144, 24);
             this.txtLocalidades.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtLocalidades.Name = "txtLocalidades";
             this.txtLocalidades.Size = new System.Drawing.Size(194, 29);
@@ -55,36 +56,22 @@ namespace filtroCandidatos
             // 
             // txtQuant
             // 
-            this.txtQuant.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
-            this.txtQuant.Location = new System.Drawing.Point(270, 19);
+            this.txtQuant.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.txtQuant.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtQuant.ForeColor = System.Drawing.Color.White;
+            this.txtQuant.Location = new System.Drawing.Point(503, 24);
             this.txtQuant.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtQuant.Name = "txtQuant";
-            this.txtQuant.Size = new System.Drawing.Size(374, 29);
+            this.txtQuant.Size = new System.Drawing.Size(382, 29);
             this.txtQuant.TabIndex = 1;
             this.txtQuant.Text = "2- QUANTIDADES DE CADASTRADOS";
             this.txtQuant.TextChanged += new System.EventHandler(this.txtQuant_TextChanged);
             // 
-            // cbxCategorias
-            // 
-            this.cbxCategorias.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
-            this.cbxCategorias.FormattingEnabled = true;
-            this.cbxCategorias.Items.AddRange(new object[] {
-            "Habitação",
-            "Assistência Social",
-            "Desenvolvimento e Defesa de Direitos"});
-            this.cbxCategorias.Location = new System.Drawing.Point(699, 16);
-            this.cbxCategorias.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.cbxCategorias.Name = "cbxCategorias";
-            this.cbxCategorias.Size = new System.Drawing.Size(249, 32);
-            this.cbxCategorias.TabIndex = 2;
-            this.cbxCategorias.Text = "CATEGORIAS";
-            this.cbxCategorias.SelectedIndexChanged += new System.EventHandler(this.cbxCategorias_SelectedIndexChanged);
-            // 
             // btnFiltrar
             // 
-            this.btnFiltrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnFiltrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
-            this.btnFiltrar.Location = new System.Drawing.Point(428, 442);
+            this.btnFiltrar.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.btnFiltrar.Font = new System.Drawing.Font("Mongolian Baiti", 18F, System.Drawing.FontStyle.Bold);
+            this.btnFiltrar.Location = new System.Drawing.Point(435, 442);
             this.btnFiltrar.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnFiltrar.Name = "btnFiltrar";
             this.btnFiltrar.Size = new System.Drawing.Size(113, 38);
@@ -100,40 +87,43 @@ namespace filtroCandidatos
             this.menuToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1459, 32);
+            this.menuStrip1.Size = new System.Drawing.Size(1459, 28);
             this.menuStrip1.TabIndex = 4;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // menuToolStripMenuItem
             // 
-            this.menuToolStripMenuItem.BackColor = System.Drawing.Color.White;
+            this.menuToolStripMenuItem.BackColor = System.Drawing.Color.SeaShell;
             this.menuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.voltarParaTelaInicialToolStripMenuItem,
             this.voltarParaTelaAnteriorToolStripMenuItem,
             this.alteraçãoDeDadosToolStripMenuItem});
-            this.menuToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
+            this.menuToolStripMenuItem.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
             this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
-            this.menuToolStripMenuItem.Size = new System.Drawing.Size(75, 28);
+            this.menuToolStripMenuItem.Size = new System.Drawing.Size(70, 24);
             this.menuToolStripMenuItem.Text = "Menu";
             // 
             // voltarParaTelaInicialToolStripMenuItem
             // 
+            this.voltarParaTelaInicialToolStripMenuItem.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Underline);
             this.voltarParaTelaInicialToolStripMenuItem.Name = "voltarParaTelaInicialToolStripMenuItem";
-            this.voltarParaTelaInicialToolStripMenuItem.Size = new System.Drawing.Size(297, 28);
+            this.voltarParaTelaInicialToolStripMenuItem.Size = new System.Drawing.Size(226, 22);
             this.voltarParaTelaInicialToolStripMenuItem.Text = "Voltar para tela Inicial";
             this.voltarParaTelaInicialToolStripMenuItem.Click += new System.EventHandler(this.voltarParaTelaInicialToolStripMenuItem_Click);
             // 
             // voltarParaTelaAnteriorToolStripMenuItem
             // 
+            this.voltarParaTelaAnteriorToolStripMenuItem.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Underline);
             this.voltarParaTelaAnteriorToolStripMenuItem.Name = "voltarParaTelaAnteriorToolStripMenuItem";
-            this.voltarParaTelaAnteriorToolStripMenuItem.Size = new System.Drawing.Size(297, 28);
+            this.voltarParaTelaAnteriorToolStripMenuItem.Size = new System.Drawing.Size(226, 22);
             this.voltarParaTelaAnteriorToolStripMenuItem.Text = "Voltar para tela anterior";
             this.voltarParaTelaAnteriorToolStripMenuItem.Click += new System.EventHandler(this.voltarParaTelaAnteriorToolStripMenuItem_Click);
             // 
             // alteraçãoDeDadosToolStripMenuItem
             // 
+            this.alteraçãoDeDadosToolStripMenuItem.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Underline);
             this.alteraçãoDeDadosToolStripMenuItem.Name = "alteraçãoDeDadosToolStripMenuItem";
-            this.alteraçãoDeDadosToolStripMenuItem.Size = new System.Drawing.Size(297, 28);
+            this.alteraçãoDeDadosToolStripMenuItem.Size = new System.Drawing.Size(226, 22);
             this.alteraçãoDeDadosToolStripMenuItem.Text = "Alteração de Dados";
             this.alteraçãoDeDadosToolStripMenuItem.Click += new System.EventHandler(this.alteraçãoDeDadosToolStripMenuItem_Click);
             // 
@@ -143,7 +133,6 @@ namespace filtroCandidatos
             this.groupBox1.Controls.Add(this.btnFiltrar);
             this.groupBox1.Controls.Add(this.txtQuant);
             this.groupBox1.Controls.Add(this.txtLocalidades);
-            this.groupBox1.Controls.Add(this.cbxCategorias);
             this.groupBox1.Location = new System.Drawing.Point(172, 49);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1028, 498);
@@ -153,6 +142,7 @@ namespace filtroCandidatos
             // 
             // dgvLocalidades
             // 
+            this.dgvLocalidades.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.dgvLocalidades.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvLocalidades.Location = new System.Drawing.Point(41, 69);
             this.dgvLocalidades.Name = "dgvLocalidades";
@@ -184,7 +174,6 @@ namespace filtroCandidatos
 
         private System.Windows.Forms.TextBox txtLocalidades;
         private System.Windows.Forms.TextBox txtQuant;
-        private System.Windows.Forms.ComboBox cbxCategorias;
         private System.Windows.Forms.Button btnFiltrar;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItem;
