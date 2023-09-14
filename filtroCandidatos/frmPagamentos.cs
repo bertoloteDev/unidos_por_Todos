@@ -176,5 +176,10 @@ namespace filtroCandidatos
         {
 
         }
+
+        private void maskNume_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
     }
 }

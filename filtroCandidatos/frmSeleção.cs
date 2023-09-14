@@ -7,16 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
+using filtroCandidatos.Models;
 
 namespace filtroCandidatos
 {
     public partial class frmSeleção : Form
     {
         int plano;
-        public frmSeleção(int plano)
+        int id_user;
+        public frmSeleção(int id_user)
         {
             //A FAZER: receber como parametro o usuario cadastrado
-            this.plano = plano;
+            
+            this.id_user = id_user;
 
             InitializeComponent();
         }
@@ -29,7 +33,22 @@ namespace filtroCandidatos
             int y = (this.Height - groupBox88.Height) / 2;
             groupBox88.Location = new Point(x, y);
 
-            //A FAZER: select nos cadastrados e planos para verificar quem ´já pagou e e então mostrar o groupBox se não vai mandar para a tela de planos
+            using (MyDbContext db = new MyDbContext())
+            {
+                string query = "select * from pagamentos where id_cadastros = "+this.id_user+" LIMIT 1;";
+                Pagamento pagamento = db.Database.SqlQuery<Pagamento>(query).SingleOrDefault();
+              
+                if(pagamento == null)
+                {
+                    Form planos = new frmPlanos();
+                    planos.Show();
+                }
+                else
+                {
+                    this.plano = pagamento.pacote;
+                }
+
+            }
         }
 
 
