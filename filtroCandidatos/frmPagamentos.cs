@@ -151,12 +151,12 @@ namespace filtroCandidatos
 
                 };
 
-               // int batatinha = db.Database.SqlQuery<int>(query, parameters).Single();
+              int batatinha = db.Database.SqlQuery<int>(query, parameters).Single();
 
             }
 
 
-            Form vRecuperacao = new frmSeleção(this.plano);
+            Form vRecuperacao = new frmSelecao(this.plano);
             vRecuperacao.Show();
         }
 
@@ -173,6 +173,11 @@ namespace filtroCandidatos
          }
 
         private void pBPix_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void maskNume_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
         {
 
         }

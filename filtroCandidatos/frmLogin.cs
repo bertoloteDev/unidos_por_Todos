@@ -33,7 +33,7 @@ namespace filtroCandidatos
 
         }
 
-       
+        private bool planos = false;
         
         
         private void frmLogin_Load(object sender, EventArgs e)
@@ -43,6 +43,9 @@ namespace filtroCandidatos
 
         private void btn_Entrar_Click(object sender, EventArgs e)
         {
+           
+          
+            
             string vLogin = txtCPF.Text;
             string vsenha = txtSenha.Text;
 
@@ -65,9 +68,24 @@ namespace filtroCandidatos
 
                    Login login = db.Database.SqlQuery<Login>(query, parameters).SingleOrDefault();
 
+                    if(login == null)
+                    {
+                        MessageBox.Show("Usuario não encontrado");
+                        return;
+                    }
 
-                    Form vSelecao = new frmPlanos();
-                    vSelecao.Show();
+
+                    
+                    if (!planos)
+                    {
+                        Form vSelecao = new frmSelecao(login.id_cadastro);
+                        vSelecao.Show();
+
+                        planos = true;
+                    }
+
+
+
                 }
 
             }
