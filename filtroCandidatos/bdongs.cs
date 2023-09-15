@@ -38,6 +38,10 @@ namespace filtroCandidatos
             teladevbd.Show();
             
         }
-        
+
+        private void bdong_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

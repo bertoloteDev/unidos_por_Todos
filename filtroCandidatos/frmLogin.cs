@@ -28,14 +28,10 @@ namespace filtroCandidatos
             {
                 string query = "select * from cadastrados;";
                 
-
             }
 
         }
 
-       
-        
-        
         private void frmLogin_Load(object sender, EventArgs e)
         {
 

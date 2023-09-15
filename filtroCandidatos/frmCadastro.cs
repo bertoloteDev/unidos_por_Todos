@@ -43,6 +43,14 @@ namespace filtroCandidatos
             string senha2 = Password2.Text;// Declarei a variável que é uma string e coloquei o "Password2.Text" nessa variável
 
             
+            Regex regex = new Regex(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$");//Declarei a classe "Regex" e declarei uma variável chamada "Regex". Para eu conseguir usar essa variável eu preciso usar o "new". O Regex serve para validar a máscara de email.
+            if (!regex.IsMatch(email)) // o If serve para verificar se o email tem a estrutura necessária para ser considerado valido
+            {
+                MessageBox.Show("Email Inválido");
+                return;
+            }
+
+
 
             string opcao = "";
             if (Woman.Checked)
@@ -135,8 +143,8 @@ namespace filtroCandidatos
 
                 }
 
-                Form login = new frmLogin();
-                login.Show();
+                Form planos = new frmPlanos();
+                planos.Show();
                 this.Close();
 
                 //A FAZER: chamar a tela de planos passando o id do login
@@ -160,12 +168,11 @@ namespace filtroCandidatos
         {
             string email = Email.Text;
             Regex regex = new Regex(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$");//Declarei a classe "Regex" e declarei uma variável chamada "Regex". Para eu conseguir usar essa variável eu preciso usar o "new". O Regex serve para validar a máscara de email.
-                if (!regex.IsMatch(email)) // o If serve para verificar se o email tem a estrutura necessária para ser considerado valido
+            if (!regex.IsMatch(email)) // o If serve para verificar se o email tem a estrutura necessária para ser considerado valido
             {
                 MessageBox.Show("Email Inválido");
-                Email.Focus();// Estou focando o textbox( name - "Email")
+                //Email.Focus();// Estou focando o textbox( name - "Email")
             }
-
 
         }
 

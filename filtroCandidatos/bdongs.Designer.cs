@@ -44,6 +44,7 @@ namespace filtroCandidatos
             this.bdong.Name = "bdong";
             this.bdong.Size = new System.Drawing.Size(631, 315);
             this.bdong.TabIndex = 0;
+            this.bdong.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bdong_CellContentClick);
             // 
             // label1
             // 
