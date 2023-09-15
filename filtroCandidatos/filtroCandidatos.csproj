@@ -210,11 +210,11 @@
     <Compile Include="frmQuemSomosNos.Designer.cs">
       <DependentUpon>frmQuemSomosNos.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmSeleção.cs">
+    <Compile Include="frmSelecao.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmSeleção.Designer.cs">
-      <DependentUpon>frmSeleção.cs</DependentUpon>
+    <Compile Include="frmSelecao.Designer.cs">
+      <DependentUpon>frmSelecao.cs</DependentUpon>
     </Compile>
     <Compile Include="frmTeladeDesenvolvedor.cs">
       <SubType>Form</SubType>
@@ -278,8 +278,8 @@
     <EmbeddedResource Include="frmRecuperacaosenha.resx">
       <DependentUpon>frmRecuperacaosenha.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmSeleção.resx">
-      <DependentUpon>frmSeleção.cs</DependentUpon>
+    <EmbeddedResource Include="frmSelecao.resx">
+      <DependentUpon>frmSelecao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSudeste.resx">
       <DependentUpon>frmSudeste.cs</DependentUpon>

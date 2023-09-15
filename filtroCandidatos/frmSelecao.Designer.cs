@@ -1,7 +1,7 @@
 ﻿
 namespace filtroCandidatos
 {
-    partial class frmSeleção
+    partial class frmSelecao
     {
         /// <summary>
         /// Required designer variable.

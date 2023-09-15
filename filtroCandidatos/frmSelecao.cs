@@ -12,11 +12,11 @@ using filtroCandidatos.Models;
 
 namespace filtroCandidatos
 {
-    public partial class frmSeleção : Form
+    public partial class frmSelecao : Form
     {
         int plano;
         int id_user;
-        public frmSeleção(int id_user)
+        public frmSelecao(int id_user)
         {
             //A FAZER: receber como parametro o usuario cadastrado
             
@@ -42,6 +42,7 @@ namespace filtroCandidatos
                 {
                     Form planos = new frmPlanos();
                     planos.Show();
+                    //this.Close();
                 }
                 else
                 {
