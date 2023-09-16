@@ -129,8 +129,7 @@ namespace filtroCandidatos
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form editarcadastro = new frmEditarCadastro();
-            editarcadastro.Show();
+            
         }
 
         private void btnNorte_Click(object sender, EventArgs e)
@@ -144,6 +143,11 @@ namespace filtroCandidatos
             {
                 MessageBox.Show("Você não tem acesso a esta região com o plano selecionado.");
             }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

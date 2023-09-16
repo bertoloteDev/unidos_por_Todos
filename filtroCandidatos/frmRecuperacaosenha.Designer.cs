@@ -29,6 +29,7 @@ namespace filtroCandidatos
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRecuperacaosenha));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.voltarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnRecuperar = new System.Windows.Forms.Button();
@@ -66,8 +67,9 @@ namespace filtroCandidatos
             // 
             this.voltarToolStripMenuItem.BackColor = System.Drawing.Color.SeaShell;
             this.voltarToolStripMenuItem.Font = new System.Drawing.Font("Mongolian Baiti", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.voltarToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("voltarToolStripMenuItem.Image")));
             this.voltarToolStripMenuItem.Name = "voltarToolStripMenuItem";
-            this.voltarToolStripMenuItem.Size = new System.Drawing.Size(194, 20);
+            this.voltarToolStripMenuItem.Size = new System.Drawing.Size(210, 20);
             this.voltarToolStripMenuItem.Text = "Voltar para tela anterior";
             this.voltarToolStripMenuItem.Click += new System.EventHandler(this.voltarToolStripMenuItem_Click);
             // 

@@ -76,8 +76,7 @@ namespace filtroCandidatos
 
         private void alteraçãoDeDadosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form vAlteracaodados = new frmEditarCadastro();
-            vAlteracaodados.Show();
+            
         }
 
         private void txtQuant_TextChanged(object sender, EventArgs e)

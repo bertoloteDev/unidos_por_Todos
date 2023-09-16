@@ -27,6 +27,7 @@ namespace filtroCandidatos
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmFiltro));
             this.txtLocalidades = new System.Windows.Forms.TextBox();
             this.txtQuant = new System.Windows.Forms.TextBox();
             this.btnFiltrar = new System.Windows.Forms.Button();
@@ -87,7 +88,7 @@ namespace filtroCandidatos
             this.menuToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1459, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1459, 24);
             this.menuStrip1.TabIndex = 4;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -99,9 +100,9 @@ namespace filtroCandidatos
             this.voltarParaTelaAnteriorToolStripMenuItem,
             this.alteraçãoDeDadosToolStripMenuItem});
             this.menuToolStripMenuItem.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
+            this.menuToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("menuToolStripMenuItem.Image")));
             this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
-            this.menuToolStripMenuItem.Size = new System.Drawing.Size(70, 24);
-            this.menuToolStripMenuItem.Text = "Menu";
+            this.menuToolStripMenuItem.Size = new System.Drawing.Size(28, 20);
             // 
             // voltarParaTelaInicialToolStripMenuItem
             // 
