@@ -44,6 +44,7 @@ namespace filtroCandidatos
         {
             Form teladev = new frmTeladeDesenvolvedor();
             teladev.Show();
+            this.Hide();
         }
     }
 }

@@ -33,12 +33,12 @@ namespace filtroCandidatos
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.logoff = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.voltarParaTelaAnteriorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.consult = new System.Windows.Forms.Button();
             this.consult2 = new System.Windows.Forms.Button();
+            this.consult = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -90,16 +90,6 @@ namespace filtroCandidatos
             this.label3.Text = "LOCAIS QUE PRECISAM DE AJUDA:";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // logoff
-            // 
-            this.logoff.Location = new System.Drawing.Point(712, 637);
-            this.logoff.Name = "logoff";
-            this.logoff.Size = new System.Drawing.Size(115, 42);
-            this.logoff.TabIndex = 7;
-            this.logoff.Text = "VOLTAR";
-            this.logoff.UseVisualStyleBackColor = true;
-            this.logoff.Click += new System.EventHandler(this.logoff_Click);
-            // 
             // menuStrip1
             // 
             this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
@@ -115,12 +105,13 @@ namespace filtroCandidatos
             // 
             this.voltarParaTelaAnteriorToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.voltarParaTelaAnteriorToolStripMenuItem.Name = "voltarParaTelaAnteriorToolStripMenuItem";
-            this.voltarParaTelaAnteriorToolStripMenuItem.Size = new System.Drawing.Size(144, 20);
-            this.voltarParaTelaAnteriorToolStripMenuItem.Text = "Voltar para tela anterior ";
+            this.voltarParaTelaAnteriorToolStripMenuItem.Size = new System.Drawing.Size(38, 20);
+            this.voltarParaTelaAnteriorToolStripMenuItem.Text = "Sair";
             this.voltarParaTelaAnteriorToolStripMenuItem.Click += new System.EventHandler(this.voltarParaTelaAnteriorToolStripMenuItem_Click);
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.consult2);
             this.groupBox1.Controls.Add(this.consult);
             this.groupBox1.Controls.Add(this.label2);
@@ -134,16 +125,6 @@ namespace filtroCandidatos
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // consult
-            // 
-            this.consult.Location = new System.Drawing.Point(177, 205);
-            this.consult.Name = "consult";
-            this.consult.Size = new System.Drawing.Size(98, 40);
-            this.consult.TabIndex = 6;
-            this.consult.Text = "CONSULTAR";
-            this.consult.UseVisualStyleBackColor = true;
-            this.consult.Click += new System.EventHandler(this.consult_Click);
-            // 
             // consult2
             // 
             this.consult2.Location = new System.Drawing.Point(1041, 205);
@@ -154,6 +135,26 @@ namespace filtroCandidatos
             this.consult2.UseVisualStyleBackColor = true;
             this.consult2.Click += new System.EventHandler(this.consult2_Click);
             // 
+            // consult
+            // 
+            this.consult.Location = new System.Drawing.Point(177, 205);
+            this.consult.Name = "consult";
+            this.consult.Size = new System.Drawing.Size(98, 40);
+            this.consult.TabIndex = 6;
+            this.consult.Text = "CONSULTAR";
+            this.consult.UseVisualStyleBackColor = true;
+            this.consult.Click += new System.EventHandler(this.consult_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(624, 213);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(98, 40);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "CONSULTAR";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // frmTeladeDesenvolvedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -161,7 +162,6 @@ namespace filtroCandidatos
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.ClientSize = new System.Drawing.Size(1477, 899);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.logoff);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmTeladeDesenvolvedor";
@@ -181,11 +181,11 @@ namespace filtroCandidatos
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button logoff;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.ToolStripMenuItem voltarParaTelaAnteriorToolStripMenuItem;
         private System.Windows.Forms.Button consult;
         private System.Windows.Forms.Button consult2;
+        private System.Windows.Forms.Button button1;
     }
 }

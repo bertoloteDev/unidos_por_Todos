@@ -133,13 +133,12 @@ namespace filtroCandidatos
 
                     int rowsAffected = db.Database.ExecuteSqlCommand(query, parameters);
 
+
+                    Form login = new frmPlanos(id_cadastrados);
+                    login.Show();
+                    this.Hide();
                 }
 
-                Form login = new frmLogin();
-                login.Show();
-                this.Close();
-
-                //A FAZER: chamar a tela de planos passando o id do login
 
             }
             else
@@ -235,7 +234,7 @@ namespace filtroCandidatos
         {
             Form login = new frmLogin();
             login.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)

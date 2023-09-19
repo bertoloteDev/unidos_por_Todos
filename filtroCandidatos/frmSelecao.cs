@@ -18,7 +18,6 @@ namespace filtroCandidatos
         int id_user;
         public frmSelecao(int id_user)
         {
-            //A FAZER: receber como parametro o usuario cadastrado
             
             this.id_user = id_user;
 
@@ -43,6 +42,7 @@ namespace filtroCandidatos
             {
                 Form frmFiltro = new frmFiltro("CentroOeste");
                 frmFiltro.Show();
+                this.Hide();
             }
             else
             {
@@ -56,11 +56,13 @@ namespace filtroCandidatos
             {
                 Form frmFiltro = new frmFiltro("Nordeste");
                 frmFiltro.Show();
+                this.Hide();
             }
             else if (plano == 3)
             {
                 Form frmFiltro = new frmFiltro("Nordeste");
                 frmFiltro.Show();
+                this.Hide();
             }
             else
             {
@@ -74,6 +76,7 @@ namespace filtroCandidatos
             {
                 Form frmFiltro = new frmFiltro("Sul");
                 frmFiltro.Show();
+                this.Hide();
             }
             else
             {
@@ -87,6 +90,7 @@ namespace filtroCandidatos
             {
                 Form frmFiltro = new frmFiltro("Sudeste");
                 frmFiltro.Show();
+                this.Hide();
             }
             else
             {
@@ -107,14 +111,14 @@ namespace filtroCandidatos
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            Form cadastroong = new frmOngsCadastro();
-            cadastroong.Show();
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form editarcadastro = new frmEditarCadastro();
+            /*Form editarcadastro = new frmEditarCadastro();
             editarcadastro.Show();
+            this.Hide();*/
         }
 
         private void btnNorte_Click(object sender, EventArgs e)
@@ -123,11 +127,26 @@ namespace filtroCandidatos
             {
                 Form frmFiltro = new frmFiltro("CentroOeste");
                 frmFiltro.Show();
+                this.Hide();
             }
             else
             {
                 MessageBox.Show("Você não tem acesso a esta região com o plano selecionado.");
             }
+        }
+
+        private void loginToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frmDev = new frmTeladeDesenvolvedor();
+            frmDev.Show();
+            this.Hide();
+        }
+
+        private void oNGToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form cadastroong = new frmOngsCadastro(this.id_user);
+            cadastroong.Show();
+            this.Hide();
         }
     }
 }

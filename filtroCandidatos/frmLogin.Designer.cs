@@ -40,7 +40,6 @@ namespace filtroCandidatos
             this.cadastrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.recuperarSemhaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quemSomosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.button1 = new System.Windows.Forms.Button();
             this.pbPass = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -131,8 +130,7 @@ namespace filtroCandidatos
             this.cadastrosToolStripMenuItem.BackColor = System.Drawing.Color.SeaShell;
             this.cadastrosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.recuperarSemhaToolStripMenuItem,
-            this.quemSomosToolStripMenuItem,
-            this.loginToolStripMenuItem});
+            this.quemSomosToolStripMenuItem});
             this.cadastrosToolStripMenuItem.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cadastrosToolStripMenuItem.Name = "cadastrosToolStripMenuItem";
             this.cadastrosToolStripMenuItem.Size = new System.Drawing.Size(70, 24);
@@ -143,7 +141,7 @@ namespace filtroCandidatos
             // 
             this.recuperarSemhaToolStripMenuItem.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.recuperarSemhaToolStripMenuItem.Name = "recuperarSemhaToolStripMenuItem";
-            this.recuperarSemhaToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
+            this.recuperarSemhaToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
             this.recuperarSemhaToolStripMenuItem.Text = "Recuperar senha ";
             this.recuperarSemhaToolStripMenuItem.Click += new System.EventHandler(this.recuperarSemhaToolStripMenuItem_Click);
             // 
@@ -151,17 +149,9 @@ namespace filtroCandidatos
             // 
             this.quemSomosToolStripMenuItem.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.quemSomosToolStripMenuItem.Name = "quemSomosToolStripMenuItem";
-            this.quemSomosToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
+            this.quemSomosToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
             this.quemSomosToolStripMenuItem.Text = "Quem somos?";
             this.quemSomosToolStripMenuItem.Click += new System.EventHandler(this.quemSomosToolStripMenuItem_Click);
-            // 
-            // loginToolStripMenuItem
-            // 
-            this.loginToolStripMenuItem.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
-            this.loginToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
-            this.loginToolStripMenuItem.Text = "Desenvolvedores ";
-            this.loginToolStripMenuItem.Click += new System.EventHandler(this.loginToolStripMenuItem_Click);
             // 
             // button1
             // 
@@ -244,7 +234,6 @@ namespace filtroCandidatos
         private System.Windows.Forms.Button btn_Entrar;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem cadastrosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem loginToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem recuperarSemhaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem quemSomosToolStripMenuItem;
         private System.Windows.Forms.Button button1;

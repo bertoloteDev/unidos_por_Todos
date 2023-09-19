@@ -17,8 +17,10 @@ namespace filtroCandidatos
 {
     public partial class frmOngsCadastro : Form
     {
-        public frmOngsCadastro()
+        int id_cadastro;
+        public frmOngsCadastro(int id_cadastro)
         {
+            this.id_cadastro = id_cadastro;
             InitializeComponent();
         }
 
@@ -53,7 +55,7 @@ namespace filtroCandidatos
             else
             {
                 MessageBox.Show(" ONG cadastrada com Sucesso! ");
-                this.Close();
+                
             }
 
             using (MyDbContext db = new MyDbContext())
@@ -152,8 +154,8 @@ namespace filtroCandidatos
 
         private void voltar_Click(object sender, EventArgs e)
         {
-            /*Form seleção = new frmSeleção();
-            seleção.Show();*/
+            Form seleção = new frmSelecao(this.id_cadastro);
+            seleção.Show();
         }
     }
 }

@@ -70,6 +70,7 @@ namespace filtroCandidatos
         {
             Form vAlteracaodados = new frmEditarCadastro();
             vAlteracaodados.Show();
+            this.Hide();
         }
 
         private void txtQuant_TextChanged(object sender, EventArgs e)

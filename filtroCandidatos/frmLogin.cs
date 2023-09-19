@@ -88,7 +88,7 @@ namespace filtroCandidatos
                         Form vPlano = new frmPlanos(login.id_cadastro);
                         vPlano.Show();
                     }
-
+                    this.Hide();
 
 
                 }
@@ -106,18 +106,21 @@ namespace filtroCandidatos
         {
             Form vRecuperacao = new frmRecuperacaosenha();
             vRecuperacao.Show();
+            this.Hide();
         }
 
         private void quemSomosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form vQuemsomos = new frmQuemSomosNos();
             vQuemsomos.Show();
+            this.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             Form vFormulario = new frmCadastro();
             vFormulario.Show();
+            this.Hide();
         }
 
         private void frmLogin_Load_1(object sender, EventArgs e)
@@ -149,8 +152,7 @@ namespace filtroCandidatos
 
         private void loginToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form frmDev = new frmTeladeDesenvolvedor();
-            frmDev.Show();
+            
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)

@@ -126,12 +126,6 @@
     <Compile Include="bdongs.Designer.cs">
       <DependentUpon>bdongs.cs</DependentUpon>
     </Compile>
-    <Compile Include="Final.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Final.Designer.cs">
-      <DependentUpon>Final.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmPlanos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,18 +137,6 @@
     </Compile>
     <Compile Include="frmCadastro.Designer.cs">
       <DependentUpon>frmCadastro.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmCentroOeste.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmCentroOeste.Designer.cs">
-      <DependentUpon>frmCentroOeste.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmEditarCadastro.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmEditarCadastro.Designer.cs">
-      <DependentUpon>frmEditarCadastro.cs</DependentUpon>
     </Compile>
     <Compile Include="frmFiltro.cs">
       <SubType>Form</SubType>
@@ -179,30 +161,6 @@
     </Compile>
     <Compile Include="frmRecuperacaosenha.Designer.cs">
       <DependentUpon>frmRecuperacaosenha.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmSudeste.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmSudeste.Designer.cs">
-      <DependentUpon>frmSudeste.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmNordeste.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmNordeste.Designer.cs">
-      <DependentUpon>frmNordeste.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmSul.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmSul.Designer.cs">
-      <DependentUpon>frmSul.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmNorte.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmNorte.Designer.cs">
-      <DependentUpon>frmNorte.cs</DependentUpon>
     </Compile>
     <Compile Include="frmQuemSomosNos.cs">
       <SubType>Form</SubType>
@@ -242,29 +200,14 @@
     <EmbeddedResource Include="bdongs.resx">
       <DependentUpon>bdongs.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Final.resx">
-      <DependentUpon>Final.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmCadastro.resx">
       <DependentUpon>frmCadastro.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmCentroOeste.resx">
-      <DependentUpon>frmCentroOeste.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmEditarCadastro.resx">
-      <DependentUpon>frmEditarCadastro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmFiltro.resx">
       <DependentUpon>frmFiltro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmNordeste.resx">
-      <DependentUpon>frmNordeste.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmNorte.resx">
-      <DependentUpon>frmNorte.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmOngsCadastro.resx">
       <DependentUpon>frmOngsCadastro.cs</DependentUpon>
@@ -280,12 +223,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmSelecao.resx">
       <DependentUpon>frmSelecao.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmSudeste.resx">
-      <DependentUpon>frmSudeste.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmSul.resx">
-      <DependentUpon>frmSul.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTeladeDesenvolvedor.resx">
       <DependentUpon>frmTeladeDesenvolvedor.cs</DependentUpon>

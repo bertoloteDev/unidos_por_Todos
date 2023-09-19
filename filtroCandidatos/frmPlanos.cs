@@ -46,6 +46,7 @@ namespace filtroCandidatos
         {
             Form frmLogin = new frmLogin();
             frmLogin.Show();
+            this.Hide();
         }
 
         private void btnPadrao_Click(object sender, EventArgs e)
@@ -61,6 +62,7 @@ namespace filtroCandidatos
         {
             Form pagamentos = new frmPagamentos(radioButtonIndex, this.id_cadastro );
             pagamentos.Show();
+            this.Hide();
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)

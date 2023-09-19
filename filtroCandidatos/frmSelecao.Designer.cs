@@ -35,14 +35,15 @@ namespace filtroCandidatos
             this.btnCentroOeste = new System.Windows.Forms.Button();
             this.btnSul = new System.Windows.Forms.Button();
             this.btnSudeste = new System.Windows.Forms.Button();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.voltarATelaPricipalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox88 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.menuStrip1.SuspendLayout();
+            this.menuStrip2 = new System.Windows.Forms.MenuStrip();
+            this.cadastrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.recuperarSemhaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.quemSomosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.oNGToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox88.SuspendLayout();
+            this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -122,39 +123,8 @@ namespace filtroCandidatos
             this.btnSudeste.UseVisualStyleBackColor = true;
             this.btnSudeste.Click += new System.EventHandler(this.btnSudeste_Click);
             // 
-            // menuStrip1
-            // 
-            this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1442, 24);
-            this.menuStrip1.TabIndex = 2;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // menuToolStripMenuItem
-            // 
-            this.menuToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.menuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.voltarATelaPricipalToolStripMenuItem});
-            this.menuToolStripMenuItem.Font = new System.Drawing.Font("Mongolian Baiti", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.menuToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
-            this.menuToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
-            this.menuToolStripMenuItem.Text = "Menu";
-            // 
-            // voltarATelaPricipalToolStripMenuItem
-            // 
-            this.voltarATelaPricipalToolStripMenuItem.Font = new System.Drawing.Font("Mongolian Baiti", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.voltarATelaPricipalToolStripMenuItem.Name = "voltarATelaPricipalToolStripMenuItem";
-            this.voltarATelaPricipalToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
-            this.voltarATelaPricipalToolStripMenuItem.Text = "Voltar a tela pricipal";
-            this.voltarATelaPricipalToolStripMenuItem.Click += new System.EventHandler(this.voltarATelaPricipalToolStripMenuItem_Click);
-            // 
             // groupBox88
             // 
-            this.groupBox88.Controls.Add(this.button1);
             this.groupBox88.Controls.Add(this.btnNorte);
             this.groupBox88.Controls.Add(this.label1);
             this.groupBox88.Controls.Add(this.btnNordeste);
@@ -168,45 +138,75 @@ namespace filtroCandidatos
             this.groupBox88.TabStop = false;
             this.groupBox88.Enter += new System.EventHandler(this.groupBox88_Enter);
             // 
-            // button1
+            // menuStrip2
             // 
-            this.button1.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(633, 404);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(133, 31);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Cadastrar ONG";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.menuStrip2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cadastrosToolStripMenuItem,
+            this.oNGToolStripMenuItem});
+            this.menuStrip2.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip2.Name = "menuStrip2";
+            this.menuStrip2.Size = new System.Drawing.Size(1442, 28);
+            this.menuStrip2.TabIndex = 10;
+            this.menuStrip2.Text = "menuStrip2";
             // 
-            // button2
+            // cadastrosToolStripMenuItem
             // 
-            this.button2.Location = new System.Drawing.Point(12, 84);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(97, 29);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Alternar Dados";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.cadastrosToolStripMenuItem.BackColor = System.Drawing.Color.SeaShell;
+            this.cadastrosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.recuperarSemhaToolStripMenuItem,
+            this.quemSomosToolStripMenuItem,
+            this.loginToolStripMenuItem});
+            this.cadastrosToolStripMenuItem.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cadastrosToolStripMenuItem.Name = "cadastrosToolStripMenuItem";
+            this.cadastrosToolStripMenuItem.Size = new System.Drawing.Size(70, 24);
+            this.cadastrosToolStripMenuItem.Text = "Menu";
             // 
-            // frmSeleção
+            // recuperarSemhaToolStripMenuItem
+            // 
+            this.recuperarSemhaToolStripMenuItem.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.recuperarSemhaToolStripMenuItem.Name = "recuperarSemhaToolStripMenuItem";
+            this.recuperarSemhaToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
+            this.recuperarSemhaToolStripMenuItem.Text = "Recuperar senha ";
+            // 
+            // quemSomosToolStripMenuItem
+            // 
+            this.quemSomosToolStripMenuItem.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.quemSomosToolStripMenuItem.Name = "quemSomosToolStripMenuItem";
+            this.quemSomosToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
+            this.quemSomosToolStripMenuItem.Text = "Quem somos?";
+            // 
+            // loginToolStripMenuItem
+            // 
+            this.loginToolStripMenuItem.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
+            this.loginToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
+            this.loginToolStripMenuItem.Text = "Desenvolvedores ";
+            this.loginToolStripMenuItem.Click += new System.EventHandler(this.loginToolStripMenuItem_Click);
+            // 
+            // oNGToolStripMenuItem
+            // 
+            this.oNGToolStripMenuItem.Name = "oNGToolStripMenuItem";
+            this.oNGToolStripMenuItem.Size = new System.Drawing.Size(45, 24);
+            this.oNGToolStripMenuItem.Text = "ONG";
+            this.oNGToolStripMenuItem.Click += new System.EventHandler(this.oNGToolStripMenuItem_Click);
+            // 
+            // frmSelecao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.ClientSize = new System.Drawing.Size(1442, 566);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.menuStrip2);
             this.Controls.Add(this.groupBox88);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
-            this.Name = "frmSeleção";
+            this.Name = "frmSelecao";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GabrielFBraz";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.groupBox88.ResumeLayout(false);
             this.groupBox88.PerformLayout();
+            this.menuStrip2.ResumeLayout(false);
+            this.menuStrip2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -220,11 +220,12 @@ namespace filtroCandidatos
         private System.Windows.Forms.Button btnCentroOeste;
         private System.Windows.Forms.Button btnSul;
         private System.Windows.Forms.Button btnSudeste;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem voltarATelaPricipalToolStripMenuItem;
         private System.Windows.Forms.GroupBox groupBox88;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.MenuStrip menuStrip2;
+        private System.Windows.Forms.ToolStripMenuItem cadastrosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem recuperarSemhaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem quemSomosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem loginToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem oNGToolStripMenuItem;
     }
 }

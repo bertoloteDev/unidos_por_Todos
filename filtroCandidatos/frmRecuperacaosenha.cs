@@ -59,39 +59,15 @@ namespace filtroCandidatos
                     new MySqlParameter("@senha",novasenha),
                     new MySqlParameter("@confirmacao",confirmacao),
 
-           };
+                };
 
                 int batatinha = db.Database.SqlQuery<int>(query, parameters).Single();
 
+                Form vTelainicial = new frmLogin();
+                vTelainicial.Show();
+                this.Hide();
             }
-
-
-
-
-
-
-
-
-
-
-
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         private void btnMsenha_Click(object sender, EventArgs e)
         {
@@ -165,6 +141,7 @@ namespace filtroCandidatos
         {
             Form vTelainicial = new frmLogin();
             vTelainicial.Show();
+            this.Hide();
         }
     }
 }

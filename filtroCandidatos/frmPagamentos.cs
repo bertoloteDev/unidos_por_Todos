@@ -156,8 +156,9 @@ namespace filtroCandidatos
             }
 
 
-            Form vRecuperacao = new frmSelecao(this.plano);
-            vRecuperacao.Show();
+            Form vSelecao = new frmSelecao(this.plano);
+            vSelecao.Show();
+            this.Hide();
         }
 
         private void menuToolStripMenuItem_Click(object sender, EventArgs e)
@@ -167,10 +168,11 @@ namespace filtroCandidatos
 
         private void voltarParaTelaInicialToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form vRecuperacao = new frmPlanos();
+            Form vRecuperacao = new frmPlanos(this.id_cadastros);
             vRecuperacao.Show();
-        
-         }
+            this.Hide();
+
+        }
 
         private void pBPix_Click(object sender, EventArgs e)
         {

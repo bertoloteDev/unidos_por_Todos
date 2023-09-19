@@ -22,9 +22,9 @@ namespace filtroCandidatos
 
         private void logoff_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(" LogOff Realizado ");
+            /*
             Form frmlogin = new frmLogin();
-            frmlogin.Show();
+            frmlogin.Show();*/
         }
 
         private void frmTeladeDesenvolvedor_Load(object sender, EventArgs e)
@@ -40,6 +40,8 @@ namespace filtroCandidatos
         {
             Form vtelaant = new frmLogin();
             vtelaant.Show();
+            MessageBox.Show(" LogOff Realizado ");
+            this.Hide();
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
@@ -51,7 +53,7 @@ namespace filtroCandidatos
         {
             Form bdcadastrados = new frmbdcadastrados();
             bdcadastrados.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void consult2_Click(object sender, EventArgs e)
@@ -69,6 +71,14 @@ namespace filtroCandidatos
         private void label3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            Form vSelecao = new frmSelecao(3);
+            vSelecao.Show();
+            this.Hide();
         }
     }
 }

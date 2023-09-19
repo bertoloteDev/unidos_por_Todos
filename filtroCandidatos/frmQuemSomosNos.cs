@@ -38,6 +38,7 @@ namespace filtroCandidatos
         {
             Form frmLogin = new frmLogin();
             frmLogin.Show();
+            this.Hide();
         }
 
         private void groupBox85_Enter(object sender, EventArgs e)

@@ -36,6 +36,7 @@ namespace filtroCandidatos
             
             Form teladevbd = new frmTeladeDesenvolvedor();
             teladevbd.Show();
+            this.Hide();
             
         }
         
