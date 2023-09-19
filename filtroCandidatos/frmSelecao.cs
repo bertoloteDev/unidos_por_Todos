@@ -33,23 +33,7 @@ namespace filtroCandidatos
             int y = (this.Height - groupBox88.Height) / 2;
             groupBox88.Location = new Point(x, y);
 
-            using (MyDbContext db = new MyDbContext())
-            {
-                string query = "select * from pagamentos where id_cadastros = "+this.id_user+" LIMIT 1;";
-                Pagamento pagamento = db.Database.SqlQuery<Pagamento>(query).SingleOrDefault();
-              
-                if(pagamento == null)
-                {
-                    Form planos = new frmPlanos();
-                    planos.Show();
-                    //this.Close();
-                }
-                else
-                {
-                    this.plano = pagamento.pacote;
-                }
-
-            }
+            
         }
 
 

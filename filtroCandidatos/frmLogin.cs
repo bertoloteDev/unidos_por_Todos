@@ -76,12 +76,17 @@ namespace filtroCandidatos
 
 
                     
-                    if (!planos)
+                     bool fezPagamento = VerificarPagamento(login);
+
+                    if (fezPagamento)
                     {
                         Form vSelecao = new frmSelecao(login.id_cadastro);
                         vSelecao.Show();
-
-                        planos = true;
+                    }
+                    else
+                    {
+                        Form vPlano = new frmPlanos(login.id_cadastro);
+                        vPlano.Show();
                     }
 
 
@@ -157,5 +162,27 @@ namespace filtroCandidatos
         {
 
         }
+        private bool VerificarPagamento(Login login)
+        {
+            using (MyDbContext db = new MyDbContext())
+            {
+            string query = "SELECT * FROM pagamentos WHERE id_cadastros = @id_cadastro LIMIT 1;";
+            var parameters = new[]
+            {
+            new MySqlParameter("@id_cadastro", login.id_cadastro)
+            };
+        
+            Pagamento pagamento = db.Database.SqlQuery<Pagamento>(query, parameters).SingleOrDefault();
+
+            if (pagamento != null)
+            {
+            return true; // O usuário fez o pagamento
+            }
+            else
+            {
+            return false; // O usuário não fez o pagamento
+            }
+        }
+    
     }
-}
+}}

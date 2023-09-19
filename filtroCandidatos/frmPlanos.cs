@@ -12,8 +12,10 @@ namespace filtroCandidatos
 {
     public partial class frmPlanos : Form
     {
-        public frmPlanos()
+        int id_cadastro;
+        public frmPlanos(int id_cadastro)
         {
+            this.id_cadastro = id_cadastro;
             InitializeComponent();
         }
 
@@ -57,7 +59,7 @@ namespace filtroCandidatos
         }
         private void teste(int radioButtonIndex)
         {
-            Form pagamentos = new frmPagamentos(radioButtonIndex, 1);
+            Form pagamentos = new frmPagamentos(radioButtonIndex, this.id_cadastro );
             pagamentos.Show();
         }
 
