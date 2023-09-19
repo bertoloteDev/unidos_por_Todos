@@ -53,12 +53,13 @@ namespace filtroCandidatos
             else
             {
                 MessageBox.Show(" ONG cadastrada com Sucesso! ");
+                this.Close();
             }
 
             using (MyDbContext db = new MyDbContext())
 
             {
-                string query = @"INSERT INTO ongs (nome_de_ongs, responsavel_ongs, cnpj, cpf_responsavel, telefone, orcamento, emailong) VALUES (@nome_de_ongs, @responsavel_ongs, @cnpj, @cpf_responsavel, @telefone, @orcamento, emailong)";
+                string query = @"INSERT INTO ongs (nome_de_ongs, responsavel_ongs, cnpj, cpf_responsavel, telefone, orcamento, emailong) VALUES (@nome_de_ongs, @responsavel_ongs, @cnpj, @cpf_responsavel, @telefone, @orcamento, @emailong)";
 
                 var parameters = new[]
 
