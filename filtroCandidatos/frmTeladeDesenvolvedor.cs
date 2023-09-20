@@ -15,8 +15,10 @@ namespace filtroCandidatos
 {
     public partial class frmTeladeDesenvolvedor : Form
     {
-        public frmTeladeDesenvolvedor()
+        int id_cadastro;
+        public frmTeladeDesenvolvedor(int id_cadastro)
         {
+            this.id_cadastro = id_cadastro;
             InitializeComponent();
         }
 
@@ -51,14 +53,14 @@ namespace filtroCandidatos
 
         private void consult_Click(object sender, EventArgs e)
         {
-            Form bdcadastrados = new frmbdcadastrados();
+            Form bdcadastrados = new frmbdcadastrados(this.id_cadastro);
             bdcadastrados.Show();
             this.Hide();
         }
 
         private void consult2_Click(object sender, EventArgs e)
         {
-            Form bdong = new frmbdongs();
+            Form bdong = new frmbdongs(this.id_cadastro);
             bdong.Show();
             this.Close();
         }
@@ -76,7 +78,7 @@ namespace filtroCandidatos
         private void button1_Click(object sender, EventArgs e)
         {
 
-            Form vSelecao = new frmSelecao(3);
+            Form vSelecao = new frmSelecao(this.id_cadastro, 3);
             vSelecao.Show();
             this.Hide();
         }

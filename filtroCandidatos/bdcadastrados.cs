@@ -10,15 +10,14 @@ using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using filtroCandidatos.Models;
 
-
-
-
 namespace filtroCandidatos
 {
     public partial class frmbdcadastrados : Form
     {
-        public frmbdcadastrados()
+        int id_cadastro;
+        public frmbdcadastrados(int id_cadastro)
         {
+            this.id_cadastro = id_cadastro;
             InitializeComponent();
         }
 
@@ -42,7 +41,7 @@ namespace filtroCandidatos
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form teladev = new frmTeladeDesenvolvedor();
+            Form teladev = new frmTeladeDesenvolvedor(this.id_cadastro);
             teladev.Show();
             this.Hide();
         }

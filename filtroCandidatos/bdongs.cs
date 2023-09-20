@@ -14,8 +14,10 @@ namespace filtroCandidatos
 {
     public partial class frmbdongs : Form
     {
-        public frmbdongs()
+        int id_cadastro;
+        public frmbdongs(int id_cadastro)
         {
+            this.id_cadastro = id_cadastro;
             InitializeComponent();
         }
 
@@ -34,7 +36,7 @@ namespace filtroCandidatos
         private void btnvoltar_Click(object sender, EventArgs e)
         {
             
-            Form teladevbd = new frmTeladeDesenvolvedor();
+            Form teladevbd = new frmTeladeDesenvolvedor(this.id_cadastro);
             teladevbd.Show();
             this.Hide();
             

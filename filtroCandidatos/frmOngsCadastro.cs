@@ -18,9 +18,11 @@ namespace filtroCandidatos
     public partial class frmOngsCadastro : Form
     {
         int id_cadastro;
-        public frmOngsCadastro(int id_cadastro)
+        int plano;
+        public frmOngsCadastro(int id_cadastro, int plano)
         {
             this.id_cadastro = id_cadastro;
+            this.plano = plano;
             InitializeComponent();
         }
 
@@ -154,7 +156,7 @@ namespace filtroCandidatos
 
         private void voltar_Click(object sender, EventArgs e)
         {
-            Form seleção = new frmSelecao(this.id_cadastro);
+            Form seleção = new frmSelecao(this.id_cadastro, this.plano);
             seleção.Show();
         }
     }

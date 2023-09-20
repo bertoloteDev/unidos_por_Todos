@@ -27,9 +27,8 @@ namespace filtroCandidatos
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtLocalidades = new System.Windows.Forms.TextBox();
-            this.txtQuant = new System.Windows.Forms.TextBox();
-            this.cbxCategorias = new System.Windows.Forms.ComboBox();
+            this.txtEstado = new System.Windows.Forms.TextBox();
+            this.txtCidade = new System.Windows.Forms.TextBox();
             this.btnFiltrar = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -43,42 +42,26 @@ namespace filtroCandidatos
             ((System.ComponentModel.ISupportInitialize)(this.dgvLocalidades)).BeginInit();
             this.SuspendLayout();
             // 
-            // txtLocalidades
+            // txtEstado
             // 
-            this.txtLocalidades.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
-            this.txtLocalidades.Location = new System.Drawing.Point(41, 19);
-            this.txtLocalidades.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.txtLocalidades.Name = "txtLocalidades";
-            this.txtLocalidades.Size = new System.Drawing.Size(194, 29);
-            this.txtLocalidades.TabIndex = 0;
-            this.txtLocalidades.Text = "  1 -LOCALIDADES      ";
+            this.txtEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
+            this.txtEstado.Location = new System.Drawing.Point(41, 19);
+            this.txtEstado.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.txtEstado.Name = "txtEstado";
+            this.txtEstado.Size = new System.Drawing.Size(447, 29);
+            this.txtEstado.TabIndex = 0;
+            this.txtEstado.Text = "ESTADO";
             // 
-            // txtQuant
+            // txtCidade
             // 
-            this.txtQuant.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
-            this.txtQuant.Location = new System.Drawing.Point(270, 19);
-            this.txtQuant.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.txtQuant.Name = "txtQuant";
-            this.txtQuant.Size = new System.Drawing.Size(374, 29);
-            this.txtQuant.TabIndex = 1;
-            this.txtQuant.Text = "2- QUANTIDADES DE CADASTRADOS";
-            this.txtQuant.TextChanged += new System.EventHandler(this.txtQuant_TextChanged);
-            // 
-            // cbxCategorias
-            // 
-            this.cbxCategorias.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
-            this.cbxCategorias.FormattingEnabled = true;
-            this.cbxCategorias.Items.AddRange(new object[] {
-            "Habitação",
-            "Assistência Social",
-            "Desenvolvimento e Defesa de Direitos"});
-            this.cbxCategorias.Location = new System.Drawing.Point(699, 16);
-            this.cbxCategorias.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.cbxCategorias.Name = "cbxCategorias";
-            this.cbxCategorias.Size = new System.Drawing.Size(249, 32);
-            this.cbxCategorias.TabIndex = 2;
-            this.cbxCategorias.Text = "CATEGORIAS";
-            this.cbxCategorias.SelectedIndexChanged += new System.EventHandler(this.cbxCategorias_SelectedIndexChanged);
+            this.txtCidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
+            this.txtCidade.Location = new System.Drawing.Point(498, 19);
+            this.txtCidade.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.txtCidade.Name = "txtCidade";
+            this.txtCidade.Size = new System.Drawing.Size(459, 29);
+            this.txtCidade.TabIndex = 1;
+            this.txtCidade.Text = "CIDADE";
+            this.txtCidade.TextChanged += new System.EventHandler(this.txtQuant_TextChanged);
             // 
             // btnFiltrar
             // 
@@ -141,9 +124,8 @@ namespace filtroCandidatos
             // 
             this.groupBox1.Controls.Add(this.dgvLocalidades);
             this.groupBox1.Controls.Add(this.btnFiltrar);
-            this.groupBox1.Controls.Add(this.txtQuant);
-            this.groupBox1.Controls.Add(this.txtLocalidades);
-            this.groupBox1.Controls.Add(this.cbxCategorias);
+            this.groupBox1.Controls.Add(this.txtCidade);
+            this.groupBox1.Controls.Add(this.txtEstado);
             this.groupBox1.Location = new System.Drawing.Point(172, 49);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1028, 498);
@@ -182,9 +164,8 @@ namespace filtroCandidatos
 
         }
 
-        private System.Windows.Forms.TextBox txtLocalidades;
-        private System.Windows.Forms.TextBox txtQuant;
-        private System.Windows.Forms.ComboBox cbxCategorias;
+        private System.Windows.Forms.TextBox txtEstado;
+        private System.Windows.Forms.TextBox txtCidade;
         private System.Windows.Forms.Button btnFiltrar;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItem;

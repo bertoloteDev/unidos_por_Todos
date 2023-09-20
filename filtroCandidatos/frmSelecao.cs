@@ -16,10 +16,11 @@ namespace filtroCandidatos
     {
         int plano;
         int id_user;
-        public frmSelecao(int id_user)
+        public frmSelecao(int id_user, int plano)
         {
             
             this.id_user = id_user;
+            this.plano = plano;
 
             InitializeComponent();
         }
@@ -137,14 +138,14 @@ namespace filtroCandidatos
 
         private void loginToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form frmDev = new frmTeladeDesenvolvedor();
+            Form frmDev = new frmTeladeDesenvolvedor(this.id_user);
             frmDev.Show();
             this.Hide();
         }
 
         private void oNGToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form cadastroong = new frmOngsCadastro(this.id_user);
+            Form cadastroong = new frmOngsCadastro(this.id_user, this.plano);
             cadastroong.Show();
             this.Hide();
         }

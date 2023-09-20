@@ -12,11 +12,6 @@ using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Configuration;
 using MySql.Data.MySqlClient;
 
-
-
-
-
-
 namespace filtroCandidatos
 {
     public partial class frmLogin : Form
@@ -27,14 +22,8 @@ namespace filtroCandidatos
             using (MyDbContext db = new MyDbContext())
             {
                 string query = "select * from cadastrados;";
-                
-
             }
-
         }
-
-        private bool planos = false;
-        
         
         private void frmLogin_Load(object sender, EventArgs e)
         {
@@ -43,44 +32,34 @@ namespace filtroCandidatos
 
         private void btn_Entrar_Click(object sender, EventArgs e)
         {
-           
-          
-            
             string vLogin = txtCPF.Text;
             string vsenha = txtSenha.Text;
 
-          if (vLogin != "" && vsenha != "")
+            if (vLogin != "" && vsenha != "")
             {
-
                 using (MyDbContext db = new MyDbContext())
-
                 {
-
                     string query = @"SELECT l.id, l.email, l.senha, l.tipo_de_acesso, l.id_cadastrados FROM login AS l WHERE l.email = @email AND l.senha = @senha LIMIT 1;";
 
                     var parameters = new[]
-
                     {
                         new MySqlParameter("@email", vLogin),
                         new MySqlParameter("@senha", vsenha)
-                   };
+                    };
 
-
-                   Login login = db.Database.SqlQuery<Login>(query, parameters).SingleOrDefault();
+                    Login login = db.Database.SqlQuery<Login>(query, parameters).SingleOrDefault();
 
                     if(login == null)
                     {
                         MessageBox.Show("Usuario não encontrado");
                         return;
                     }
-
-
                     
-                     bool fezPagamento = VerificarPagamento(login);
+                    int fezPagamento = VerificarPagamento(login);
 
-                    if (fezPagamento)
+                    if (fezPagamento != 0)
                     {
-                        Form vSelecao = new frmSelecao(login.id_cadastro);
+                        Form vSelecao = new frmSelecao(login.id_cadastro, fezPagamento);
                         vSelecao.Show();
                     }
                     else
@@ -89,17 +68,11 @@ namespace filtroCandidatos
                         vPlano.Show();
                     }
                     this.Hide();
-
-
                 }
 
-            }
-                else
-            {
+            } else {
                 MessageBox.Show(" Preencha os Campos ");
             }
-
-
         }
 
         private void recuperarSemhaToolStripMenuItem_Click(object sender, EventArgs e)
@@ -164,27 +137,26 @@ namespace filtroCandidatos
         {
 
         }
-        private bool VerificarPagamento(Login login)
+
+        private int VerificarPagamento(Login login)
         {
             using (MyDbContext db = new MyDbContext())
             {
-            string query = "SELECT * FROM pagamentos WHERE id_cadastros = @id_cadastro LIMIT 1;";
-            var parameters = new[]
-            {
-            new MySqlParameter("@id_cadastro", login.id_cadastro)
-            };
+                string query = "SELECT * FROM pagamentos WHERE id_cadastros = @id_cadastro LIMIT 1;";
+                var parameters = new[]
+                {
+                    new MySqlParameter("@id_cadastro", login.id_cadastro)
+                };
         
-            Pagamento pagamento = db.Database.SqlQuery<Pagamento>(query, parameters).SingleOrDefault();
+                Pagamento pagamento = db.Database.SqlQuery<Pagamento>(query, parameters).SingleOrDefault();
 
-            if (pagamento != null)
-            {
-            return true; // O usuário fez o pagamento
-            }
-            else
-            {
-            return false; // O usuário não fez o pagamento
+                if (pagamento != null)
+                {
+                    return pagamento.id; // O usuário fez o pagamento
+                } else {
+                    return 0; // O usuário não fez o pagamento
+                }
             }
         }
-    
     }
-}}
+}

@@ -19,11 +19,29 @@ namespace filtroCandidatos
             this.regiao = regiao;
             InitializeComponent();
 
+            encontrar_localidades();
+        }
+        
+
+        private void encontrar_localidades(string vEstado=null, string vCidade=null)
+        {
             using (MyDbContext db = new MyDbContext())
 
             {
 
-                string query = "SELECT * FROM localidades where regiao like '"+this.regiao+"';";
+                string query = "SELECT * FROM localidades where regiao like '" + this.regiao + "'";
+
+                if(vEstado != null)
+                {
+                    query += " OR '" + vEstado + "'";
+                }
+
+                if (vCidade != null)
+                {
+                    query += " OR '" + vCidade + "'";
+                }
+
+                query += ";";
 
                 List<Localidade> localidades = db.Database.SqlQuery<Localidade>(query).ToList();
 
@@ -34,24 +52,19 @@ namespace filtroCandidatos
 
         private void btnFiltrar_Click(object sender, EventArgs e)
         {
-            string vCategorias = "";
-            if (cbxCategorias.SelectedItem != null)
-            {
-                vCategorias = cbxCategorias.SelectedItem.ToString();
-            }
 
-            string vLocalidades = txtLocalidades.Text;
-            string vQuant = txtQuant.Text;
+            string vEstado = txtEstado.Text.Replace("ESTADO", "");
+            string vCidade = txtCidade.Text.Replace("CIDADE", "");
 
-            if (vCategorias == "" && vLocalidades == "" && vQuant == "")
+            if (vEstado == "" && vCidade == "")
             {
-                MessageBox.Show(" precisa filtrar por algum campo");
+                MessageBox.Show("Precisa filtrar por algum campo");
                 return;
             }
 
+            encontrar_localidades(vEstado, vCidade);
 
-            MessageBox.Show("cbxCategoria: " + vCategorias +
-                " txtLocalidades: " + vLocalidades + " txtQuant: " + vQuant);
+
         }
 
         private void voltarParaTelaInicialToolStripMenuItem_Click(object sender, EventArgs e)
@@ -68,9 +81,9 @@ namespace filtroCandidatos
 
         private void alteraçãoDeDadosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form vAlteracaodados = new frmEditarCadastro();
+            /*Form vAlteracaodados = new frmEditarCadastro();
             vAlteracaodados.Show();
-            this.Hide();
+            this.Hide();*/
         }
 
         private void txtQuant_TextChanged(object sender, EventArgs e)

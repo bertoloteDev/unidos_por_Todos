@@ -116,47 +116,27 @@ namespace filtroCandidatos
             string num = maskNume.Text;
             string vali = maskvali.Text;
             string ccc = txtcvv.Text;
-            
 
-
-
-
-
+            MessageBox.Show("c: "+this.id_cadastros);
             using (MyDbContext db = new MyDbContext())
-
             {
-
                 string query = @"INSERT INTO pagamentos (numero_do_cartao, cvc, nome_cartao, cpf_cartao, pacote, validade_do_cartao, id_cadastros) VALUES (@pnumero_do_cartao, @pcvc, @pnome_cartao, @pcpf_cartao, @ppacote, @pvaliadade_do_cartao, @pid_cadastros ); SELECT LAST_INSERT_ID();";
 
                 var parameters = new[]
-
                 {
-
                     new MySqlParameter("@pnumero_do_cartao", num),
-
                     new MySqlParameter("@pcvc", ccc),
-
                     new MySqlParameter("@pnome_cartao", nome),
-
                     new MySqlParameter("@pcpf_cartao", CPF),
-
                     new MySqlParameter("@ppacote", this.plano),
-
                     new MySqlParameter("@pvaliadade_do_cartao", vali ),
-
-                    new MySqlParameter("@pid_cadastros", this.id_cadastros),
-
-                   
-
-
+                    new MySqlParameter("@pid_cadastros", this.id_cadastros)
                 };
 
-              int batatinha = db.Database.SqlQuery<int>(query, parameters).Single();
-
+                int batatinha = db.Database.SqlQuery<int>(query, parameters).Single();
             }
 
-
-            Form vSelecao = new frmSelecao(this.plano);
+            Form vSelecao = new frmSelecao(this.id_cadastros, this.plano);
             vSelecao.Show();
             this.Hide();
         }
@@ -171,7 +151,6 @@ namespace filtroCandidatos
             Form vRecuperacao = new frmPlanos(this.id_cadastros);
             vRecuperacao.Show();
             this.Hide();
-
         }
 
         private void pBPix_Click(object sender, EventArgs e)
