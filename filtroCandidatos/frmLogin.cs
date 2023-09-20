@@ -55,16 +55,17 @@ namespace filtroCandidatos
                         return;
                     }
                     
-                    int fezPagamento = VerificarPagamento(login);
+                    int fezPagamento = VerificarPagamento(login.id_cadastrados);
+                    MessageBox.Show("p: " + fezPagamento);
 
                     if (fezPagamento != 0)
                     {
-                        Form vSelecao = new frmSelecao(login.id_cadastro, fezPagamento);
+                        Form vSelecao = new frmSelecao(login.id_cadastrados, fezPagamento);
                         vSelecao.Show();
                     }
                     else
                     {
-                        Form vPlano = new frmPlanos(login.id_cadastro);
+                        Form vPlano = new frmPlanos(login.id_cadastrados);
                         vPlano.Show();
                     }
                     this.Hide();
@@ -138,17 +139,21 @@ namespace filtroCandidatos
 
         }
 
-        private int VerificarPagamento(Login login)
+        private int VerificarPagamento(int id_cadastro)
         {
+
+            MessageBox.Show("u: "+ id_cadastro);
             using (MyDbContext db = new MyDbContext())
             {
                 string query = "SELECT * FROM pagamentos WHERE id_cadastros = @id_cadastro LIMIT 1;";
                 var parameters = new[]
                 {
-                    new MySqlParameter("@id_cadastro", login.id_cadastro)
+                    new MySqlParameter("@id_cadastro", id_cadastro)
                 };
         
                 Pagamento pagamento = db.Database.SqlQuery<Pagamento>(query, parameters).SingleOrDefault();
+
+                MessageBox.Show("p: "+ pagamento.id);
 
                 if (pagamento != null)
                 {

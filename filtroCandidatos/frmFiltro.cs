@@ -43,6 +43,8 @@ namespace filtroCandidatos
 
                 query += ";";
 
+                MessageBox.Show(query);
+
                 List<Localidade> localidades = db.Database.SqlQuery<Localidade>(query).ToList();
 
                 dgvLocalidades.DataSource = localidades;

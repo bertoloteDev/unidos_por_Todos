@@ -24,7 +24,7 @@ namespace filtroCandidatos.Models
         public string senha { get; set; }
 
         [Column("id_cadastro")]
-        public int id_cadastro { get; set; }
+        public int id_cadastrados { get; set; }
 
     }
 }

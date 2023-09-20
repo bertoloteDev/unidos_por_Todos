@@ -17,19 +17,19 @@ namespace filtroCandidatos.Models
 
         [Column ("numero_do_cartao")]
 
-        public int numero_do_cartao { get; set; }
+        public string numero_do_cartao { get; set; }
 
         [Column ("cvc")]
         
-        public int cvc { get; set; }
+        public string cvc { get; set; }
 
         [Column ("nome_cartao")]
 
-        public int nome_cartao { get; set; }
+        public string nome_cartao { get; set; }
 
         [Column ("cpf_cartao")]
 
-        public int cpf_cartao { get; set; }
+        public string cpf_cartao { get; set; }
 
         [Column ("pacote")]
 
@@ -37,10 +37,10 @@ namespace filtroCandidatos.Models
 
         [Column ("validade_do_cartao")]
 
-        public int validade_do_cartao { get; set; }
+        public string validade_do_cartao { get; set; }
 
         [Column ("chave")]
 
-        public int chave { get; set; }
+        public string chave { get; set; }
     }
 }

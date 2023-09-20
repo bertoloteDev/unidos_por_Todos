@@ -90,82 +90,58 @@ namespace filtroCandidatos
                     string query = @"INSERT INTO cadastrados (nome, sobrenome, cpf,data_de_nascimento, idade, genero, telefone_usuario) VALUES (@nome, @sobrenome, @cpf, @data_de_nascimento, @idade, @genero, @telefone_usuario); SELECT LAST_INSERT_ID();";
 
                     var parameters = new[]
-
                     {
-
-                    new MySqlParameter("@nome", nome),
-
-                    new MySqlParameter("@sobrenome", lastname),
-
-                    new MySqlParameter("@cpf", CPF),
-
-                    new MySqlParameter("@data_de_nascimento", DatadeNasimento),
-
-                    new MySqlParameter("@idade", age),
-
-                    new MySqlParameter("@genero", opcao),
-
-                    new MySqlParameter("@telefone_usuario", telefone)
-
-                   
-
+                        new MySqlParameter("@nome", nome),
+                        new MySqlParameter("@sobrenome", lastname),
+                        new MySqlParameter("@cpf", CPF),
+                        new MySqlParameter("@data_de_nascimento", DatadeNasimento),
+                        new MySqlParameter("@idade", age),
+                        new MySqlParameter("@genero", opcao),
+                        new MySqlParameter("@telefone_usuario", telefone)
                     };
 
+                    int id_cadastrados = db.Database.SqlQuery<int>(query, parameters).SingleOrDefault();
 
-                    
-                    int id_cadastrados = db.Database.SqlQuery<int>(query, parameters).Single();
+                    if(id_cadastrados == null)
+                    {
+                        MessageBox.Show("Usuario não cadastrado");
+                        return;
+                    }
+
+                    MessageBox.Show("u: "+ id_cadastrados);
 
                     query = @"INSERT INTO login (email, tipo_de_acesso, senha, id_cadastrados) VALUES (@email, @tipo_de_acesso, @senha, @id_cadastrados);";
 
                     parameters = new[]
-
-                   {
-
-                    new MySqlParameter ("@email", email),
-
-                    new MySqlParameter("@senha", senha),
-
-                    new MySqlParameter("@tipo_de_acesso", "clientes"),
-
-                    new MySqlParameter("@id_cadastrados", id_cadastrados)
-
+                    {
+                        new MySqlParameter ("@email", email),
+                        new MySqlParameter("@senha", senha),
+                        new MySqlParameter("@tipo_de_acesso", "clientes"),
+                        new MySqlParameter("@id_cadastrados", id_cadastrados)
                     };
 
                     int rowsAffected = db.Database.ExecuteSqlCommand(query, parameters);
-
 
                     Form login = new frmPlanos(id_cadastrados);
                     login.Show();
                     this.Hide();
                 }
-
-
             }
             else
             {
                 MessageBox.Show("Senhas não Conferem!");
-
             }
-
-
-
-
-
-
-
         }
 
         private void Email_Validated(object sender, EventArgs e)
         {
             string email = Email.Text;
             Regex regex = new Regex(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$");//Declarei a classe "Regex" e declarei uma variável chamada "Regex". Para eu conseguir usar essa variável eu preciso usar o "new". O Regex serve para validar a máscara de email.
-                if (!regex.IsMatch(email)) // o If serve para verificar se o email tem a estrutura necessária para ser considerado valido
+            if (!regex.IsMatch(email)) // o If serve para verificar se o email tem a estrutura necessária para ser considerado valido
             {
                 MessageBox.Show("Email Inválido");
                 Email.Focus();// Estou focando o textbox( name - "Email")
             }
-
-
         }
 
         private void cpf_Validated(object sender, EventArgs e)
