@@ -63,6 +63,36 @@ namespace filtroCandidatos.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap aaaaa {
+            get {
+                object obj = ResourceManager.GetObject("aaaaa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_tela_2023_09_15_190813 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de tela 2023-09-15 190813", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Design_sem_nome {
+            get {
+                object obj = ResourceManager.GetObject("Design sem nome", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap hide {
             get {
                 object obj = ResourceManager.GetObject("hide", resourceCulture);
@@ -76,6 +106,26 @@ namespace filtroCandidatos.Properties {
         internal static System.Drawing.Bitmap images {
             get {
                 object obj = ResourceManager.GetObject("images", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap kkkkkkkk {
+            get {
+                object obj = ResourceManager.GetObject("kkkkkkkk", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap marcador {
+            get {
+                object obj = ResourceManager.GetObject("marcador", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

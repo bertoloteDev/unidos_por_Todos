@@ -30,6 +30,7 @@ namespace filtroCandidatos
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -55,7 +56,7 @@ namespace filtroCandidatos
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(286, 28);
+            this.label1.Location = new System.Drawing.Point(269, 29);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(89, 30);
             this.label1.TabIndex = 0;
@@ -66,7 +67,7 @@ namespace filtroCandidatos
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Mongolian Baiti", 15.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(201, 125);
+            this.label2.Location = new System.Drawing.Point(184, 126);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(73, 23);
             this.label2.TabIndex = 1;
@@ -77,7 +78,7 @@ namespace filtroCandidatos
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Mongolian Baiti", 15.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(200, 207);
+            this.label3.Location = new System.Drawing.Point(183, 208);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(68, 23);
             this.label3.TabIndex = 2;
@@ -86,7 +87,7 @@ namespace filtroCandidatos
             // txtCPF
             // 
             this.txtCPF.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCPF.Location = new System.Drawing.Point(291, 121);
+            this.txtCPF.Location = new System.Drawing.Point(274, 122);
             this.txtCPF.Name = "txtCPF";
             this.txtCPF.Size = new System.Drawing.Size(211, 29);
             this.txtCPF.TabIndex = 5;
@@ -94,7 +95,7 @@ namespace filtroCandidatos
             // txtSenha
             // 
             this.txtSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSenha.Location = new System.Drawing.Point(291, 203);
+            this.txtSenha.Location = new System.Drawing.Point(274, 204);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(211, 29);
@@ -102,10 +103,10 @@ namespace filtroCandidatos
             // 
             // btn_Entrar
             // 
-            this.btn_Entrar.BackColor = System.Drawing.Color.Honeydew;
+            this.btn_Entrar.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.btn_Entrar.Font = new System.Drawing.Font("Mongolian Baiti", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Entrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btn_Entrar.Location = new System.Drawing.Point(171, 286);
+            this.btn_Entrar.ForeColor = System.Drawing.Color.Black;
+            this.btn_Entrar.Location = new System.Drawing.Point(187, 287);
             this.btn_Entrar.Name = "btn_Entrar";
             this.btn_Entrar.Size = new System.Drawing.Size(97, 36);
             this.btn_Entrar.TabIndex = 7;
@@ -120,7 +121,7 @@ namespace filtroCandidatos
             this.cadastrosToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1470, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1470, 24);
             this.menuStrip1.TabIndex = 9;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -132,9 +133,9 @@ namespace filtroCandidatos
             this.recuperarSemhaToolStripMenuItem,
             this.quemSomosToolStripMenuItem});
             this.cadastrosToolStripMenuItem.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cadastrosToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("cadastrosToolStripMenuItem.Image")));
             this.cadastrosToolStripMenuItem.Name = "cadastrosToolStripMenuItem";
-            this.cadastrosToolStripMenuItem.Size = new System.Drawing.Size(70, 24);
-            this.cadastrosToolStripMenuItem.Text = "Menu";
+            this.cadastrosToolStripMenuItem.Size = new System.Drawing.Size(28, 20);
             this.cadastrosToolStripMenuItem.Click += new System.EventHandler(this.cadastrosToolStripMenuItem_Click);
             // 
             // recuperarSemhaToolStripMenuItem
@@ -155,10 +156,10 @@ namespace filtroCandidatos
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.button1.BackColor = System.Drawing.Color.White;
             this.button1.Font = new System.Drawing.Font("Mongolian Baiti", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.button1.Location = new System.Drawing.Point(342, 286);
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Location = new System.Drawing.Point(363, 287);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(160, 36);
             this.button1.TabIndex = 10;
@@ -170,7 +171,7 @@ namespace filtroCandidatos
             // 
             this.pbPass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.pbPass.Image = global::filtroCandidatos.Properties.Resources.hide;
-            this.pbPass.Location = new System.Drawing.Point(507, 215);
+            this.pbPass.Location = new System.Drawing.Point(490, 216);
             this.pbPass.Margin = new System.Windows.Forms.Padding(2);
             this.pbPass.Name = "pbPass";
             this.pbPass.Size = new System.Drawing.Size(33, 17);

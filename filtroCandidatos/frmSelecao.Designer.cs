@@ -29,8 +29,8 @@ namespace filtroCandidatos
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSelecao));
             this.label1 = new System.Windows.Forms.Label();
-            this.btnNorte = new System.Windows.Forms.Button();
             this.btnNordeste = new System.Windows.Forms.Button();
             this.btnCentroOeste = new System.Windows.Forms.Button();
             this.btnSul = new System.Windows.Forms.Button();
@@ -52,85 +52,72 @@ namespace filtroCandidatos
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(239, 33);
+            this.label1.Location = new System.Drawing.Point(232, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(322, 29);
             this.label1.TabIndex = 0;
             this.label1.Text = "SELEÇÃO DE REGIÕES";
             // 
-            // btnNorte
-            // 
-            this.btnNorte.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNorte.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnNorte.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNorte.Location = new System.Drawing.Point(128, 119);
-            this.btnNorte.Name = "btnNorte";
-            this.btnNorte.Size = new System.Drawing.Size(100, 60);
-            this.btnNorte.TabIndex = 1;
-            this.btnNorte.Text = "Norte";
-            this.btnNorte.UseVisualStyleBackColor = true;
-            this.btnNorte.Click += new System.EventHandler(this.btnNorte_Click);
-            // 
             // btnNordeste
             // 
+            this.btnNordeste.BackColor = System.Drawing.Color.Transparent;
             this.btnNordeste.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNordeste.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnNordeste.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNordeste.Location = new System.Drawing.Point(128, 250);
+            this.btnNordeste.ForeColor = System.Drawing.Color.Transparent;
+            this.btnNordeste.Image = ((System.Drawing.Image)(resources.GetObject("btnNordeste.Image")));
+            this.btnNordeste.Location = new System.Drawing.Point(458, 104);
             this.btnNordeste.Name = "btnNordeste";
-            this.btnNordeste.Size = new System.Drawing.Size(100, 60);
+            this.btnNordeste.Size = new System.Drawing.Size(130, 108);
             this.btnNordeste.TabIndex = 1;
-            this.btnNordeste.Text = "Nordeste";
-            this.btnNordeste.UseVisualStyleBackColor = true;
+            this.btnNordeste.UseVisualStyleBackColor = false;
             this.btnNordeste.Click += new System.EventHandler(this.btnNordeste_Click);
             // 
             // btnCentroOeste
             // 
+            this.btnCentroOeste.BackColor = System.Drawing.Color.Transparent;
             this.btnCentroOeste.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCentroOeste.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnCentroOeste.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCentroOeste.Location = new System.Drawing.Point(343, 179);
+            this.btnCentroOeste.Image = ((System.Drawing.Image)(resources.GetObject("btnCentroOeste.Image")));
+            this.btnCentroOeste.Location = new System.Drawing.Point(311, 207);
             this.btnCentroOeste.Name = "btnCentroOeste";
-            this.btnCentroOeste.Size = new System.Drawing.Size(100, 60);
+            this.btnCentroOeste.Size = new System.Drawing.Size(119, 81);
             this.btnCentroOeste.TabIndex = 1;
-            this.btnCentroOeste.Text = "Centro-Oeste";
-            this.btnCentroOeste.UseVisualStyleBackColor = true;
+            this.btnCentroOeste.UseVisualStyleBackColor = false;
             this.btnCentroOeste.Click += new System.EventHandler(this.btnCentroOeste_Click);
             // 
             // btnSul
             // 
+            this.btnSul.BackColor = System.Drawing.Color.Transparent;
             this.btnSul.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSul.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnSul.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSul.Location = new System.Drawing.Point(548, 250);
+            this.btnSul.Image = ((System.Drawing.Image)(resources.GetObject("btnSul.Image")));
+            this.btnSul.Location = new System.Drawing.Point(352, 338);
             this.btnSul.Name = "btnSul";
-            this.btnSul.Size = new System.Drawing.Size(100, 60);
+            this.btnSul.Size = new System.Drawing.Size(91, 75);
             this.btnSul.TabIndex = 1;
-            this.btnSul.Text = "Sul";
-            this.btnSul.UseVisualStyleBackColor = true;
+            this.btnSul.UseVisualStyleBackColor = false;
             this.btnSul.Click += new System.EventHandler(this.btnSul_Click);
             // 
             // btnSudeste
             // 
+            this.btnSudeste.BackColor = System.Drawing.Color.Transparent;
             this.btnSudeste.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSudeste.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnSudeste.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSudeste.Location = new System.Drawing.Point(548, 119);
+            this.btnSudeste.Image = ((System.Drawing.Image)(resources.GetObject("btnSudeste.Image")));
+            this.btnSudeste.Location = new System.Drawing.Point(436, 271);
             this.btnSudeste.Name = "btnSudeste";
-            this.btnSudeste.Size = new System.Drawing.Size(100, 60);
+            this.btnSudeste.Size = new System.Drawing.Size(81, 49);
             this.btnSudeste.TabIndex = 1;
-            this.btnSudeste.Text = "Sudeste";
-            this.btnSudeste.UseVisualStyleBackColor = true;
+            this.btnSudeste.UseVisualStyleBackColor = false;
             this.btnSudeste.Click += new System.EventHandler(this.btnSudeste_Click);
             // 
             // groupBox88
             // 
             this.groupBox88.Controls.Add(this.btnNorte);
-            this.groupBox88.Controls.Add(this.label1);
             this.groupBox88.Controls.Add(this.btnNordeste);
-            this.groupBox88.Controls.Add(this.btnSudeste);
             this.groupBox88.Controls.Add(this.btnCentroOeste);
+            this.groupBox88.Controls.Add(this.btnSudeste);
             this.groupBox88.Controls.Add(this.btnSul);
+            this.groupBox88.Controls.Add(this.pictureBox1);
             this.groupBox88.Location = new System.Drawing.Point(324, 84);
             this.groupBox88.Name = "groupBox88";
             this.groupBox88.Size = new System.Drawing.Size(772, 441);

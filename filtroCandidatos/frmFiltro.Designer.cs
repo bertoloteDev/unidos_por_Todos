@@ -64,9 +64,9 @@ namespace filtroCandidatos
             // 
             // btnFiltrar
             // 
-            this.btnFiltrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnFiltrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
-            this.btnFiltrar.Location = new System.Drawing.Point(428, 442);
+            this.btnFiltrar.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.btnFiltrar.Font = new System.Drawing.Font("Mongolian Baiti", 18F, System.Drawing.FontStyle.Bold);
+            this.btnFiltrar.Location = new System.Drawing.Point(435, 442);
             this.btnFiltrar.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnFiltrar.Name = "btnFiltrar";
             this.btnFiltrar.Size = new System.Drawing.Size(113, 38);
@@ -82,23 +82,24 @@ namespace filtroCandidatos
             this.menuToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1459, 32);
+            this.menuStrip1.Size = new System.Drawing.Size(1459, 24);
             this.menuStrip1.TabIndex = 4;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // menuToolStripMenuItem
             // 
-            this.menuToolStripMenuItem.BackColor = System.Drawing.Color.White;
+            this.menuToolStripMenuItem.BackColor = System.Drawing.Color.SeaShell;
             this.menuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.voltarParaTelaInicialToolStripMenuItem,
             this.alteraçãoDeDadosToolStripMenuItem});
-            this.menuToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
+            this.menuToolStripMenuItem.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
+            this.menuToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("menuToolStripMenuItem.Image")));
             this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
-            this.menuToolStripMenuItem.Size = new System.Drawing.Size(75, 28);
-            this.menuToolStripMenuItem.Text = "Menu";
+            this.menuToolStripMenuItem.Size = new System.Drawing.Size(28, 20);
             // 
             // voltarParaTelaInicialToolStripMenuItem
             // 
+            this.voltarParaTelaInicialToolStripMenuItem.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Underline);
             this.voltarParaTelaInicialToolStripMenuItem.Name = "voltarParaTelaInicialToolStripMenuItem";
             this.voltarParaTelaInicialToolStripMenuItem.Size = new System.Drawing.Size(280, 28);
             this.voltarParaTelaInicialToolStripMenuItem.Text = "Voltar para tela Inicial";
@@ -106,6 +107,7 @@ namespace filtroCandidatos
             // 
             // alteraçãoDeDadosToolStripMenuItem
             // 
+            this.alteraçãoDeDadosToolStripMenuItem.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Underline);
             this.alteraçãoDeDadosToolStripMenuItem.Name = "alteraçãoDeDadosToolStripMenuItem";
             this.alteraçãoDeDadosToolStripMenuItem.Size = new System.Drawing.Size(280, 28);
             this.alteraçãoDeDadosToolStripMenuItem.Text = "Alteração de Dados";
@@ -126,6 +128,7 @@ namespace filtroCandidatos
             // 
             // dgvLocalidades
             // 
+            this.dgvLocalidades.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.dgvLocalidades.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvLocalidades.Location = new System.Drawing.Point(41, 69);
             this.dgvLocalidades.Name = "dgvLocalidades";
