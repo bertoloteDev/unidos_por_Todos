@@ -33,7 +33,6 @@ namespace filtroCandidatos
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.voltarParaTelaInicialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.voltarParaTelaAnteriorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.alteraçãoDeDadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dgvLocalidades = new System.Windows.Forms.DataGridView();
@@ -92,7 +91,6 @@ namespace filtroCandidatos
             this.menuToolStripMenuItem.BackColor = System.Drawing.Color.White;
             this.menuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.voltarParaTelaInicialToolStripMenuItem,
-            this.voltarParaTelaAnteriorToolStripMenuItem,
             this.alteraçãoDeDadosToolStripMenuItem});
             this.menuToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
             this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
@@ -102,21 +100,14 @@ namespace filtroCandidatos
             // voltarParaTelaInicialToolStripMenuItem
             // 
             this.voltarParaTelaInicialToolStripMenuItem.Name = "voltarParaTelaInicialToolStripMenuItem";
-            this.voltarParaTelaInicialToolStripMenuItem.Size = new System.Drawing.Size(297, 28);
+            this.voltarParaTelaInicialToolStripMenuItem.Size = new System.Drawing.Size(280, 28);
             this.voltarParaTelaInicialToolStripMenuItem.Text = "Voltar para tela Inicial";
             this.voltarParaTelaInicialToolStripMenuItem.Click += new System.EventHandler(this.voltarParaTelaInicialToolStripMenuItem_Click);
-            // 
-            // voltarParaTelaAnteriorToolStripMenuItem
-            // 
-            this.voltarParaTelaAnteriorToolStripMenuItem.Name = "voltarParaTelaAnteriorToolStripMenuItem";
-            this.voltarParaTelaAnteriorToolStripMenuItem.Size = new System.Drawing.Size(297, 28);
-            this.voltarParaTelaAnteriorToolStripMenuItem.Text = "Voltar para tela anterior";
-            this.voltarParaTelaAnteriorToolStripMenuItem.Click += new System.EventHandler(this.voltarParaTelaAnteriorToolStripMenuItem_Click);
             // 
             // alteraçãoDeDadosToolStripMenuItem
             // 
             this.alteraçãoDeDadosToolStripMenuItem.Name = "alteraçãoDeDadosToolStripMenuItem";
-            this.alteraçãoDeDadosToolStripMenuItem.Size = new System.Drawing.Size(297, 28);
+            this.alteraçãoDeDadosToolStripMenuItem.Size = new System.Drawing.Size(280, 28);
             this.alteraçãoDeDadosToolStripMenuItem.Text = "Alteração de Dados";
             this.alteraçãoDeDadosToolStripMenuItem.Click += new System.EventHandler(this.alteraçãoDeDadosToolStripMenuItem_Click);
             // 
@@ -170,7 +161,6 @@ namespace filtroCandidatos
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem voltarParaTelaInicialToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem voltarParaTelaAnteriorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem alteraçãoDeDadosToolStripMenuItem;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridView dgvLocalidades;

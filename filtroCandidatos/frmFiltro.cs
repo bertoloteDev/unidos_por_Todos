@@ -14,8 +14,12 @@ namespace filtroCandidatos
     public partial class frmFiltro : Form
     {
         string regiao;
-        public frmFiltro( string regiao)
+        int id_user;
+        int id_plano;
+        public frmFiltro( string regiao, int id_user, int id_plano)
         {
+            this.id_plano = id_plano;
+            this.id_user = id_user;
             this.regiao = regiao;
             InitializeComponent();
 
@@ -71,8 +75,9 @@ namespace filtroCandidatos
 
         private void voltarParaTelaInicialToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form vInicial = new frmLogin();
+            Form vInicial = new frmSelecao(id_user, id_plano);
             vInicial.Show();
+            this.Hide();
         }
 
         private void voltarParaTelaAnteriorToolStripMenuItem_Click(object sender, EventArgs e)

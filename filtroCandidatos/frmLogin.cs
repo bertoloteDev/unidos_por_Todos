@@ -153,11 +153,11 @@ namespace filtroCandidatos
         
                 Pagamento pagamento = db.Database.SqlQuery<Pagamento>(query, parameters).SingleOrDefault();
 
-                MessageBox.Show("p: "+ pagamento.id);
+                MessageBox.Show("p: "+ pagamento.pacote);
 
                 if (pagamento != null)
                 {
-                    return pagamento.id; // O usuário fez o pagamento
+                    return pagamento.pacote; // O usuário fez o pagamento
                 } else {
                     return 0; // O usuário não fez o pagamento
                 }

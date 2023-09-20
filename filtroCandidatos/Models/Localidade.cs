@@ -37,9 +37,9 @@ namespace filtroCandidatos.Models
 
 
 
-        [Column("indicedh")]
+        [Column("indiceidh")]
 
-        public string indicedh { get; set; }
+        public string indiceidh { get; set; }
 
 
         [Column("regiao")]

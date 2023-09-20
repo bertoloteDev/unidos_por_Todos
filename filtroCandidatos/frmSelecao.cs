@@ -18,7 +18,7 @@ namespace filtroCandidatos
         int id_user;
         public frmSelecao(int id_user, int plano)
         {
-            
+            //MessageBox.Show("pl: " + plano);
             this.id_user = id_user;
             this.plano = plano;
 
@@ -41,7 +41,7 @@ namespace filtroCandidatos
         {
             if (plano == 3)
             {
-                Form frmFiltro = new frmFiltro("CentroOeste");
+                Form frmFiltro = new frmFiltro("Centro-Oeste", this.id_user, this.plano);
                 frmFiltro.Show();
                 this.Hide();
             }
@@ -52,30 +52,17 @@ namespace filtroCandidatos
         }
 
         private void btnNordeste_Click(object sender, EventArgs e)
-        {
-            if (plano == 2 && "Nordeste".Equals(btnNordeste.Text, StringComparison.OrdinalIgnoreCase))
-            {
-                Form frmFiltro = new frmFiltro("Nordeste");
-                frmFiltro.Show();
-                this.Hide();
-            }
-            else if (plano == 3)
-            {
-                Form frmFiltro = new frmFiltro("Nordeste");
-                frmFiltro.Show();
-                this.Hide();
-            }
-            else
-            {
-                MessageBox.Show("Você não tem acesso a esta região com o plano selecionado.");
-            }
+        {            
+            Form frmFiltro = new frmFiltro("Nordeste", this.id_user, this.plano);
+            frmFiltro.Show();
+            this.Hide();   
         }
 
         private void btnSul_Click(object sender, EventArgs e)
         {
             if (plano == 3)
             {
-                Form frmFiltro = new frmFiltro("Sul");
+                Form frmFiltro = new frmFiltro("Sul", this.id_user, this.plano);
                 frmFiltro.Show();
                 this.Hide();
             }
@@ -89,7 +76,7 @@ namespace filtroCandidatos
         {
             if (plano == 3)
             {
-                Form frmFiltro = new frmFiltro("Sudeste");
+                Form frmFiltro = new frmFiltro("Sudeste", this.id_user, this.plano);
                 frmFiltro.Show();
                 this.Hide();
             }
@@ -126,7 +113,7 @@ namespace filtroCandidatos
         {
             if (plano == 3)
             {
-                Form frmFiltro = new frmFiltro("CentroOeste");
+                Form frmFiltro = new frmFiltro("CentroOeste", this.id_user, this.plano);
                 frmFiltro.Show();
                 this.Hide();
             }
