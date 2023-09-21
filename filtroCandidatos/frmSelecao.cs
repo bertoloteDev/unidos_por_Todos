@@ -109,7 +109,7 @@ namespace filtroCandidatos
             this.Hide();*/
         }
 
-        private void btnNorte_Click(object sender, EventArgs e)
+        private void btnNorte1_Click(object sender, EventArgs e)
         {
             if (plano == 3)
             {
@@ -140,6 +140,20 @@ namespace filtroCandidatos
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnNorte1_Click_1(object sender, EventArgs e)
+        {
+            if (plano == 3)
+            {
+                Form frmFiltro = new frmFiltro("Norte", this.id_user, this.plano);
+                frmFiltro.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Você não tem acesso a esta região com o plano selecionado.");
+            }
         }
     }
 }
